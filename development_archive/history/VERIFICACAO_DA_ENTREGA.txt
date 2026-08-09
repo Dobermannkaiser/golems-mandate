@@ -1,0 +1,38 @@
+SquareVillage — Parte 2, Etapa 4 — v2.4.2 corrigida
+
+Correção principal
+------------------
+A previsão populacional em GameManager.gd ainda chamava a constante removida
+VillagePopulationState.REPRESENTATIVE_COUNT. Isso impedia a compilação do
+GameManager e fazia o Godot parar na linha 2007.
+
+A v2.4.2 usa protected_named_resident_count, obtido do estado real da população.
+A previsão e a resolução do fim do dia agora obedecem à mesma regra: habitantes
+anônimos podem sair, mas os cinco personagens nomeados iniciais são protegidos.
+
+Validação executada
+-------------------
+- 127 verificações automatizadas: 0 falhas.
+- Todas as referências Classe.membro das classes do projeto foram conferidas.
+- Nenhuma referência executável a VillagePopulationState.REPRESENTATIVE_COUNT permanece.
+- Recursos preload e recursos das cenas existem.
+- Delimitadores dos 30 scripts GDScript e das cenas foram conferidos.
+- IDs do elenco são únicos; há quatro ativos e Mimo na reserva.
+- Troca de Conselho preserva quatro ativos e herda a profissão.
+- Save da correção isolado em square_village_part2_v2_4_2_save.json.
+- ZIP validado com teste de integridade.
+
+Limitação do ambiente
+---------------------
+O executável do Godot não está instalado neste ambiente, portanto não foi
+possível iniciar a interface gráfica. O verificador foi ampliado especificamente
+para detectar o tipo de erro de compilação relatado nesta correção.
+
+Teste inicial recomendado no Godot 4.7.1
+----------------------------------------
+1. Importar project.godot em uma pasta nova.
+2. Iniciar uma nova campanha.
+3. Abrir GERENCIAR CONSELHO.
+4. Trocar um fundador por Mimo.
+5. Encerrar um dia.
+6. Salvar, voltar ao menu e carregar.

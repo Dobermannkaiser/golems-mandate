@@ -1,0 +1,5 @@
+Golem's Mandate — verificação heurística de escopo local GDScript
+Scripts analisados: 61
+Funções analisadas: 1141
+Possíveis vazamentos de escopo: 0
+Resultado: APROVADO

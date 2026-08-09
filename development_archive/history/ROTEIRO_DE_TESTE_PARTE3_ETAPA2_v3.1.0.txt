@@ -1,0 +1,175 @@
+Golem’s Mandate — Parte 3, Etapa 2 — v3.1.0
+ROTEIRO DE TESTE MANUAL NO GODOT
+
+IMPORTANTE
+- Testar esta cópia separada.
+- Não substituir a v3.0.0 validada antes da aprovação.
+- O nome da pasta/projeto pode ser alterado; o Oráculo não deve verificar o nome.
+
+A. ABERTURA E DIAGNÓSTICO
+
+1. Abrir project.godot no Godot.
+2. Confirmar que o projeto importa sem erro de parser.
+3. Iniciar o jogo.
+4. Abrir o Oráculo de Diagnóstico.
+5. Executar a verificação completa.
+6. Confirmar que “Fila de obras” aparece como OK.
+7. Confirmar que não existe aviso sobre nome do projeto/pasta.
+
+B. NOVA CAMPANHA E INTERFACE
+
+1. Iniciar nova campanha da Parte 3.
+2. Abrir CONSTRUÇÕES.
+3. Confirmar cabeçalho com CANTEIROS, FILA e capacidade.
+4. Confirmar que a saída/fechar permanece visível fora da rolagem.
+5. Rolar até casas e construções fixas.
+6. Verificar textos longos, resolução mínima e escala de UI aumentada.
+
+C. CASA: TEMPO E CUSTO
+
+1. No dia 1, anotar material atual.
+2. Colocar uma casa na fila.
+3. Confirmar desconto imediato do custo.
+4. Confirmar que a casa ainda não aumenta a capacidade habitacional no dia 1.
+5. Encerrar o dia 1.
+6. No dia 2, confirmar que a obra está ativa com progresso inicial coerente.
+7. Encerrar o dia 2.
+8. No início do dia 3, confirmar:
+   - obra removida da fila;
+   - uma casa adicional;
+   - +5 vagas de moradia;
+   - canteiro liberado.
+
+D. NÍVEIS 1, 2 E 3
+
+Para uma construção fixa:
+1. Enfileirar nível 1 e confirmar duração 1 dia.
+2. Após conclusão, enfileirar nível 2 e confirmar duração 2 dias.
+3. Após conclusão, enfileirar nível 3 e confirmar duração 3 dias.
+4. Em cada caso, verificar que o benefício só entra no dia posterior ao último dia de trabalho.
+5. Confirmar que não é possível enfileirar outra melhoria do mesmo prédio enquanto uma está pendente ou ativa.
+
+E. FILA E REORDENAÇÃO
+
+1. Com apenas um canteiro, enfileirar pelo menos três obras.
+2. Confirmar ordem visual.
+3. Mover a terceira para cima.
+4. Confirmar que a previsão de início/conclusão é recalculada.
+5. Tentar mover a primeira mais para cima e a última mais para baixo; os botões-limite devem estar desativados.
+6. Quando uma obra estiver ativa, confirmar que ela não possui controles de reordenação.
+
+F. CANCELAMENTO PENDENTE — 100%
+
+1. Enfileirar uma obra que ainda não começou.
+2. Anotar custo pago.
+3. Clicar CANCELAR.
+4. Confirmar que o modal informa 100% e a perda da posição.
+5. Confirmar que o foco começa em MANTER OBRA.
+6. Pressionar Esc e confirmar que só o modal fecha.
+7. Abrir novamente e confirmar o cancelamento.
+8. Verificar reembolso integral e remoção da fila.
+
+G. CANCELAMENTO ATIVO — 50%
+
+1. Deixar uma obra iniciar.
+2. Enfileirar outra atrás dela.
+3. Cancelar a obra ativa.
+4. Confirmar modal com 50% e perda do progresso.
+5. Confirmar reembolso de metade do custo.
+6. Confirmar que a próxima obra não começa imediatamente no mesmo clique.
+7. Encerrar o dia e confirmar que ela só começa na próxima resolução diária elegível.
+
+H. CAPACIDADE POR POPULAÇÃO
+
+Testar quando a campanha atingir as faixas:
+- 1–19: 1 canteiro;
+- 20–39: 2;
+- 40–59: 3;
+- 60+: 4.
+
+Para cada faixa:
+1. enfileirar obras suficientes;
+2. encerrar o dia;
+3. confirmar número correto de obras ativas;
+4. confirmar que nunca passa de quatro novos canteiros.
+
+I. QUEDA DE POPULAÇÃO
+
+1. Com duas ou mais obras ativas, provocar ou carregar uma situação em que a população caia abaixo da faixa de capacidade.
+2. Confirmar que obras ativas continuam.
+3. Confirmar aviso de capacidade excedida.
+4. Confirmar que nenhuma nova obra começa até a quantidade ativa ficar abaixo da capacidade.
+5. Confirmar que o Oráculo trata isso como situação válida, não falha.
+
+J. AVALIAÇÃO
+
+1. Preparar uma obra cujo último dia de trabalho seja o dia 20.
+2. Antes de encerrar o dia 20, observar previsão.
+3. Encerrar o dia 20.
+4. Confirmar que a avaliação usa o estado anterior à liberação da obra.
+5. Confirmar que a obra entra em vigor somente no início do dia 21.
+6. Repetir em outra avaliação se possível.
+
+K. APARÊNCIA DOS CANTEIROS
+
+1. Observar uma casa ativa na vila.
+2. Observar um prédio fixo ativo.
+3. Confirmar fundação, andaime e barra de progresso.
+4. Verificar visão normal e ampliada.
+5. Testar resolução mínima e redimensionamento da janela.
+6. Confirmar que nenhum desenho escapa do painel da vila.
+7. Confirmar que modais continuam acima e clicáveis.
+
+L. SAVE/LOAD V9
+
+1. Salvar com:
+   - uma obra ativa;
+   - duas obras na fila;
+   - ordem alterada;
+   - progresso parcial.
+2. Voltar ao menu e carregar.
+3. Confirmar custo já pago, ordem, status, progresso e previsões.
+4. Avançar dias e confirmar conclusão sem duplicação de benefício ou reembolso.
+
+M. MIGRAÇÃO V8 DA ETAPA 1
+
+1. Fazer cópia de um save v8 real da v3.0.0.
+2. Abrir na v3.1.0.
+3. Confirmar mensagem de conversão.
+4. Confirmar recursos, população, construções, história e relacionamentos preservados.
+5. Confirmar fila funcional vazia após a migração.
+6. Salvar novamente e confirmar que o arquivo passa a ser v9.
+
+N. TECLADO E CONTROLE
+
+1. Abrir CONSTRUÇÕES sem usar mouse.
+2. Navegar por casas, prédios, fila e fechar.
+3. Abrir cancelamento.
+4. Confirmar foco visível em MANTER OBRA.
+5. Usar ui_cancel/B/Círculo para fechar o modal.
+6. Confirmar restauração de foco.
+7. Confirmar que nenhum elemento decorativo intercepta entrada.
+
+O. REGRESSÃO
+
+Confirmar funcionamento normal de:
+- Conselho;
+- produção e consumo;
+- eventos;
+- capítulos;
+- relacionamentos;
+- campanha e avaliações;
+- save/load;
+- menu e configurações;
+- tutorial e Guia do Jogo;
+- vitória, derrota e modo livre.
+
+RESULTADO A REPORTAR
+
+Informar:
+- versão do Godot;
+- erros do painel Output/Debugger;
+- resultado do Oráculo;
+- testes que passaram;
+- qualquer divergência de dias, custo, reembolso ou previsão;
+- capturas de bugs visuais, se houver.

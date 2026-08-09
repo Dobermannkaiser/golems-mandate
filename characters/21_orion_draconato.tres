@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "orion_draconato"
+display_name = "Orion Escamagelo"
+species_name = "Draconato"
+pronouns = "ele/dele"
+role_name = "Pesquisador de fenômenos arcanos"
+personality = "Formal, distraído e fascinado por qualquer coisa que brilhe de maneira cientificamente inconveniente."
+biography = "Um draconato pesquisador que estuda mana, clima e ruínas. Preparado como futura opção de amizade e romance."
+portrait_path = "res://assets/dialogue/portraits/orion_draconato.png"
+fallback_color = Color(0.662745, 0.792157, 0.898039, 1)
+is_special_npc = true
+romance_available = true
+hidden_until_story = true

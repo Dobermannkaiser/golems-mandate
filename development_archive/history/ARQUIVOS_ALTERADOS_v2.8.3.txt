@@ -1,0 +1,11 @@
+Square Village — Parte 2 Etapa 8 — v2.8.3
+
+Arquivos principais alterados:
+- scripts/ui/TutorialWindow.gd
+- scripts/UIManagerVariantB.gd
+- project.godot
+- tools/verify_stage8.py
+- LEIA-ME_CORRECAO_TUTORIAL_v2.8.3.md
+- ROTEIRO_DE_TESTE_ETAPA8_v2.8.3.txt
+- AUDITORIA_TUTORIAL_CONTEXTUAL_v2.8.3.txt
+- VERIFICACAO_ETAPA8_v2.8.3.txt

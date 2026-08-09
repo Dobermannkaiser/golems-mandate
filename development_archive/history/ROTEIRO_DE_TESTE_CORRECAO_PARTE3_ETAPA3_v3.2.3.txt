@@ -1,0 +1,57 @@
+ROTEIRO DE TESTE — PARTE 3 / ETAPA 3 — v3.2.3
+
+IMPORTANTE: crie uma campanha nova; o save agora é versão 11.
+
+1. ABERTURA
+- Importe o project.godot em uma pasta nova.
+- Confirme que não há erro de parser, autoload ou recurso.
+
+2. CARTAS E LEGIBILIDADE
+- Observe as quatro cartas ativas.
+- Confirme que as letras não possuem sombra ou contorno borrado.
+- Expanda uma carta e confira também o texto detalhado.
+
+3. MIMO
+- Abra TROCAR CARTAS.
+- Confirme que Mimo possui FOR 3, INT 3, CAR 3 e AGI 3.
+- Confirme que permanece na reserva com a passiva Faz-tudo.
+
+4. XP DIÁRIO
+- Anote o XP das quatro cartas ativas.
+- Encerre um dia.
+- Confirme que cada carta ativa ganhou +2 XP.
+- Troque uma carta pela reserva, encerre outro dia e confirme que somente as quatro ativas ganharam XP.
+
+5. XP POR ACONTECIMENTO
+- Resolva um acontecimento escolhendo uma carta responsável.
+- Confirme que a carta recebeu +20 XP além do XP diário já concedido.
+- Confirme a mensagem de XP no resultado e a atualização imediata da barra.
+
+6. SAVE E LOAD DO XP
+- Salve após ganhar XP.
+- Carregue o save.
+- Confirme nível, XP e composição do Conselho.
+
+7. TRANSPARÊNCIA
+- Confira retratos novos nas cartas e nas Relações da Vila.
+- Confirme que não existe quadrado preto atrás dos personagens.
+
+8. PRIMEIRA OFERTA
+- Antes do dia 20, desenvolva amizade com Mimo ou Aelric.
+- Passe na avaliação do dia 20.
+- Após fechar o resultado da avaliação, confirme a janela com duas cartas da mesma espécie.
+- Escolha uma delas e confirme que entrou na reserva em TROCAR CARTAS.
+
+9. NÃO REPETIÇÃO DO NPC FONTE
+- Continue até a avaliação do dia 40.
+- Confirme que o NPC que originou a primeira oferta não foi usado novamente.
+- O sistema deve usar o vínculo elegível de maior amizade entre os restantes.
+
+10. TROCA COM CARTA RECRUTADA
+- Selecione a nova carta na reserva e troque com uma ativa.
+- Escolha uma profissão para ela.
+- Encerre um dia e confirme produção e +2 XP.
+
+11. OFERTAS RESTANTES
+- As avaliações dos dias 60, 80, 100 e 120 também devem criar ofertas quando houver fonte elegível.
+- Nenhum dos seis NPCs fonte pode se repetir durante a campanha.

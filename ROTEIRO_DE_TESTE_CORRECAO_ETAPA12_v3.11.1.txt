@@ -1,0 +1,35 @@
+GOLEM'S MANDATE — TESTE MANUAL DA CORREÇÃO — ETAPA 12 / v3.11.1
+
+PRÉ-CONDIÇÃO
+- Abrir a candidata v3.11.1 no mesmo Godot usado no teste da v3.11.0.
+- Carregar o save do dia 11 mostrado no erro, se ele estiver disponível.
+
+1. RECOMPILAÇÃO
+- Aguardar o Godot importar e recarregar todos os scripts.
+- Abrir a aba Erros do depurador.
+
+RESULTADO ESPERADO
+- Não aparecem os seis avisos sobre seed, effect_key, representative_id, animate, met_goals e total_goals.
+
+2. TELA AVALIAÇÃO
+- Clicar em AVALIAÇÃO no dia 11.
+- Conferir as quatro metas.
+- Fechar e abrir a tela novamente.
+
+RESULTADO ESPERADO
+- A tela abre sem travar ou fechar o jogo.
+- Alimentação, material e felicidade usam uma casa decimal.
+- População aparece como inteiro.
+- Cada linha mostra Agora, Projeção e Meta.
+
+3. CONTINUIDADE
+- Fechar Avaliação.
+- Salvar a campanha.
+- Encerrar um dia quando não houver história pendente.
+- Reabrir Avaliação após a mudança dos recursos.
+
+RESULTADO ESPERADO
+- O jogo continua normalmente e os valores da tela são atualizados.
+- Nenhuma mensagem iniciada por E aparece no depurador.
+
+O Godot não foi executado pelo assistente; estes três fluxos são a validação de runtime da correção.

@@ -1,0 +1,36 @@
+Golem’s Mandate — Parte 3 / Etapa 3 — v3.2.3
+
+Código e cenas:
+- project.godot
+- scenes/main.tscn
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/Villager.gd
+- scripts/council/CouncilCardCatalog.gd
+- scripts/council/CouncilRecruitmentManager.gd
+- scripts/foundation/Part3FoundationManager.gd
+- scripts/save/SaveManager.gd
+- scripts/ui/RecruitmentWindow.gd
+- scripts/ui/VillagerCard.gd
+
+Recursos de cartas:
+- characters/30_carta_elfo_homem.tres até characters/43_carta_meio_vampiro_mulher.tres
+- assets/council/portraits/ (16 PNGs novos processados)
+
+Retratos processados:
+- assets/dialogue/portraits/ (7 retratos novos processados)
+- assets/relationships/portraits/ (7 retratos novos processados)
+
+Ferramentas e relatórios:
+- tools/simulate_xp_stage3.py
+- tools/simulate_recruitment_stage3.py
+- tools/verify_transparent_portraits_stage3.py
+- tools/verify_part3_stage3.py
+- LEIA-ME_CORRECAO_PARTE3_ETAPA3_v3.2.3.md
+- ROTEIRO_DE_TESTE_CORRECAO_PARTE3_ETAPA3_v3.2.3.txt
+- VERIFICACAO_CORRECAO_PARTE3_ETAPA3_v3.2.3.txt
+- SIMULACAO_CONSELHO_PARTE3_ETAPA3_v3.2.3.txt
+- SIMULACAO_XP_PARTE3_ETAPA3_v3.2.3.txt
+- SIMULACAO_RECRUTAMENTO_PARTE3_ETAPA3_v3.2.3.txt
+- VERIFICACAO_TRANSPARENCIA_PARTE3_ETAPA3_v3.2.3.txt

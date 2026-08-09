@@ -1,0 +1,71 @@
+SQUARE VILLAGE — ROTEIRO DE TESTE DA ETAPA 7 — v2.7.1
+
+IMPORTANTE
+- Extraia o projeto em uma pasta nova.
+- Use Godot 4.7.1.
+- Esta versão utiliza save separado e requer nova campanha.
+
+1. PRÓLOGO
+- Clique em NOVA CAMPANHA.
+- Confirme que o menu fecha e o prólogo abre antes do tutorial.
+- Teste as duas primeiras escolhas do Prefeito em campanhas separadas, se desejar.
+- Verifique Sanctuary-Void, Mimo e os trechos sem retrato do Narrador.
+- Confirme que a conversa não pode ser fechada antes do fim.
+- Ao terminar, confirme que o tutorial pode abrir normalmente.
+
+2. ORÁCULO DE DIAGNÓSTICO
+- Abra TESTE INTERNO.
+- Confirme “TODOS OS TESTES PASSARAM”.
+- Selecione PRÓLOGO e clique TESTAR CAPÍTULO.
+- Encerre o teste e confirme que recursos e campanha não mudaram.
+
+3. TESTE DIRETO DOS CAPÍTULOS
+Para cada opção DIA 20, 40, 60, 80, 100 e 120:
+- Abra TESTE INTERNO.
+- Escolha o dia.
+- Clique TESTAR CAPÍTULO.
+- Conclua o diálogo introdutório.
+- Confirme a abertura do acontecimento principal.
+- Verifique que há três escolhas.
+- Teste uma escolha segura, uma especial e uma arriscada em execuções diferentes.
+- Confirme o diálogo de encerramento.
+- Confirme que o estado original foi restaurado ao terminar o teste.
+
+4. DIA 20 — AELRIC
+- Confirme retrato, nome e fala de Aelric Brasa-Clara.
+- Confirme que a opção especial exige Serraria nível 1 fora do modo de teste.
+- Confirme que ele é marcado como conhecido após o capítulo.
+- Confirme aumento de um morador nomeado e afinidade conforme a escolha.
+
+5. DIAS 40 A 100
+- Dia 40: Kobi e Praça nível 1.
+- Dia 60: Orion e Poço nível 2.
+- Dia 80: Rubra e Servidor Público no Conselho.
+- Dia 100: Brunna e Muralha nível 2.
+- Confirme que opções indisponíveis explicam o requisito.
+
+6. DIA 120
+- Confirme que a terceira resposta exige cinco aliados conhecidos.
+- Confirme que as consequências são aplicadas antes da avaliação final.
+- Confirme vitória/derrota e modo livre conforme as metas.
+
+7. SALVAR E CARREGAR
+- Termine o prólogo e faça um salvamento manual para habilitar os salvamentos automáticos.
+- Antes de encerrar o dia 20, salve a campanha.
+- Inicie o capítulo e feche/reabra o jogo após a introdução: o acontecimento principal deve voltar aberto.
+- Resolva o acontecimento e feche/reabra antes de concluir o diálogo final: o desfecho deve voltar sem repetir recursos, população ou recrutamento.
+- Salve novamente depois de concluir o capítulo e confirme que ele não é disparado outra vez.
+
+8. EVENTOS COMUNS E ESTAÇÕES
+- Jogue dias comuns ou use uma campanha longa.
+- Confirme que acontecimentos não exclusivos recebem texto sazonal mágico.
+- Confirme que a chance aleatória continua menor que na versão antiga.
+
+9. REGRESSÃO
+- Conselho e reserva.
+- Troca e profissão.
+- Construções e casas.
+- Área da Vila e ampliar.
+- Diálogos comuns por segundo clique.
+- Histórico de conversa.
+- Registro, avaliação, salvar/carregar e configurações.

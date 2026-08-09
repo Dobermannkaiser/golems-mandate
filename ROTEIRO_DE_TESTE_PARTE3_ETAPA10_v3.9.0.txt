@@ -1,0 +1,40 @@
+GOLEM'S MANDATE — ROTEIRO DE TESTE — PARTE 3 / ETAPA 10 / v3.9.0
+
+1. MIGRAÇÃO
+- Abra uma cópia do save 17 usado na v3.8.2.
+- Confirme carregamento no mesmo dia, recursos, Conselho, relações e Teste Interno.
+- Salve, feche e carregue novamente.
+
+2. PRIMEIRO PAR
+- Chegue ao encerramento do dia 15 e conclua o capítulo de Aelric.
+- Confirme que o diálogo obrigatório Mimo/Aelric abre somente depois da apresentação.
+- Verifique quatro respostas e que Conciliar explica seu requisito quando bloqueada.
+- Apoie um lado e confira +20 com ele e -10 com o outro na roda de relações.
+- No dia 16, confirme que o segundo diálogo recorda a escolha anterior.
+
+3. MAPA
+- Abra Relações da Vila.
+- Confira os 28 pares, os cinco nomes de estado e a causa desconhecida nos pares ainda não vistos.
+- Teste os filtros Todos, Afinidades e Conflitos.
+- Resolva conversas diferentes e confirme atualização imediata e permanência após load.
+
+4. CONCILIAÇÃO
+- Teste um requisito de amizade, um de alimentação/material e um de Conselho completo.
+- Confirme +10/+10 ao jogador e melhora separada do vínculo interno.
+- Confirme que a segunda conversa sempre pode usar a memória da primeira.
+
+5. CONSEQUÊNCIA E SINERGIA
+- No dia posterior a uma escolha, procure o comentário entre personagens no resumo.
+- Após descobrir ao menos uma Afinidade, confira +1% na decomposição do Conselho.
+- Confirme que várias afinidades continuam dando somente +1%.
+- Confirme que Conflito não reduz produção.
+
+6. DÁLIA E SILAS
+- Teste os diálogos dos dias 90–101 e 105–118.
+- Confirme retratos com cores originais.
+- Confirme que os textos de Dália tratam somente de cultivo, comunidade, magia e métodos, sem comentários corporais ou temas sensíveis.
+
+7. BLOQUEIOS E SAVE
+- Durante diálogo obrigatório, confirme que não é possível fechá-lo nem encerrar outro dia.
+- Salve antes de um diálogo, escolha uma resposta, conclua a reação e recarregue.
+- Confirme que pontos e memória foram aplicados uma vez, sem repetição.

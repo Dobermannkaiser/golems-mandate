@@ -1,0 +1,16 @@
+Golem's Mandate — simulação do recrutamento da Etapa 7
+Ritmo focado viável:
+- Dia 20: Mimo 360/50
+- Dia 40: Aelric 503/120
+- Dia 60: Kobi 593/220
+- Dia 80: Orion 648/340
+- Dia 100: Rubra 773/480
+- Dia 120: Brunna 863/620
+Campanhas aleatórias: 5000
+Ofertas concluídas: 30000
+Verificações adiadas: 9032
+Empates de espécie: 1023
+Ofertas concluídas após o Dia 120: 5662
+Maior reserva observada: 7
+Erros: 0
+Resultado: APROVADO

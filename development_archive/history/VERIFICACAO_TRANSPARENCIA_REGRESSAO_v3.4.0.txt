@@ -1,0 +1,4 @@
+VERIFICAÇÃO — TRANSPARÊNCIA DOS RETRATOS — v3.2.3
+Imagens verificadas: 30
+Falhas: 0
+Resultado: APROVADO

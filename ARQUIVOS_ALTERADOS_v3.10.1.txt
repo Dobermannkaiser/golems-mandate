@@ -1,0 +1,45 @@
+GOLEM'S MANDATE — ARQUIVOS ALTERADOS — v3.10.1
+
+CONFIGURAÇÃO
+- project.godot
+
+SISTEMAS E INTEGRAÇÃO
+- scripts/GameManager.gd
+- scripts/save/SaveManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/relationships/RelationshipCatalog.gd
+- scripts/relationships/RelationshipDialogueCatalog.gd
+
+INTERFACE E VILA
+- scripts/ui/BuildingVisuals.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/RelationshipsWindow.gd
+- scripts/ui/VillageWindow.gd
+
+NOVO SCRIPT
+- scripts/ui/VillagePawn.gd
+
+NOVAS IMAGENS FORNECIDAS PELO USUÁRIO
+- assets/relationships/scenes_800/aelric.jpg
+- assets/relationships/scenes_800/brunna.jpg
+- assets/relationships/scenes_800/dalia.jpg
+- assets/relationships/scenes_800/kobi.jpg
+- assets/relationships/scenes_800/mimo.jpg
+- assets/relationships/scenes_800/orion.jpg
+- assets/relationships/scenes_800/rubra.jpg
+- assets/relationships/scenes_800/silas.jpg
+
+VERIFICAÇÃO E ENTREGA
+- tools/verify_part3_stage11.py
+- LEIA-ME_PARTE3_ETAPA11_v3.10.1.md
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA11_v3.10.1.txt
+- ARQUIVOS_ALTERADOS_v3.10.1.txt
+- VERIFICACAO_CONSOLIDADA_PARTE3_ETAPA11_v3.10.1.txt
+
+NÃO CRIADO
+- Variantes de canteiro
+- Pacote ou diretório novo de decoração

@@ -1,0 +1,28 @@
+GOLEM'S MANDATE — VERIFICAÇÃO DA CORREÇÃO v3.8.2
+
+ESCOPO
+- Teste Interno permite repetir conversas pontuáveis no mesmo dia.
+- Conversas internas não consomem o limite diário do jogo normal.
+- O jogo normal mantém uma conversa pontuável por personagem por dia.
+- Save permanece no formato 17, sem migração.
+
+RESULTADOS
+- Verificador específico do Teste Interno: 9 verificações, 0 falhas.
+- Verificador da Parte 3 / Etapa 9: 67 verificações, 0 falhas.
+- Escopo local GDScript: 71 scripts e 1.315 funções, 0 possíveis vazamentos.
+- Equilíbrio de delimitadores: 71 scripts, 0 falhas.
+- Bateria acumulada relevante: 13 verificadores executados, 0 falhas.
+- Retratos transparentes: 30 imagens verificadas, 0 falhas.
+
+COBERTURA DE REGRESSÃO
+- A flag do Teste Interno percorre janela, catálogo de diálogo, GameManager,
+  fundação e estado de relacionamento.
+- O teste de runtime incluído exige 18, 36 e 54 pontos após três respostas
+  corretas no mesmo dia.
+- O mesmo teste confirma que a conversa normal permanece disponível depois do
+  Teste Interno e que uma segunda conversa normal continua bloqueada no dia.
+
+LIMITAÇÃO
+- O executável do Godot não está disponível neste ambiente.
+- O teste puro tools/test_internal_relationship_test_v382.gd foi incluído, mas
+  não executado aqui. A confirmação final depende do roteiro manual no motor.

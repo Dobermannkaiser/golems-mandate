@@ -1,0 +1,62 @@
+Golem's Mandate — roteiro curto de teste da v3.11.5
+
+1. RECUPERAÇÃO DO SAVE COM 2/6 RECRUTAMENTOS
+
+Pré-condição:
+- carregar o save de teste que estava no Dia 116 e mostrava 2/6 escolhas.
+
+Passos:
+1. Carregar a campanha.
+2. Confirmar que a escolha pendente do Dia 60 abre sem exigir os 5 pontos que faltavam.
+3. Escolher uma das duas cartas.
+4. Confirmar que a escolha atrasada seguinte abre em sequência.
+5. Concluir as escolhas dos dias 60, 80 e 100.
+6. Abrir CONSELHO e conferir o resumo.
+
+Resultado esperado:
+- três ofertas atrasadas são apresentadas, uma por vez;
+- cada oferta mantém duas cartas da mesma espécie;
+- nenhuma carta é escolhida automaticamente;
+- o contador chega a 5/6, com a sexta escolha ainda futura no Dia 120;
+- salvar, carregar e reabrir o Conselho não duplica nem rerrola ofertas.
+
+2. SAVE NORMAL
+
+Passos:
+1. Salvar a campanha.
+2. Voltar ao menu.
+3. Usar CONTINUAR.
+4. Abrir SALVAR/CARREGAR.
+
+Resultado esperado:
+- a campanha carrega normalmente;
+- nenhum aviso de backup aparece quando o arquivo principal está íntegro;
+- dia, recursos, população, Conselho e pendências permanecem iguais.
+
+3. CONFIGURAÇÕES E TUTORIAL
+
+Passos:
+1. Abrir Configurações numa instalação que já possuía preferências anteriores.
+2. Conferir áudio, tela, movimento, texto instantâneo e contraste.
+3. Abrir AJUDA.
+
+Resultado esperado:
+- preferências antigas continuam aplicadas;
+- o tutorial não reaparece indevidamente;
+- o Guia afirma que a avaliação aprovada garante a escolha de recrutamento.
+
+4. NOVA CAMPANHA — INICIALIZAÇÃO
+
+Passos:
+1. Criar uma campanha com semente anotada.
+2. Anotar nomes, retratos, passivas e personalidades dos quatro fundadores.
+3. Recriar a campanha com a mesma semente.
+
+Resultado esperado:
+- a composição materializada é reproduzível;
+- nenhum nome provisório "Quadrado" aparece;
+- nenhum erro ou warning novo surge no depurador.
+
+Limite:
+- o pacote foi revisado sem executar o Godot. Importação, warnings reais,
+  runtime, foco, áudio e inspeção visual dependem deste teste local.

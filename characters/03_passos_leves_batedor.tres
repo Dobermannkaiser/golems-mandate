@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "passos_leves_batedor"
+display_name = "Aparência: Batedor da Mata"
+species_name = "Passos-Leves"
+pronouns = "variáveis"
+role_name = "Batedor e arqueiro"
+personality = "Direto, vigilante e muito orgulhoso da própria pontaria."
+biography = "Um visual genérico para fundadores associados à caça, defesa, exploração e criaturas das florestas encantadas."
+portrait_path = "res://assets/dialogue/portraits/passos_leves_batedor.png"
+fallback_color = Color(0.592157, 0.447059, 0.243137, 1)
+is_founder_appearance = true

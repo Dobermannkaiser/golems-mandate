@@ -1,0 +1,13 @@
+SIMULAÇÃO — DIÁLOGOS COM CONSEQUÊNCIA — v3.3.2
+Campanhas simuladas: 10000
+Dias por campanha: 120
+Oportunidades iniciadas: 80000
+Projetos concluídos: 80000
+Oportunidades únicas por campanha: mínimo 8, máximo 8
+Durações: {2: 15000, 3: 65000}
+Uso por representante: {'representante_01': 20000, 'representante_02': 20000, 'representante_03': 20000, 'representante_04': 20000}
+Uso por modelo narrativo: {'bosque_oferece_caminho': 5000, 'cadernos_atrasados': 5000, 'ferramentas_cantoras': 10000, 'metal_com_memoria': 10000, 'pedidos_cruzados': 5000, 'pedras_que_sussurram': 5000, 'pegadas_no_limite': 5000, 'praga_de_vidro': 10000, 'rumores_da_praca': 5000, 'sementes_luminosas': 10000, 'sino_sem_vento': 5000, 'talento_sem_destino': 5000}
+Campanhas envolvendo os quatro representantes: 10000
+Níveis das ofertas: {20: 2, 40: 3, 60: 4, 80: 5, 100: 6, 120: 6}
+Falhas: 0
+Resultado: APROVADO

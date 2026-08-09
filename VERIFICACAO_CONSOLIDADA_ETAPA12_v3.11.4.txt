@@ -1,0 +1,42 @@
+GOLEM'S MANDATE — VERIFICAÇÃO CONSOLIDADA — ETAPA 12 / v3.11.4
+
+ORIGEM E ESCOPO
+- Criada a partir da candidata v3.11.3.
+- Base estável oficial v3.10.1 preservada.
+- Mudança limitada aos modificadores alimentares do inverno, suas explicações, diagnóstico e versionamento.
+- Nenhuma dificuldade, meta, construção, população, relação, recrutamento ou regra econômica fora do inverno foi alterada.
+
+REBALANCEAMENTO DE INVERNO
+- Produção de alimentação: 80% -> 90%.
+- Consumo de alimentação: 120% -> 110%.
+- Economia equilibrada de referência: saldo sazonal -40 -> -20.
+- Pressão causada pela estação reduzida exatamente pela metade.
+- Previsão e avanço do dia continuam usando o mesmo catálogo e as mesmas fórmulas do GameManager.
+
+SAVES
+- Envelope global: 18.
+- Schema da campanha: 5.
+- Catálogo da campanha: 4.
+- SaveManager idêntico à v3.11.3.
+- Nenhuma migração nova.
+- Saves existentes recebem os multiplicadores novos sem alteração retroativa de recursos.
+
+VERIFICAÇÕES EXECUTADAS
+- Contratos corretivos v3.11.4: 27/27 aprovados.
+- Contratos gerais da Etapa 12: 228/228 aprovados.
+- Escopo local GDScript: 76 scripts e 1.430 funções; 0 possível vazamento.
+- Regressão do Teste Interno de relações: 9/9 aprovada.
+- Transparência dos retratos: 30 imagens; 0 falha.
+- Sintaxe Python por AST: 45/45 arquivos aprovada.
+- Referências res:// literais: nenhuma ausente.
+- Caches, saves, logs e temporários: nenhum encontrado na árvore candidata.
+- GameManager, DifficultyCatalog, SaveManager, CampaignManager e BuildingManager: hashes preservados da v3.11.3.
+
+LIMITES DA EVIDÊNCIA
+- O Godot não foi executado.
+- Não houve teste visual, de input ou de runtime pelo assistente.
+- A simulação extensa dos 120 dias não foi executada.
+- O valor exato no save do usuário depende do déficit-base além da estação.
+
+RESULTADO
+APROVADO nas verificações estáticas executadas. A candidata aguarda validação manual no Godot antes de qualquer promoção a base estável.

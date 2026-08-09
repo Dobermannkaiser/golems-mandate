@@ -1,0 +1,25 @@
+GOLEM'S MANDATE — VERIFICAÇÃO CONSOLIDADA — PARTE 3 / ETAPA 10 / v3.9.0
+
+BASE
+- Origem: v3.8.2, SHA-256 a0d9d31e194ae531d4fb68b3e5b3af62cabd8b4ea129ee06477e63db892faa9f.
+- Base extraída sem alteração; candidata montada em cópia separada.
+
+RESULTADOS
+- Contratos específicos da Etapa 10: 30 aprovados, 0 falhas.
+- Catálogo: 8 NPCs, 28 pares únicos, 56 diálogos e 224 escolhas.
+- Calendário: 56 dias únicos, intervalo 15–118, nenhum diálogo antes da chegada dos envolvidos.
+- Estados alcançáveis: Conflito, Tensão, Neutro, Afinidade e Vínculo forte.
+- Escopo GDScript: 73 scripts, 1.351 funções, 0 possíveis vazamentos locais.
+- Delimitadores: 72 arquivos .gd examinados, 0 falhas.
+- Teste Interno v3.8.2: 9 verificações, 0 falhas.
+- Transparência: 30 retratos, 0 falhas.
+- Conteúdo de Dália: nenhuma ocorrência de termos corporais ou de peso na Etapa 10.
+
+VERIFICADORES HISTÓRICOS
+- Verificadores das Etapas 3–9 mantêm expectativas congeladas em projeto 3.8.2 e save 17.
+- Seus alertas na candidata limitam-se à evolução deliberada para projeto 3.9.0 e save 18.
+- Verificadores independentes de versão para Teste Interno e retratos passaram integralmente.
+
+LIMITAÇÃO
+- O executável Godot não estava disponível. Não houve parse/import, execução de cena ou teste visual no motor.
+- A promoção para base estável depende do teste manual do usuário no Godot.

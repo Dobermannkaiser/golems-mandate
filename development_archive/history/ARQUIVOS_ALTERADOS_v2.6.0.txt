@@ -1,0 +1,27 @@
+ARQUIVOS PRINCIPAIS DA PARTE 2 — ETAPA 6
+
+NOVOS
+- assets/dialogue/alagard.ttf
+- assets/dialogue/portraits/*.png
+- characters/*.tres
+- characters/character_template.tres.example
+- scripts/dialogue/CharacterDefinition.gd
+- scripts/dialogue/CharacterCatalog.gd
+- scripts/dialogue/DialogueCatalog.gd
+- scripts/dialogue/DialogueManager.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/events/MagicalEventCatalog.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/ui/DiagnosticsWindow.gd
+- tools/verify_stage6.py
+
+ALTERADOS
+- project.godot
+- scripts/GameManager.gd
+- scripts/Villager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/events/EventCatalog.gd
+- scripts/events/EventManager.gd
+- scripts/ui/EventWindow.gd
+- scripts/specialists/SpecialistCatalog.gd

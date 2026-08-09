@@ -1,0 +1,10 @@
+SIMULAÇÃO — EXPERIÊNCIA E HISTÓRICO — ETAPA 4
+Cenários determinísticos: APROVADOS
+Carreiras simuladas: 25000
+Cartas simuladas: 25000
+Diálogos de nível gerados: 60083
+Respostas corretas recompensadas: 20217
+Distribuição final de níveis: {2: 12, 3: 14929, 4: 10023, 5: 36}
+Marcos por recurso: {'food': 16324, 'happiness': 16100, 'material': 16115}
+Falhas de invariantes: 0
+Resultado: APROVADO

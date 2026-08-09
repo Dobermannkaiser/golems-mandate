@@ -1,0 +1,34 @@
+Golem's Mandate — Parte 3 / Etapa 4 — v3.3.0
+RELATÓRIO DE VERIFICAÇÃO
+
+1. Base da Etapa 3 e estrutura geral
+Golem's Mandate — verificação da Parte 3 / Etapa 3
+Verificações: 588
+Falhas: 0
+Resultado estrutural: APROVADO
+
+2. Experiência e histórico
+Golem's Mandate — verificação da Parte 3 / Etapa 4
+Verificações: 130
+Falhas: 0
+Resultado estrutural: APROVADO
+
+3. Regressões preservadas
+- Simulação das cartas da Etapa 3: APROVADA.
+- Simulação da fila de obras da Etapa 2: APROVADA.
+- Transparência de 30 retratos: APROVADA.
+- Compilação dos verificadores Python: APROVADA.
+
+4. Validação de empacotamento
+Será repetida sobre uma extração vazia do ZIP final. O resultado final ficará em
+`VERIFICACAO_ZIP_EXTRAIDO_PARTE3_ETAPA4_v3.3.0.txt` fora do pacote.
+
+5. Limitação obrigatória
+O projeto não foi executado no Godot neste ambiente. Portanto este relatório não comprova:
+- parser real do GDScript;
+- inicialização dos autoloads;
+- funcionamento de cliques e foco em runtime;
+- composição visual final;
+- campanha completa no motor.
+
+A v3.3.0 permanece candidata até o teste real do usuário no Godot 4.7.1.

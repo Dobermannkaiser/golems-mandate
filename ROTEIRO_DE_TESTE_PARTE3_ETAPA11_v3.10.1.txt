@@ -1,0 +1,65 @@
+GOLEM'S MANDATE — ROTEIRO DE TESTE — PARTE 3 / ETAPA 11 / v3.10.1
+
+0. REGRESSÕES DA CORREÇÃO
+- Abra OBJETIVOS em uma campanha ativa e confirme que não surge erro de formatação.
+- Passe o cursor sobre a previsão populacional e confirme os contadores de atração e risco sem erros repetidos.
+- Salve manualmente com acontecimento, conquista ou conversa obrigatória pendente; feche e carregue o arquivo.
+- Abra e feche o Guia enquanto existir uma pendência obrigatória e confirme que ela reaparece.
+- Troque Mimo para o Conselho, evolua e distribua pontos de fundadores; execute o TESTE INTERNO e confirme Cartas do Conselho em [OK].
+
+1. ABERTURA E REGRESSÃO
+- Importe o projeto no Godot 4.x usado para validar a v3.9.0.
+- Confirme que não há erro de parser, preload ou importação das oito imagens.
+- Inicie uma campanha e carregue também uma cópia de um save 18 da v3.9.0.
+- Confirme dia, recursos, população, Conselho, relações, obras e história.
+
+2. MARCOS DAS CENAS
+- No Teste Interno, acompanhe um vínculo antes e depois de cruzar 200, 400, 600 e 800 pontos.
+- Confirme os nomes Amizade, Confiança, Intimidade e Decisão.
+- Confirme que uma cena não aparece antes do marco e permanece disponível até ser concluída.
+- Confirme que, depois da conclusão, a interface passa a informar o próximo marco.
+
+3. INTERESSE E ROMANCE
+- Em uma rota romântica, demonstre interesse nas cenas de 400 e 600 pontos.
+- Na cena de 800, confirme as escolhas Romance, Amizade profunda e Decidir depois.
+- Em outra rota, chegue a 800 sem as duas demonstrações e confirme que Romance não aparece.
+- Com um parceiro oficial, confirme que outra rota não oferece um segundo romance.
+- Em Mimo, confirme que Romance nunca aparece.
+
+4. DECIDIR DEPOIS
+- Na cena de 800, escolha Decidir depois.
+- Reabra Relações e confirme que a cena continua disponível.
+- Salve, feche e carregue; confirme que a decisão continua aberta.
+- Retome a cena e escolha Amizade profunda ou Romance, quando habilitado.
+
+5. OITO ILUSTRAÇÕES
+- Abra a cena de 800 de Mimo, Aelric, Kobi, Orion, Rubra, Brunna, Dália e Silas.
+- Confirme que cada personagem usa sua imagem correta, sem corte indevido ou distorção.
+- Confirme que a imagem aparece antes das escolhas e que texto, histórico e foco continuam utilizáveis.
+- Teste pelo menos uma cena em resolução menor e outra na vila ampliada.
+
+6. PEÇAS DA VILA
+- Observe a vila normal e a vila ampliada.
+- Confirme que aldeões são peças simplificadas, sem sprites de personagens.
+- Confirme cores variadas, padrões, iniciais nos representantes e aro dourado no selecionado.
+- Troque representantes e confirme que cada identidade mantém a própria cor.
+- Confirme que clique, foco de teclado/controle e tooltip dos representantes continuam funcionando.
+
+7. FELICIDADE RESPONSIVA
+- Teste felicidade alta (70+), normal (40–69), baixa (20–39) e crise (abaixo de 20), usando cópias de save se necessário.
+- Confirme os quatro textos de estado e as marcas correspondentes nas peças.
+- Confirme movimento mais vivo em alta, normal na faixa intermediária, lento em baixa e muito lento na crise.
+- Confirme sinais localizados no centro da vila e ausência de filtro colorido sobre a tela inteira.
+- Ative Reduzir Animações e confirme que o movimento e o feedback são reduzidos.
+
+8. CANTEIRO E FEEDBACK
+- Enfileire obras diferentes e confirme que todas usam o mesmo canteiro genérico.
+- Confirme barra de progresso, início de obra e conclusão sem variantes visuais de canteiro.
+- Resolva um acontecimento com sucesso e um com consequência negativa; confira feedback verde/vermelho localizado.
+- Passe uma avaliação e confira o feedback dourado.
+
+9. SAVE FINAL
+- Salve durante uma obra e com uma cena importante pendente.
+- Feche e carregue novamente.
+- Confirme obras, peças, felicidade, relações, marcadores de interesse, parceiro e cena pendente.
+- Execute TESTE INTERNO e confirme que a verificação consolidada não apresenta falhas.

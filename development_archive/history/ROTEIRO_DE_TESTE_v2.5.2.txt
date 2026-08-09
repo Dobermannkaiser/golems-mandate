@@ -1,0 +1,33 @@
+ROTEIRO DE TESTE — PARTE 2, ETAPA 5 — v2.5.2
+
+1. Extraia o projeto em uma pasta nova.
+2. Abra project.godot no Godot 4.7.
+3. Inicie uma nova campanha.
+4. Confirme na mini-vila:
+   - fundo sem repetição óbvia;
+   - duas casas pequenas e separadas;
+   - cinco terrenos discretos para construções;
+   - quatro conselheiros sem quadrados pretos;
+   - poucos moradores comuns andando;
+   - caminhos visíveis sobre o chão.
+5. Selecione diferentes cartões de representantes.
+   - somente o representante selecionado deve exibir o nome na mini-vila;
+   - a estrela deve acompanhar a seleção.
+6. Clique em um prédio ou terreno.
+   - a janela de obras deve abrir normalmente.
+7. Clique em AMPLIAR.
+   - a janela ampliada deve ter prédios maiores e bem separados;
+   - os nomes dos quatro conselheiros devem ficar visíveis;
+   - os moradores devem continuar andando.
+8. Feche e reabra a vila ampliada.
+   - a interface deve responder normalmente;
+   - as animações não devem acelerar nem duplicar.
+9. Construa uma casa e uma melhoria de prédio quando houver material.
+   - a nova casa deve ocupar o próximo lote;
+   - o prédio deve mudar de aparência sem cobrir elementos vizinhos.
+10. Salve, volte ao menu e carregue.
+   - casas, níveis, população e conselho devem ser reconstruídos visualmente.
+11. Avance até uma mudança de estação ou carregue um save de outra estação.
+   - o terreno e pequenos detalhes devem mudar sem efeitos excessivos.
+
+Em caso de erro, envie a mensagem completa do depurador e um print da tela.

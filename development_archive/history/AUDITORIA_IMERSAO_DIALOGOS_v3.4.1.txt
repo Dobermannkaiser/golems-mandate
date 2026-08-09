@@ -1,0 +1,4 @@
+Golem's Mandate — auditoria de imersão dos diálogos — v3.4.1
+Verificações: 24
+Falhas: 0
+Resultado: APROVADO

@@ -1,0 +1,167 @@
+Golem's Mandate — Parte 3 / Etapa 4 — correção v3.3.1
+Relatório de verificação estática e simulações
+
+IMPORTANTE:
+- O Godot não foi baixado, instalado ou executado.
+- Por determinação do usuário, nenhuma tentativa de executar o motor será feita.
+- A validação de runtime, layout real, cliques e comportamento no motor pertence ao teste do usuário.
+
+Resultado agregado: APROVADO NOS TESTES DISPONÍVEIS
+
+===== Verificação estrutural da Etapa 3 =====
+COMANDO: python3 tools/verify_part3_stage3.py --strict-art
+CÓDIGO DE SAÍDA: 0
+
+Golem's Mandate — verificação da Parte 3 / Etapa 3
+Verificações: 612
+Falhas: 0
+Resultado estrutural: APROVADO
+
+
+===== Verificação estrutural da Etapa 4 =====
+COMANDO: python3 tools/verify_part3_stage4.py
+CÓDIGO DE SAÍDA: 0
+
+Golem's Mandate — verificação da Parte 3 / Etapa 4
+Verificações: 178
+Falhas: 0
+Resultado estrutural: APROVADO
+
+
+===== Simulação de diálogos com consequência =====
+COMANDO: python3 tools/simulate_councillor_opportunities_v331.py
+CÓDIGO DE SAÍDA: 0
+
+SIMULAÇÃO — DIÁLOGOS COM CONSEQUÊNCIA — v3.3.1
+Campanhas simuladas: 10000
+Dias por campanha: 120
+Oportunidades iniciadas: 80000
+Projetos concluídos: 80000
+Oportunidades únicas por campanha: mínimo 8, máximo 8
+Durações: {2: 15000, 3: 65000}
+Uso por representante: {'representante_01': 20000, 'representante_02': 20000, 'representante_03': 20000, 'representante_04': 20000}
+Uso por modelo narrativo: {'bosque_oferece_caminho': 5000, 'cadernos_atrasados': 5000, 'ferramentas_cantoras': 10000, 'metal_com_memoria': 10000, 'pedidos_cruzados': 5000, 'pedras_que_sussurram': 5000, 'pegadas_no_limite': 5000, 'praga_de_vidro': 10000, 'rumores_da_praca': 5000, 'sementes_luminosas': 10000, 'sino_sem_vento': 5000, 'talento_sem_destino': 5000}
+Campanhas envolvendo os quatro representantes: 10000
+Níveis das ofertas: {20: 2, 40: 3, 60: 4, 80: 5, 100: 6, 120: 6}
+Falhas: 0
+Resultado: APROVADO
+
+
+===== Regressão das cartas =====
+COMANDO: python3 tools/simulate_council_cards_stage3.py
+CÓDIGO DE SAÍDA: 0
+
+SIMULAÇÃO — CARTAS DO CONSELHO — ETAPA 3
+Campanhas simuladas: 10000
+Cartas geradas: 40000
+Falhas de invariantes: 0
+Conselhos distintos: 10000
+Distribuição de valores de atributo: {1: 28119, 2: 56864, 3: 47873, 4: 21186, 5: 5958}
+Uso de nomes: {'Luma Pata-Leve': 6732, 'Nilo Brisa-Mansa': 6664, 'Pico Trilha-Fina': 6635, 'Rino Salta-Orvalho': 6691, 'Tiri Musgo-Claro': 6643, 'Vela Dedo-Ágil': 6635}
+Uso de retratos: {'felix_pescador': 5598, 'lumi_cozinheira': 5709, 'passos_leves_andarilho': 5660, 'passos_leves_artifice': 5803, 'passos_leves_batedor': 5797, 'passos_leves_bolseiro': 5663, 'passos_leves_cronista': 5770}
+Uso de passivas: {'adaptavel': 10000, 'cooperativo': 10000, 'economico': 10000, 'motivador': 10000}
+Uso de personalidades: {'ambitious': 4957, 'cautious': 5004, 'kind': 4916, 'optimistic': 5060, 'pessimistic': 4976, 'playful': 5001, 'practical': 5017, 'stubborn': 5069}
+Resultado: APROVADO
+
+
+===== Regressão do XP =====
+COMANDO: python3 tools/simulate_xp_stage3.py
+CÓDIGO DE SAÍDA: 0
+
+SIMULAÇÃO — XP DAS CARTAS — v3.2.3
+Fontes modeladas: +2 por dia ativo; +20 por acontecimento resolvido.
+Casos verificados: 6
+Falhas: 0
+Resultado: APROVADO
+
+
+===== Regressão do recrutamento =====
+COMANDO: python3 tools/simulate_recruitment_stage3.py
+CÓDIGO DE SAÍDA: 0
+
+SIMULAÇÃO — RECRUTAMENTO DE CARTAS — v3.2.3
+Campanhas simuladas: 10000
+Ofertas simuladas: 60000
+Falhas: 0
+Casos em que a segunda maior amizade foi usada: 46535
+Uso de espécies: {'Anã': 10000, 'Draconato': 10000, 'Elfo': 10000, 'Kobold': 10000, 'Meio-demônia': 10000, 'Passos-Leves': 10000}
+Resultado: APROVADO
+
+
+===== Regressão da progressão e histórico =====
+COMANDO: python3 tools/simulate_councillor_progression_stage4.py
+CÓDIGO DE SAÍDA: 0
+
+SIMULAÇÃO — EXPERIÊNCIA E HISTÓRICO — ETAPA 4
+Cenários determinísticos: APROVADOS
+Carreiras simuladas: 25000
+Cartas simuladas: 25000
+Diálogos de nível gerados: 60083
+Respostas corretas recompensadas: 20217
+Distribuição final de níveis: {2: 12, 3: 14929, 4: 10023, 5: 36}
+Marcos por recurso: {'food': 16324, 'happiness': 16100, 'material': 16115}
+Falhas de invariantes: 0
+Resultado: APROVADO
+
+
+===== Regressão da fila de obras =====
+COMANDO: python3 tools/simulate_construction_queue_stage2.py
+CÓDIGO DE SAÍDA: 0
+
+SIMULAÇÃO DE REFERÊNCIA — FILA DE OBRAS — v3.1.0
+
+Escopo: regras temporais, capacidade, ordem, cancelamento e auditoria.
+Limitação: este modelo não executa Godot nem GDScript.
+
+[OK] dia 10 / início: []
+[OK] dia 11 / início (1d): ['obra_000001']
+[OK] disponibilidade (1d): 12
+[OK] dia 10 / início: []
+[OK] dia 11 / início (2d): ['obra_000001']
+[OK] disponibilidade (2d): 13
+[OK] dia 10 / início: []
+[OK] dia 11 / início (3d): ['obra_000001']
+[OK] disponibilidade (3d): 14
+[OK] capacidade população 1: 1
+[OK] capacidade população 19: 1
+[OK] capacidade população 20: 2
+[OK] capacidade população 39: 2
+[OK] capacidade população 40: 3
+[OK] capacidade população 59: 3
+[OK] capacidade população 60: 4
+[OK] capacidade população 79: 4
+[OK] capacidade população 200: 4
+[OK] reordenar terceira para cima: True
+[OK] ordem após reordenar: ['obra_000001', 'obra_000003', 'obra_000002']
+[OK] início respeita dois canteiros: ['obra_000001', 'obra_000003']
+[OK] obra ativa não reordena: False
+[OK] reembolso pendente: 18.0
+[OK] reembolso ativo: 9.0
+[OK] nenhuma obra iniciou no próprio cancelamento: []
+[OK] três canteiros com população 40: ['obra_000001', 'obra_000002', 'obra_000003']
+[OK] queda não cancela ativas: 3
+[OK] queda bloqueia nova obra: []
+[OK] fila recomeça após liberar capacidade: ['obra_000004']
+[OK] obra ainda pendente durante avaliação do dia 20: True
+[OK] benefício ainda não aplicado na avaliação: []
+[OK] liberação após avaliação: ['obra_000001']
+[OK] benefício disponível no dia 21: ['obra_000001']
+[OK] stress sem duplicar conclusão: 100
+[OK] stress preserva no máximo 100 ordens: 100
+
+RESULTADO: todos os cenários do modelo de referência passaram.
+A validação no Godot real ainda é obrigatória para foco, cliques, desenho e save/runtime.
+
+
+===== Verificação dos retratos transparentes =====
+COMANDO: python3 tools/verify_transparent_portraits_stage3.py
+CÓDIGO DE SAÍDA: 0
+
+VERIFICAÇÃO — TRANSPARÊNCIA DOS RETRATOS — v3.2.3
+Imagens verificadas: 30
+Falhas: 0
+Resultado: APROVADO
+
+AVISOS/STDERR:
+/mnt/data/gm_v331_work/tools/verify_transparent_portraits_stage3.py:46: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(alpha.getdata())

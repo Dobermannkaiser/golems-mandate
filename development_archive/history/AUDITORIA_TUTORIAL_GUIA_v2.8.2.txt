@@ -1,0 +1,12 @@
+[OK] Menu renomeado para GUIA DO JOGO
+[OK] Tutorial inicial separado do guia
+[OK] Guia possui 16 páginas — 16
+[OK] Todas as áreas do guia presentes — VISÃO GERAL, PERFIL DO PREFEITO, RECURSOS, POPULAÇÃO, REPRESENTANTES, CONSELHO, OBRAS, AVALIAÇÕES, ACONTECIMENTOS, HISTÓRIA, RELAÇÕES, ENCONTROS, ESTAÇÕES, REGISTRO, SALVAR E CARREGAR, INTERFACE
+[OK] Sete dicas contextuais presentes — area_buildings, area_campaign, area_council, area_register, area_relationships, area_save, area_village_expanded
+[OK] Dicas são persistidas pelo TutorialManager
+[OK] Guia não marca introdução como vista
+[OK] Tutorial acima de todos os modais
+[OK] Botões adequados ao guia e dicas
+[OK] Save permanece compatível
+
+Resumo: 10 verificações, 0 falha(s).

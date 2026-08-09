@@ -1,0 +1,25 @@
+Square Village — Parte 2 Etapa 9 — v2.9.0
+
+Arquivos principais novos:
+- scripts/audio/AudioManager.gd
+- assets/audio/music/*.ogg
+- assets/audio/ambience/*.ogg
+- assets/audio/ambience/occasional/*.wav
+- assets/audio/sfx/**/*.wav
+- assets/audio/SOURCES.txt
+- assets/audio/LICENSES.txt
+- tools/verify_stage9.py
+- LEIA-ME_ETAPA9.md
+- LEIA-ME_PARTE2_ETAPA9.md
+- ROTEIRO_DE_TESTE_ETAPA9_v2.9.0.txt
+- AUDITORIA_AUDIO_ETAPA9_v2.9.0.txt
+- VERIFICACAO_ETAPA9_v2.9.0.txt
+
+Arquivos principais alterados:
+- project.godot
+- scripts/settings/GameSettings.gd
+- scripts/ui/MainMenu.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/diagnostics/InternalDiagnostics.gd

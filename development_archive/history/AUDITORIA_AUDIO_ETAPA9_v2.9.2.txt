@@ -1,0 +1,40 @@
+SQUARE VILLAGE — AUDITORIA DE ÁUDIO — v2.9.2
+
+Músicas: 9
+  [OK] music_autumn.ogg: 155.00s, vorbis, 44100 Hz, 2 canais, 2.74 MiB
+  [OK] music_fun.ogg: 147.20s, vorbis, 44100 Hz, 2 canais, 2.72 MiB
+  [OK] music_menu.ogg: 182.80s, vorbis, 44100 Hz, 2 canais, 2.89 MiB
+  [OK] music_spring_01.ogg: 149.60s, vorbis, 44100 Hz, 2 canais, 2.87 MiB
+  [OK] music_spring_02.ogg: 165.30s, vorbis, 44100 Hz, 2 canais, 2.97 MiB
+  [OK] music_story_special.ogg: 223.30s, vorbis, 44100 Hz, 2 canais, 3.30 MiB
+  [OK] music_summer.ogg: 183.40s, vorbis, 44100 Hz, 2 canais, 3.49 MiB
+  [OK] music_winter_01.ogg: 169.50s, vorbis, 44100 Hz, 2 canais, 2.80 MiB
+  [OK] music_winter_02.ogg: 155.30s, vorbis, 44100 Hz, 2 canais, 2.81 MiB
+
+Ambientes sazonais: 4
+  [OK] ambience_autumn.ogg: 303.10s, vorbis, 44100 Hz, 2 canais, 3.47 MiB
+  [OK] ambience_spring.ogg: 303.10s, vorbis, 44100 Hz, 2 canais, 3.59 MiB
+  [OK] ambience_summer.ogg: 303.10s, vorbis, 44100 Hz, 2 canais, 3.57 MiB
+  [OK] ambience_winter.ogg: 303.10s, vorbis, 44100 Hz, 2 canais, 3.33 MiB
+
+Efeitos e ambientes ocasionais WAV: 40
+  [OK] WAV PCM legíveis: 40/40
+
+[OK] Clique recortado: 0.200s
+[OK] Recompensa recortada: 1.660s; pico nos primeiros 0,20s = 10420
+[OK] O atraso original de aproximadamente 3,24s foi removido.
+[OK] Não há fontes M4A nem músicas WAV brutas dentro de assets/audio.
+
+Integração verificada:
+  [OK] Gerenciador global e quatro canais secundários
+  [OK] Transição suave entre músicas
+  [OK] Duas variações de Primavera e duas de Inverno
+  [OK] Ambiente por estação e sons ocasionais
+  [OK] Redução de música/ambiente durante diálogos
+  [OK] Efeitos automáticos em botões
+  [OK] Efeitos de gestão, acontecimentos, história e relações
+  [OK] Cinco controles de volume, teste, mute e restauração
+  [OK] Atenuação quando a janela perde foco
+  [OK] Compatibilidade com saves da v2.8.3
+
+Resumo: 9 músicas, 4 ambientes sazonais e 40 WAV; 0 falhas de formato.

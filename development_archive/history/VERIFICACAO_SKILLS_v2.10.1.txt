@@ -1,0 +1,67 @@
+[OK] Versão de manutenção 2.10.1
+[OK] Base estável mantém save v7
+[OK] Save da Etapa 10 preservado
+[OK] Seis avaliações preservadas
+[OK] Três dificuldades preservadas
+[OK] Helper de acessibilidade incorporado
+[OK] Contrato de UI: remember_focus
+[OK] Contrato de UI: restore_focus_deferred
+[OK] Contrato de UI: focus_first_enabled
+[OK] Contrato de UI: configure_button
+[OK] Contrato de UI: configure_input
+[OK] Contrato de UI: mark_feedback
+[OK] Alvos interativos mínimos
+[OK] Botões usam foco completo
+[OK] Feedback não depende só de cor
+[OK] Schema global de configurações
+[OK] Preferência persistida: reduced_motion
+[OK] Preferência persistida: instant_dialogue_text
+[OK] Preferência persistida: enhanced_contrast
+[OK] Padrões de acessibilidade restauráveis
+[OK] Paletas sazonais com contraste reforçado
+[OK] Contraste sazonal: summer
+[OK] Contraste sazonal: autumn
+[OK] Contraste sazonal: winter
+[OK] Foco visual reforçado
+[OK] LineEdit possui estado de foco
+[OK] Contraste >= 4,5:1: Texto claro / botão padrão — 5.12:1
+[OK] Contraste >= 4,5:1: Texto claro / botão reforçado — 8.29:1
+[OK] Contraste >= 4,5:1: Tinta / pergaminho — 10.44:1
+[OK] Contraste >= 4,5:1: Texto claro / painel reforçado — 10.91:1
+[OK] Contraste >= 4,5:1: Acento de inverno / fundo — 14.09:1
+[OK] Menu expõe texto instantâneo
+[OK] Menu expõe contraste reforçado
+[OK] Menu restaura acessibilidade
+[OK] Confirmação começa em ação segura
+[OK] Páginas escolhem foco inicial
+[OK] Diálogo respeita texto instantâneo
+[OK] Diálogo fecha histórico com voltar
+[OK] Diálogo foca escolhas
+[OK] Diálogo restaura foco anterior
+[OK] Modal restaura foco: BuildingWindow.gd
+[OK] Modal aceita ui_cancel: BuildingWindow.gd
+[OK] Modal restaura foco: CampaignWindow.gd
+[OK] Modal aceita ui_cancel: CampaignWindow.gd
+[OK] Modal restaura foco: CouncilWindow.gd
+[OK] Modal aceita ui_cancel: CouncilWindow.gd
+[OK] Modal restaura foco: DiagnosticsWindow.gd
+[OK] Modal aceita ui_cancel: DiagnosticsWindow.gd
+[OK] Modal restaura foco: ProfileSetupWindow.gd
+[OK] Modal aceita ui_cancel: ProfileSetupWindow.gd
+[OK] Modal restaura foco: RelationshipsWindow.gd
+[OK] Modal aceita ui_cancel: RelationshipsWindow.gd
+[OK] Modal restaura foco: SaveWindow.gd
+[OK] Modal aceita ui_cancel: SaveWindow.gd
+[OK] Modal restaura foco: SeasonHintWindow.gd
+[OK] Modal aceita ui_cancel: SeasonHintWindow.gd
+[OK] Modal restaura foco: VillageWindow.gd
+[OK] Modal aceita ui_cancel: VillageWindow.gd
+[OK] Conselho possui contrato hide_window
+[OK] UI usa contrato do Conselho
+[OK] Tema reage às configurações
+[OK] Layout oficial respeita contraste
+[OK] Guia documenta acessibilidade
+[OK] Oráculo valida UX/UI
+[OK] Oráculo verifica recurso de acessibilidade
+
+Resumo: 65 verificações, 0 falha(s).

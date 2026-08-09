@@ -1,0 +1,39 @@
+GOLEM'S MANDATE — VERIFICAÇÃO CONSOLIDADA — ETAPA 12 / v3.11.1
+
+ORIGEM
+- Candidata corrigida a partir do ZIP v3.11.0 entregue anteriormente.
+- SHA-256 da origem: 569a8ce1541c3849446483ebfa571cd3ffacdac8b288a7f2f55576f9d093b2a6.
+- A árvore extraída e a árvore de trabalho v3.11.0 foram comparadas: 511 arquivos e nenhuma diferença.
+- A v3.11.0 permaneceu intacta; a v3.11.1 foi montada em diretório separado.
+
+CORREÇÃO DE RUNTIME
+- A conversão inválida String(48.0) foi removida da construção das linhas da avaliação.
+- Valor atual, projeção e meta usam um formatador explícito para float, int e fallback textual.
+- O verificador corretivo rejeita qualquer String(Dictionary.get(..., número)) nos scripts.
+
+AVISOS DO COMPILADOR
+- SHADOWED_GLOBAL_IDENTIFIER de seed: corrigido por nome local específico.
+- CONFUSABLE_LOCAL_DECLARATION de effect_key: corrigido por nomes distintos de variante e construção.
+- CONFUSABLE_LOCAL_DECLARATION de representative_id: corrigido por nome específico do candidato.
+- UNUSED_PARAMETER de animate: parâmetro preservado e marcado como intencionalmente não usado.
+- UNUSED_VARIABLE de met_goals e total_goals na tela final: variáveis residuais removidas.
+
+RESULTADOS ESTÁTICOS
+- Contratos gerais da Etapa 12: 222/222 aprovados.
+- Contratos corretivos v3.11.1: 173/173 aprovados.
+- Escopo local GDScript: 76 scripts, 1.429 funções e 0 possíveis vazamentos.
+- Teste Interno de relações v3.8.2: 9 verificações e 0 falhas.
+- Transparência dos retratos: 30 imagens e 0 falhas.
+- Todos os caminhos res:// literais encontrados pelos verificadores existem.
+- Delimitadores e nomes duplicados de função foram verificados nos 75 scripts de gameplay.
+
+ESCOPO PRESERVADO
+- SaveManager é idêntico ao da v3.11.0.
+- Envelope global permanece v18; nenhuma migração foi adicionada.
+- Balanceamento, dificuldades, RNG, conteúdo narrativo e assets não foram alterados.
+- A simulação de 120 dias não foi executada.
+
+LIMITAÇÃO
+- O Godot não está disponível no ambiente e não foi executado, conforme a regra do projeto.
+- Não houve parse/import pelo motor, execução de cena ou teste visual interativo.
+- A promoção para base estável depende do teste manual do usuário no Godot.

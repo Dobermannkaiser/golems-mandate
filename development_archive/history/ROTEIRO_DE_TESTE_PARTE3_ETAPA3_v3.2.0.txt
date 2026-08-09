@@ -1,0 +1,27 @@
+ROTEIRO DE TESTE — PARTE 3 / ETAPA 3 — v3.2.0
+
+1. Inicie uma nova vila (save novo obrigatório da Parte 3).
+2. Verifique se o Conselho começa com 4 cartas ativas e Mimo na reserva.
+3. Confirme que os fundadores possuem:
+   - nomes Passos-Leves únicos;
+   - retratos únicos;
+   - passivas únicas;
+   - personalidades únicas;
+   - 10 pontos de atributos no total.
+4. Abra e feche as cartas para conferir retrato, atributos, nível, XP e passiva.
+5. Abra TROCAR CARTAS e confirme a comparação entre uma carta ativa e Mimo.
+6. Avance a campanha e confirme a ordem de chegada dos NPCs de relacionamento:
+   - dia 15: Aelric;
+   - dia 30: Kobi;
+   - dia 45: Orion;
+   - dia 60: Rubra;
+   - dia 75: Brunna.
+7. Confirme que os retratos novos aparecem em diálogo para:
+   - Mimo;
+   - Aelric;
+   - Orion;
+   - Rubra;
+   - Brunna.
+8. Observe que Kobi continua com o retrato anterior até o envio da arte correspondente.
+9. Confirme que as avaliações principais permanecem nos dias 20, 40, 60, 80, 100 e 120.
+10. Execute os capítulos e verifique se intro, outro e recrutamento ocorrem nos novos dias.

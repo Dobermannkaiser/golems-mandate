@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "meio_vampiro_emo_gotico"
+display_name = "Silas Nocturno"
+species_name = "Meio-vampiro"
+pronouns = "ele/dele"
+role_name = "Músico, vigia e andarilho noturno"
+personality = "Observador, sensível e dono de um humor seco. Detesta ser tratado como uma coleção de estereótipos vampíricos."
+biography = "Um meio-vampiro de 21 anos que atravessa vilas tocando à noite em troca de abrigo. A aparência sombria protege uma pessoa cuidadosa, mais confortável compondo do que confessando entusiasmo."
+portrait_path = "res://assets/dialogue/portraits/meio_vampiro_emo_gotico.png"
+fallback_color = Color(0.321569, 0.321569, 0.411765, 1)
+is_special_npc = true
+romance_available = true
+hidden_until_story = true

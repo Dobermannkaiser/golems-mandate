@@ -1,0 +1,154 @@
+Golem's Mandate — verificação consolidada da correção de janelas — v3.5.3
+
+=== ETAPA 3 ===
+Golem's Mandate — verificação da Parte 3 / Etapa 3
+Verificações: 661
+Falhas: 0
+Resultado estrutural: APROVADO
+
+=== ETAPA 4 ===
+Golem's Mandate — verificação da Parte 3 / Etapa 4
+Verificações: 183
+Falhas: 0
+Resultado estrutural: APROVADO
+
+=== ETAPA 5 — verificações estáticas, sem repetir simulações econômicas extensas ===
+Golem's Mandate — verificação estática da Parte 3 / Etapa 5 — v3.5.3
+Verificações: 59
+Falhas: 0
+
+=== ETAPA 6 ===
+Golem's Mandate — verificação da Parte 3 / Etapa 6
+Verificações: 184
+Falhas: 0
+Resultado estrutural: APROVADO
+
+=== OTIMIZAÇÃO PRESERVADA ===
+Golem's Mandate — auditoria de limpeza e otimização preservada — v3.5.3
+Verificações: 50
+Falhas: 0
+Resultado estrutural: APROVADO
+
+=== SPRITES ===
+[OK] Versão pública 3.5.3
+[OK] Menu mostra 3.5.3
+[OK] Layout mostra v3.5.3
+[OK] Diagnóstico exige 3.5.3
+[OK] Save continua na versão 15
+[OK] Catálogo referencia Silo de Reserva
+[OK] Vila referencia Silo de Reserva
+[OK] Catálogo referencia Cozinha Comunitária
+[OK] Vila referencia Cozinha Comunitária
+[OK] Catálogo referencia Serraria Intensiva
+[OK] Vila referencia Serraria Intensiva
+[OK] Catálogo referencia Oficina de Carpintaria
+[OK] Vila referencia Oficina de Carpintaria
+[OK] Catálogo referencia Reservatório Profundo
+[OK] Vila referencia Reservatório Profundo
+[OK] Catálogo referencia Fonte Comunitária
+[OK] Vila referencia Fonte Comunitária
+[OK] Catálogo referencia Mercado Comunitário
+[OK] Vila referencia Mercado Comunitário
+[OK] Catálogo referencia Jardim Público
+[OK] Vila referencia Jardim Público
+[OK] Catálogo referencia Bastião de Pedra
+[OK] Vila referencia Bastião de Pedra
+[OK] Catálogo referencia Portões Vigilantes
+[OK] Vila referencia Portões Vigilantes
+[OK] Nenhuma build referencia JPG
+[OK] Arquivo existe — Silo de Reserva — assets/buildings/variants/barn_silo.png
+[OK] Formato PNG — Silo de Reserva — PNG
+[OK] Resolução 352x240 — Silo de Reserva — (352, 240)
+[OK] Canal RGBA — Silo de Reserva — RGBA
+[OK] Transparência real — Silo de Reserva — 0-255
+[OK] Fundo removido — Silo de Reserva — 52.9% transparente; 39403/84480 opacos
+[OK] Cantos transparentes — Silo de Reserva — [0, 0, 0, 0]
+[OK] Conteúdo visível — Silo de Reserva — (32, 9, 320, 236)
+[OK] Arquivo existe — Cozinha Comunitária — assets/buildings/variants/barn_kitchen.png
+[OK] Formato PNG — Cozinha Comunitária — PNG
+[OK] Resolução 352x240 — Cozinha Comunitária — (352, 240)
+[OK] Canal RGBA — Cozinha Comunitária — RGBA
+[OK] Transparência real — Cozinha Comunitária — 0-255
+[OK] Fundo removido — Cozinha Comunitária — 46.0% transparente; 45198/84480 opacos
+[OK] Cantos transparentes — Cozinha Comunitária — [0, 0, 0, 0]
+[OK] Conteúdo visível — Cozinha Comunitária — (12, 8, 338, 229)
+[OK] Arquivo existe — Serraria Intensiva — assets/buildings/variants/sawmill_intensive.png
+[OK] Formato PNG — Serraria Intensiva — PNG
+[OK] Resolução 352x240 — Serraria Intensiva — (352, 240)
+[OK] Canal RGBA — Serraria Intensiva — RGBA
+[OK] Transparência real — Serraria Intensiva — 0-255
+[OK] Fundo removido — Serraria Intensiva — 39.3% transparente; 50801/84480 opacos
+[OK] Cantos transparentes — Serraria Intensiva — [0, 0, 0, 0]
+[OK] Conteúdo visível — Serraria Intensiva — (4, 4, 349, 228)
+[OK] Arquivo existe — Oficina de Carpintaria — assets/buildings/variants/sawmill_carpentry.png
+[OK] Formato PNG — Oficina de Carpintaria — PNG
+[OK] Resolução 352x240 — Oficina de Carpintaria — (352, 240)
+[OK] Canal RGBA — Oficina de Carpintaria — RGBA
+[OK] Transparência real — Oficina de Carpintaria — 0-255
+[OK] Fundo removido — Oficina de Carpintaria — 28.2% transparente; 59988/84480 opacos
+[OK] Cantos transparentes — Oficina de Carpintaria — [0, 0, 0, 0]
+[OK] Conteúdo visível — Oficina de Carpintaria — (7, 0, 348, 240)
+[OK] Arquivo existe — Reservatório Profundo — assets/buildings/variants/well_reservoir.png
+[OK] Formato PNG — Reservatório Profundo — PNG
+[OK] Resolução 352x240 — Reservatório Profundo — (352, 240)
+[OK] Canal RGBA — Reservatório Profundo — RGBA
+[OK] Transparência real — Reservatório Profundo — 0-255
+[OK] Fundo removido — Reservatório Profundo — 30.8% transparente; 57896/84480 opacos
+[OK] Cantos transparentes — Reservatório Profundo — [0, 0, 0, 0]
+[OK] Conteúdo visível — Reservatório Profundo — (11, 0, 347, 240)
+[OK] Arquivo existe — Fonte Comunitária — assets/buildings/variants/well_fountain.png
+[OK] Formato PNG — Fonte Comunitária — PNG
+[OK] Resolução 352x240 — Fonte Comunitária — (352, 240)
+[OK] Canal RGBA — Fonte Comunitária — RGBA
+[OK] Transparência real — Fonte Comunitária — 0-255
+[OK] Fundo removido — Fonte Comunitária — 36.2% transparente; 53246/84480 opacos
+[OK] Cantos transparentes — Fonte Comunitária — [0, 0, 0, 0]
+[OK] Conteúdo visível — Fonte Comunitária — (0, 0, 352, 240)
+[OK] Arquivo existe — Mercado Comunitário — assets/buildings/variants/square_market.png
+[OK] Formato PNG — Mercado Comunitário — PNG
+[OK] Resolução 352x240 — Mercado Comunitário — (352, 240)
+[OK] Canal RGBA — Mercado Comunitário — RGBA
+[OK] Transparência real — Mercado Comunitário — 0-255
+[OK] Fundo removido — Mercado Comunitário — 30.4% transparente; 58116/84480 opacos
+[OK] Cantos transparentes — Mercado Comunitário — [0, 0, 0, 0]
+[OK] Conteúdo visível — Mercado Comunitário — (0, 6, 349, 237)
+[OK] Arquivo existe — Jardim Público — assets/buildings/variants/square_garden.png
+[OK] Formato PNG — Jardim Público — PNG
+[OK] Resolução 352x240 — Jardim Público — (352, 240)
+[OK] Canal RGBA — Jardim Público — RGBA
+[OK] Transparência real — Jardim Público — 0-255
+[OK] Fundo removido — Jardim Público — 27.0% transparente; 61231/84480 opacos
+[OK] Cantos transparentes — Jardim Público — [0, 0, 0, 0]
+[OK] Conteúdo visível — Jardim Público — (0, 4, 351, 240)
+[OK] Arquivo existe — Bastião de Pedra — assets/buildings/variants/palisade_bastion.png
+[OK] Formato PNG — Bastião de Pedra — PNG
+[OK] Resolução 352x240 — Bastião de Pedra — (352, 240)
+[OK] Canal RGBA — Bastião de Pedra — RGBA
+[OK] Transparência real — Bastião de Pedra — 0-255
+[OK] Fundo removido — Bastião de Pedra — 32.6% transparente; 56160/84480 opacos
+[OK] Cantos transparentes — Bastião de Pedra — [0, 0, 0, 0]
+[OK] Conteúdo visível — Bastião de Pedra — (0, 0, 352, 240)
+[OK] Arquivo existe — Portões Vigilantes — assets/buildings/variants/palisade_gates.png
+[OK] Formato PNG — Portões Vigilantes — PNG
+[OK] Resolução 352x240 — Portões Vigilantes — (352, 240)
+[OK] Canal RGBA — Portões Vigilantes — RGBA
+[OK] Transparência real — Portões Vigilantes — 0-255
+[OK] Fundo removido — Portões Vigilantes — 49.6% transparente; 40321/84480 opacos
+[OK] Cantos transparentes — Portões Vigilantes — [0, 0, 0, 0]
+[OK] Conteúdo visível — Portões Vigilantes — (0, 17, 352, 227)
+
+Total: 106 verificações; 0 falhas.
+
+=== ESCOPO LOCAL GDSCRIPT ===
+Golem's Mandate — verificação heurística de escopo local GDScript
+Scripts analisados: 67
+Funções analisadas: 1206
+Possíveis vazamentos de escopo: 0
+Resultado: APROVADO
+
+=== JANELAS SOB DEMANDA ===
+Golem's Mandate — verificação das janelas sob demanda — v3.5.3
+Verificações: 96
+Falhas: 0
+
+OBSERVAÇÃO: o Godot não foi executado. As simulações econômicas extensas da Etapa 5 não foram repetidas porque esta correção altera apenas o ciclo de criação de janelas de UI.

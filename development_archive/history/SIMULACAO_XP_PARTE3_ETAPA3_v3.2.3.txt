@@ -1,0 +1,5 @@
+SIMULAÇÃO — XP DAS CARTAS — v3.2.3
+Fontes modeladas: +2 por dia ativo; +20 por acontecimento resolvido.
+Casos verificados: 6
+Falhas: 0
+Resultado: APROVADO

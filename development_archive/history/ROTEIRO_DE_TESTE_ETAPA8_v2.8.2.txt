@@ -1,0 +1,46 @@
+SQUARE VILLAGE — ROTEIRO DE TESTE DA ETAPA 8 — v2.8.3
+
+1. TUTORIAL INICIAL
+- Inicie uma nova campanha em um perfil de tutorial ainda não concluído.
+- Conclua o prólogo.
+- Confirme que o tutorial inicial continua curto e explica apenas o ciclo essencial.
+- Termine ou pule o tutorial e confirme que a vila continua utilizável.
+
+2. GUIA DO JOGO NO MENU
+- Abra MENU.
+- Confirme que o botão agora se chama GUIA DO JOGO.
+- Abra o guia e percorra todas as páginas.
+- Verifique campanha, perfil, recursos, população, representantes, Conselho, Obras, Avaliações, acontecimentos, história, relações, encontros, estações, Registro, save e interface.
+- Feche o guia e confirme o retorno correto ao menu.
+
+3. GUIA PELO BOTÃO AJUDA
+- Volte à vila e clique AJUDA.
+- Confirme que o guia completo abre sem retornar ao menu ao fechar.
+- Teste PRÓXIMO, VOLTAR, FECHAR GUIA e tecla Escape.
+
+4. DICAS CONTEXTUAIS
+Em um perfil que ainda não viu as dicas, abra pela primeira vez:
+- Conselho;
+- Relações;
+- Registro;
+- Avaliação;
+- Obras;
+- vila ampliada;
+- Salvar/Carregar.
+Confirme que cada área apresenta sua explicação apenas uma vez.
+Feche e abra novamente cada área; a dica não deve repetir.
+
+5. CAMADAS E RESOLUÇÃO
+- Teste em 1152×648.
+- Confirme que o tutorial fica acima de Conselho, Relações, Obras, Avaliação e Salvar/Carregar.
+- Verifique que textos, botões e dicas não ultrapassam o painel.
+
+6. COMPATIBILIDADE
+- Carregue uma campanha da v2.8.1.
+- Confirme que recursos, história, perfil e relacionamentos permanecem iguais.
+- Verifique que o progresso das dicas não altera o save da campanha.
+
+7. REGRESSÃO
+- Converse com os seis personagens pelo Teste de Relações.
+- Confirme cinco assuntos por personagem, respostas embaralhadas e ausência de repetição imediata.
+- Avance um dia, abra um acontecimento, construa uma obra e salve/carregue.

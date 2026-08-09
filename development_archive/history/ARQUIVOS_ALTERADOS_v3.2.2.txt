@@ -1,0 +1,7 @@
+scripts/UIManager.gd
+scripts/UIManagerVariantB.gd
+project.godot
+tools/verify_part3_stage3.py
+LEIA-ME_CORRECAO_PARTE3_ETAPA3_v3.2.2.md
+ROTEIRO_DE_TESTE_CORRECAO_PARTE3_ETAPA3_v3.2.2.txt
+ARQUIVOS_ALTERADOS_v3.2.2.txt

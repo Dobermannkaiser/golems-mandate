@@ -1,0 +1,59 @@
+Golem's Mandate — roteiro de teste da otimização v3.5.1
+
+IMPORTANTE
+- Não é necessário iniciar campanha nova em relação à v3.5.0.
+- O formato do save permanece 15.
+- Os sprites provisórios das builds ainda serão substituídos pelo ZIP do usuário.
+
+1. ABERTURA
+[ ] Abrir o projeto e confirmar ausência de Parser Error.
+[ ] Executar o jogo e confirmar que o menu inicial aparece normalmente.
+[ ] Confirmar que não há flash dos quadrados ou do painel antigo antes da interface moderna.
+
+2. CAMPANHA E SAVE
+[ ] Carregar um save válido criado na v3.5.0.
+[ ] Confirmar recursos, dia, Conselho, fila e builds preservados.
+[ ] Salvar novamente e carregar o novo save.
+
+3. JANELAS CRIADAS SOB DEMANDA
+Abra cada área pela primeira vez e depois feche e abra novamente:
+[ ] Objetivos/campanha.
+[ ] Obras.
+[ ] Salvar/carregar.
+[ ] Conselho e reserva.
+[ ] Relacionamentos.
+[ ] Ajuda/tutorial.
+[ ] Vila ampliada.
+[ ] Detalhes da previsão.
+[ ] Diagnóstico interno.
+
+Em todas:
+[ ] A primeira abertura não gera erro.
+[ ] Botões, foco, fechamento e segunda abertura funcionam.
+[ ] Não há janela duplicada.
+
+4. RETRATOS E CACHE DE PERSONAGENS
+[ ] Abrir cartas do Conselho e da reserva.
+[ ] Abrir histórico de ao menos uma carta.
+[ ] Abrir relacionamento e diálogo com retrato.
+[ ] Confirmar que os retratos aparecem corretamente em todas as áreas.
+[ ] Trocar repetidamente entre cartas e verificar ausência de travamentos ou retratos incorretos.
+
+5. FLUXO DO JOGO
+[ ] Trocar profissões.
+[ ] Encerrar ao menos três dias.
+[ ] Resolver um acontecimento.
+[ ] Abrir e fechar a janela de Obras durante a campanha.
+[ ] Confirmar que a vila e os moradores comuns continuam animados.
+
+6. BUILDS DA ETAPA 6
+[ ] Confirmar que uma construção nível 3 mantém a build escolhida.
+[ ] Abrir a janela da construção e conferir efeitos, histórico e irreversibilidade.
+[ ] Salvar e carregar novamente para confirmar persistência.
+
+7. OBSERVAÇÃO DE DESEMPENHO
+[ ] Comparar o tempo subjetivo de abertura com a v3.5.0.
+[ ] Observar se a primeira abertura das janelas apresenta atraso perceptível.
+[ ] Observar fluidez da vila, cartas e transições após alguns dias.
+
+Qualquer erro na primeira abertura de uma janela deve ser reportado com o nome da janela e a mensagem completa do Godot.

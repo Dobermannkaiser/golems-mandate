@@ -1,0 +1,18 @@
+ROTEIRO DE TESTE — CORREÇÃO DE DIÁLOGOS — v3.4.1
+
+1. Carregue uma campanha da v3.4.0 ou inicie uma campanha nova.
+2. Aguarde uma carta exibir o marcador dourado de assunto disponível.
+3. Abra o diálogo do representante.
+4. Confirme que o primeiro texto de contexto aparece como NARRADOR, sem retrato do representante.
+5. Avance para a fala do representante.
+6. Confirme que o personagem fala apenas sua opinião e sua intenção, de acordo com a personalidade.
+7. Verifique que custos, duração e efeitos continuam visíveis nos três botões de escolha.
+8. Escolha qualquer caminho.
+9. Confirme que o representante não fala sobre “sistema”, “economia da vila”, “fim do dia”, “ficha histórica” ou recompensa numérica.
+10. Faça uma carta subir de nível.
+11. Escolha a resposta compatível com sua personalidade.
+12. Confirme que o NPC reage de forma natural e que a recompensa de +1 aparece apenas na notificação externa ao diálogo.
+13. Abra uma conversa de relacionamento e um evento pessoal.
+14. Confirme que descrições em terceira pessoa aparecem como NARRADOR, não como fala do NPC.
+15. Execute o Teste Interno de diálogo e confira que Mimo descreve o teste como um feitiço, sem listar componentes da interface.
+16. Verifique que passivas, sinergias, previsão e economia continuam funcionando como na v3.4.0.

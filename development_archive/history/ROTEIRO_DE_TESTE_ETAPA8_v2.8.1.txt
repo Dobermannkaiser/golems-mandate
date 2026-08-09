@@ -1,0 +1,10 @@
+SQUARE VILLAGE — ROTEIRO DE TESTE DA ETAPA 8 — v2.8.1
+
+1. Inicie ou carregue uma campanha da v2.8.0.
+2. Abra Teste Interno e pressione TESTAR RELAÇÕES.
+3. Confirme que aparecem Mimo, Aelric, Kobi, Orion, Rubra e Brunna.
+4. Converse várias vezes com cada personagem e confirme que o mesmo assunto não aparece duas vezes seguidas.
+5. Confirme que as respostas boa, neutra e ruim mudam de posição.
+6. Avance dias e confirme que apenas a primeira conversa diária altera pontos.
+7. Teste eventos pessoais e encontros; confirme que as respostas também mudam de posição.
+8. Salve e carregue; confirme que pontos, parceiro e último assunto permanecem válidos.

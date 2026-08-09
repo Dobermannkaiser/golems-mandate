@@ -1,0 +1,34 @@
+GOLEM'S MANDATE — ARQUIVOS ALTERADOS — v3.11.3
+
+Base de origem: v3.11.2
+Base estável preservada: v3.10.1
+
+Código e configuração:
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/campaign/CampaignCatalog.gd
+- scripts/campaign/DifficultyCatalog.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/models/PopulationState.gd
+- scripts/ui/DiagnosticsWindow.gd
+- scripts/ui/MainMenu.gd
+
+Verificação:
+- tools/verify_part3_stage12.py
+- tools/verify_part3_stage12_v3113.py
+
+Documentação da entrega:
+- LEIA-ME_REBALANCEAMENTO_POPULACIONAL_v3.11.3.md
+- ROTEIRO_DE_TESTE_REBALANCEAMENTO_POPULACIONAL_v3.11.3.txt
+- ARQUIVOS_ALTERADOS_v3.11.3.txt
+- VERIFICACAO_CONSOLIDADA_ETAPA12_v3.11.3.txt
+
+Arquivos explicitamente preservados:
+- scripts/save/SaveManager.gd
+- scripts/campaign/CampaignManager.gd
+- economia diária, construções, eventos, relações, recrutamento e assets
+
+Nenhum arquivo foi removido.

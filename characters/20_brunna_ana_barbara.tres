@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "brunna_ana_barbara"
+display_name = "Brunna Ana"
+species_name = "Anã"
+pronouns = "ela/dela"
+role_name = "Bárbara gótica e ferreira ritualista"
+personality = "Intensa, romântica, teatral e muito educada enquanto segura um machado."
+biography = "Uma guerreira anã de moda gótica-lolita que grava runas funerárias em armas. Preparada como futura opção de amizade e romance."
+portrait_path = "res://assets/dialogue/portraits/brunna_ana_barbara.png"
+fallback_color = Color(0.474510, 0.215686, 0.301961, 1)
+is_special_npc = true
+romance_available = true
+hidden_until_story = true

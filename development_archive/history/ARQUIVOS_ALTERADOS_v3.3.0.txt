@@ -1,0 +1,28 @@
+Golem’s Mandate — Parte 3 / Etapa 4 — v3.3.0
+
+- LEIA-ME_PARTE3_ETAPA4_v3.3.0.md
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA4_v3.3.0.txt
+- SIMULACAO_EXPERIENCIA_HISTORICO_v3.3.0.txt
+- VERIFICACAO_PARTE3_ETAPA4_v3.3.0.txt
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/Villager.gd
+- scripts/council/CouncilCardCatalog.gd
+- scripts/council/CouncilRecruitmentManager.gd
+- scripts/council/CouncillorPersonalityCatalog.gd
+- scripts/council/CouncillorProgressionDialogueCatalog.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/foundation/Part3FoundationManager.gd
+- scripts/save/SaveManager.gd
+- scripts/ui/CouncillorHistoryWindow.gd
+- scripts/ui/EventWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/VillagerCard.gd
+- tools/simulate_councillor_progression_stage4.py
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- ARQUIVOS_ALTERADOS_v3.3.0.txt
+- VALIDACAO_GODOT_PARTE3_ETAPA4_v3.3.0.txt
+- CHECKSUM_ARQUIVOS_v3.3.0.txt

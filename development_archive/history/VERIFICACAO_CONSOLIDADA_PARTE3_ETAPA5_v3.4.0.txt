@@ -1,0 +1,87 @@
+Golem's Mandate — Parte 3 / Etapa 5 — v3.4.0
+RELATÓRIO CONSOLIDADO DE VERIFICAÇÃO
+
+IMPORTANTE
+- O Godot não foi baixado, instalado ou executado.
+- Este relatório cobre análise estática, invariantes, simulações e integridade de arquivos.
+- O teste de runtime permanece responsabilidade do usuário.
+
+=== ETAPA 3 / REGRESSÃO ===
+Golem's Mandate — verificação da Parte 3 / Etapa 3
+Verificações: 637
+Falhas: 0
+Resultado estrutural: APROVADO
+
+
+=== ETAPA 4 / REGRESSÃO ===
+Golem's Mandate — verificação da Parte 3 / Etapa 4
+Verificações: 183
+Falhas: 0
+Resultado estrutural: APROVADO
+
+
+=== ESCOPO LOCAL GDSCRIPT ===
+Golem's Mandate — verificação heurística de escopo local GDScript
+Scripts analisados: 64
+Funções analisadas: 1176
+Possíveis vazamentos de escopo: 0
+Resultado: APROVADO
+
+
+=== ETAPA 5 ===
+Golem's Mandate — verificação da Parte 3 / Etapa 5
+Verificações: 64
+Falhas: 0
+Resultado estrutural: APROVADO
+
+
+=== SIMULAÇÃO ECONÔMICA NAS TRÊS DIFICULDADES ===
+SIMULAÇÃO ECONÔMICA INICIAL — ETAPA 5
+Modelo comparativo de 120 dias; não executa o Godot nem substitui o teste de runtime.
+Valores de dificuldade, consumo, manutenção e recursos iniciais seguem os catálogos do projeto.
+O modelo mede impacto relativo; não tenta reproduzir construções, eventos, relações ou aprovação de avaliações.
+
+DIFICULDADE: Acolhedora
+- equilibrado: entrada acumulada 5621.6 (+3.02% vs. a mesma composição sem a Etapa 5)
+- quatro_profissoes: entrada acumulada 5837.6 (+2.70% vs. a mesma composição sem a Etapa 5)
+- concentracao_alimento: entrada acumulada 5935.3 (+1.14% vs. a mesma composição sem a Etapa 5)
+- concentracao_material: entrada acumulada 5347.2 (-1.78% vs. a mesma composição sem a Etapa 5)
+- quatro_iguais: entrada acumulada 5656.8 (-11.29% vs. a mesma composição sem a Etapa 5)
+- passivas_fixadas: entrada acumulada 5626.8 (+3.11% vs. a mesma composição sem a Etapa 5)
+- mimo_ativa: entrada acumulada 5920.8 (+4.17% vs. a mesma composição sem a Etapa 5)
+
+DIFICULDADE: Moderada
+- equilibrado: entrada acumulada 4888.3 (+3.02% vs. a mesma composição sem a Etapa 5)
+- quatro_profissoes: entrada acumulada 5076.2 (+2.70% vs. a mesma composição sem a Etapa 5)
+- concentracao_alimento: entrada acumulada 5161.1 (+1.14% vs. a mesma composição sem a Etapa 5)
+- concentracao_material: entrada acumulada 4649.8 (-1.78% vs. a mesma composição sem a Etapa 5)
+- quatro_iguais: entrada acumulada 4919.0 (-11.29% vs. a mesma composição sem a Etapa 5)
+- passivas_fixadas: entrada acumulada 4899.5 (+3.25% vs. a mesma composição sem a Etapa 5)
+- mimo_ativa: entrada acumulada 5148.6 (+4.17% vs. a mesma composição sem a Etapa 5)
+
+DIFICULDADE: Difícil
+- equilibrado: entrada acumulada 5132.7 (+3.02% vs. a mesma composição sem a Etapa 5)
+- quatro_profissoes: entrada acumulada 5330.0 (+2.70% vs. a mesma composição sem a Etapa 5)
+- concentracao_alimento: entrada acumulada 5419.2 (+1.14% vs. a mesma composição sem a Etapa 5)
+- concentracao_material: entrada acumulada 4882.3 (-1.78% vs. a mesma composição sem a Etapa 5)
+- quatro_iguais: entrada acumulada 5164.9 (-11.29% vs. a mesma composição sem a Etapa 5)
+- passivas_fixadas: entrada acumulada 5144.2 (+3.25% vs. a mesma composição sem a Etapa 5)
+- mimo_ativa: entrada acumulada 5406.0 (+4.17% vs. a mesma composição sem a Etapa 5)
+
+Variação média da entrada: +0.17%
+Maior aumento: +4.17%
+Maior redução: -11.29%
+Limite de +12%: APROVADO
+
+
+=== SIMULAÇÃO DE ESTRESSE ===
+SIMULAÇÃO DE ESTRESSE — PASSIVAS, SINERGIAS E CONCENTRAÇÃO — ETAPA 5
+Conselhos aleatórios simulados: 120000
+Passivas exercitadas: 15 / 15
+Uso de multiplicadores de concentração: {0.88: 911, 0.93: 15392, 0.97: 80625, 1.0: 23072}
+Quantidade de sinergias ativas: {0: 23796, 1: 80057, 2: 16147}
+Maior aumento de produção: +5.27%
+Maior redução de produção: -12.00%
+Maior ganho econômico combinado estimado: +4.91%
+Falhas: 0
+Resultado: APROVADO

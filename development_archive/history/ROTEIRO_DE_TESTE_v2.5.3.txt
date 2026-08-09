@@ -1,0 +1,12 @@
+ROTEIRO DE TESTE — PARTE 2, ETAPA 5 — v2.5.4
+
+1. Extraia o ZIP em uma pasta nova.
+2. Abra project.godot no Godot 4.7.1.
+3. Confirme que BuildingVisuals.gd carrega sem erro de parser.
+4. Inicie uma nova campanha.
+5. Verifique a mini-vila, os moradores e as construções.
+6. Clique em AMPLIAR e confirme que a janela abre e fecha.
+7. Selecione conselheiros pela vila.
+8. Abra OBRAS clicando em uma construção.
+9. Salve e carregue a campanha.
+10. Encerre ao menos um dia e confira se o visual continua sincronizado.

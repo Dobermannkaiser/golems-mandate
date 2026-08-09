@@ -1,0 +1,43 @@
+GOLEM'S MANDATE — VERIFICAÇÃO CONSOLIDADA — PARTE 3 / ETAPA 12 / v3.11.0
+
+BASE
+- Arquivo: GolemsMandate-Parte3-Etapa11-v3.10.1.zip
+- SHA-256: 1bf4b1b3e72b69fda0864e033babfee2977753bcbae843382b175e91f596629c
+- Integridade ZIP: aprovada antes da extração.
+- A base original permaneceu intacta; o trabalho ocorreu em cópia separada.
+
+VALIDAÇÃO ESTÁTICA
+- tools/verify_part3_stage12.py: 222/222 contratos aprovados.
+- Gramática independente tree-sitter-gdscript: 75/75 scripts sem erro sintático.
+- project.godot: 0 referências res:// ausentes.
+- Todos os caminhos res:// literais dos scripts: presentes.
+- Delimitadores e nomes de função: verificados em todos os scripts.
+
+CONTRATOS PRINCIPAIS APROVADOS
+- versão pública 3.11.0;
+- save global 18 e caminho preservado;
+- campanha schema 5;
+- fundação telemétrica schema 4;
+- identidade e RNG persistentes;
+- dificuldades qualitativas conectadas às regras;
+- preparação com projeção e obras conhecidas;
+- avaliação com memória, contribuição, comparação e consequência;
+- medalhas comportamentais sem bônus;
+- estatísticas e perfil final sem pontuação;
+- histórico recente sem ranking.
+
+CORREÇÃO DE CONTRATO DE SAVE
+- BuildingManager já exportava queue_state_version 2 na base v3.10.1.
+- SaveManager validava incorretamente apenas queue_state_version 1.
+- A validação foi alinhada ao schema 2 efetivamente exportado.
+
+NÃO EXECUTADO
+- Godot/editor/runtime;
+- renderização e inspeção visual dentro do motor;
+- áudio e foco em runtime;
+- campanha manual de 120 dias;
+- simulação extensa de balanceamento.
+
+CONCLUSÃO
+A candidata está estruturalmente pronta para teste manual no Godot. Nenhuma afirmação de funcionamento em runtime ou de balanceamento final é feita antes desses testes.
+

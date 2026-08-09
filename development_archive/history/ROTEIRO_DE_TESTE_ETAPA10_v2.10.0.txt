@@ -1,0 +1,94 @@
+SQUARE VILLAGE — ROTEIRO DE TESTE DA ETAPA 10 — v2.10.0
+
+1. CRIAÇÃO DA VILA E DIFICULDADE
+- Inicie uma nova campanha.
+- Confirme campos de nome, gênero e dificuldade.
+- Teste Acolhedora, Moderada e Difícil em campanhas separadas.
+- Verifique se o cabeçalho e a tela de Avaliação mostram a dificuldade correta.
+- Salve, feche e carregue; a dificuldade não pode mudar.
+
+2. CONVERSÃO DE SAVE
+- Faça cópia de segurança de um save da v2.9.2.
+- Abra a v2.10.0 e carregue esse save.
+- Confirme que ele foi convertido para Moderada.
+- Confirme população, recursos, construções, história, relações e áudio.
+- Salve novamente e carregue o novo arquivo v7.
+
+3. MATRIZ DAS 24 METAS
+- Abra AVALIAÇÃO em cada dificuldade.
+- Confirme quatro metas: população, alimentação, material e felicidade.
+- Confira os dias 20, 40, 60, 80, 100 e 120.
+- A próxima auditoria deve exibir números completos.
+- Auditorias futuras devem aparecer como prévia.
+- Use o Teste Interno > Balanceamento para consultar dificuldade e dia.
+
+4. DERROTA IMEDIATA
+- Pelo Teste Interno, prepare uma auditoria com uma única meta abaixo do valor.
+- Conclua o dia e confirme derrota imediata.
+- Repita alternando alimentação, material, felicidade e população.
+
+5. ECONOMIA POR DIFICULDADE
+- Compare os recursos iniciais das três dificuldades.
+- Construa a mesma obra e confira custo diferente.
+- Encerre alguns dias com a mesma formação de profissões.
+- Acolhedora deve gerar mais margem; Difícil deve exigir mais preparação.
+- Eventos aleatórios não devem ficar mais severos apenas pela dificuldade.
+
+6. OUTONO E INVERNO
+- Avance até o outono e acompanhe formação de alimentação e material.
+- Converse com Mimo, Aelric, Kobi, Orion, Rubra e Brunna.
+- Confirme avisos de inverno coerentes com cada personalidade.
+- Abra conversas com representantes de profissões diferentes.
+- Confirme falas contextuais sobre estoque e preparação.
+- Teste o capítulo do Dia 80 e confirme o aviso de Sanctuary-Void.
+- Avance ao inverno e confirme menor produção e maior consumo de alimentação.
+
+7. POPULAÇÃO E CASAS
+- Teste capacidade sobrando, capacidade exata e superlotação.
+- Compare atração/abandono nas três dificuldades.
+- Confirme que melhorias de casas continuam relevantes.
+- Verifique previsão populacional e atualização após construir ou melhorar casas.
+
+8. RELACIONAMENTOS
+- Complete dias com nenhum bônus de relação e confirme economia funcional.
+- Use Testar Relações para alcançar níveis com bônus.
+- Confirme que os bônus ajudam sem substituir profissões, casas ou reservas.
+- Teste campanha sem romance; nenhuma meta deve exigir parceiro.
+
+9. MEDALHAS E FINAL
+- Pelo Teste Interno, simule uma vitória com margem baixa e confirme Bronze.
+- Simule resultados melhores para Prata e Ouro.
+- Confirme dificuldade, pontuação, recursos e população no resumo final.
+- Volte ao menu: a melhor medalha deve aparecer abaixo do título.
+- Abra o histórico e confira Prefeito, dificuldade, medalha, pontuação e parceiro.
+- Termine outra campanha pior; a melhor medalha não deve ser substituída.
+- Termine outra campanha melhor; o emblema deve ser atualizado.
+
+10. MENU E SAVE
+- Confira o resumo dos saves: dia, estação, população, dificuldade e medalha.
+- Teste substituir, carregar e apagar campanha.
+- Confirme avisos antes de operações destrutivas.
+- Reinicie o jogo e confirme persistência do histórico de medalhas.
+
+11. TUTORIAL E GUIA
+- Apague ou redefina o progresso de tutorial pelas opções disponíveis.
+- Inicie uma campanha e confirme a versão atualizada do tutorial inicial.
+- A página de avaliações deve citar quatro metas e 24 metas no total.
+- Abra GUIA DO JOGO e revise dificuldade, metas, previsão, inverno e medalhas.
+- Confirme que as dicas contextuais continuam navegáveis e podem ser fechadas.
+
+12. CAMPANHA COMPLETA
+- Jogue ao menos uma campanha Acolhedora até o Dia 120.
+- Jogue ou simule Moderada e Difícil pelo Teste Interno.
+- Em cada auditoria, salve antes e carregue depois.
+- Confirme chegada dos cinco NPCs, capítulos, relações e estações.
+- Verifique se nenhum capítulo ou auditoria dispara duas vezes.
+
+13. DEPURADOR E ÁUDIO
+- Durante todos os testes, acompanhe Saída e Depurador do Godot.
+- Não devem existir erros vermelhos, métodos ausentes ou recursos inválidos.
+- Confirme que músicas, efeitos, Configurações e muralhas procedurais da v2.9.2
+  continuam funcionando após as alterações de balanceamento.
+
+Ao encontrar um erro, registre: dificuldade, dia, estação, ação anterior,
+recursos, população, mensagem completa do Depurador e uma captura da tela.

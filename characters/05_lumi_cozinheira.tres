@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "lumi_cozinheira"
+display_name = "Aparência: Cozinheira Alquímica"
+species_name = "Passos-Leves"
+pronouns = "ela/dela"
+role_name = "Chefe de cozinha e alquimista culinária"
+personality = "Protetora, exigente e convencida de que toda maldição pode ser resolvida com sopa."
+biography = "Lumi também serve como aparência genérica de fundadora. Seu visual representa cozinha, hospitalidade e receitas encantadas."
+portrait_path = "res://assets/dialogue/portraits/lumi_cozinheira.png"
+fallback_color = Color(0.788235, 0.592157, 0.364706, 1)
+is_founder_appearance = true

@@ -1,0 +1,11 @@
+ROTEIRO DE TESTE — CORREÇÃO v3.2.2
+
+1. Extraia o ZIP em uma pasta nova.
+2. Importe o project.godot dessa nova pasta.
+3. Confirme que UIManager.gd e UIManagerVariantB.gd carregam sem erro de parse.
+4. Inicie uma campanha nova.
+5. Troque a profissão de cada uma das quatro cartas.
+6. Confirme que o seletor da carta mantém a profissão escolhida.
+7. Confirme que a previsão de produção muda conforme a profissão.
+8. Abra Relações no modo de teste e confira Mimo, Aelric, Kobi, Orion, Rubra e Brunna.
+9. Avance até os dias 15, 30, 45, 60 e 75 para conferir as chegadas narrativas.

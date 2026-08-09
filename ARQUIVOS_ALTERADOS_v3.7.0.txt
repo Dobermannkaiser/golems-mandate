@@ -1,0 +1,41 @@
+GOLEM'S MANDATE — PARTE 3 / ETAPA 8 — ARQUIVOS DA v3.7.0
+
+NOVOS
+- LEIA-ME_PARTE3_ETAPA8_v3.7.0.md
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA8_v3.7.0.txt
+- VERIFICACAO_CONSOLIDADA_PARTE3_ETAPA8_v3.7.0.txt
+- scripts/events/FounderMemoryCatalog.gd
+- scripts/events/FounderMemoryManager.gd
+- tools/verify_part3_stage8.py
+
+ALTERADOS — JOGO
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/council/CouncilRecruitmentManager.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/events/EventManager.gd
+- scripts/foundation/Part3FoundationManager.gd
+- scripts/save/SaveManager.gd
+- scripts/ui/BuildingVisuals.gd
+- scripts/ui/CouncillorHistoryWindow.gd
+- scripts/ui/EventWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/RecruitmentWindow.gd
+
+ALTERADOS — VERIFICADORES ACUMULADOS
+- tools/verify_lazy_windows_v353.py
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- tools/verify_part3_stage5.py
+- tools/verify_part3_stage6.py
+- tools/verify_part3_stage7.py
+- tools/verify_project_optimization_v351.py
+- tools/verify_sprite_integration_v352.py
+
+OBSERVAÇÕES
+- Os documentos e relatórios de versões anteriores foram preservados sem edição.
+- Nenhum recurso gráfico existente foi substituído.
+- Os quatro vestígios novos são desenhados por código em BuildingVisuals.gd.
+- A fonte v3.6.0 recebida permaneceu intacta; a v3.7.0 foi construída em cópia separada.

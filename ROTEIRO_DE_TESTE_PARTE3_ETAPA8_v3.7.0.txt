@@ -1,0 +1,75 @@
+GOLEM'S MANDATE — PARTE 3 / ETAPA 8 — ROTEIRO MANUAL v3.7.0
+
+STATUS ESPERADO AO INICIAR
+- A v3.7.0 é candidata, não estável.
+- Use uma cópia do save da v3.6.0 para o teste de migração.
+
+1. NOVA CAMPANHA E ATRIBUIÇÃO
+[ ] Inicie uma nova campanha e abra as fichas dos quatro fundadores.
+[ ] Confirme que o jogo inicia normalmente e que não existe janela de memória no Dia 1.
+[ ] Avance até o primeiro acontecimento pessoal sem pular diálogos obrigatórios.
+[ ] Confirme que o acontecimento fixa um fundador e não permite trocar o responsável.
+
+2. ABERTURA E HISTÓRICO
+[ ] Resolva a primeira conversa de memória.
+[ ] Confirme que o resultado corresponde à escolha e aplica o efeito uma vez.
+[ ] Abra a Ficha Histórica do fundador e localize a decisão com dia e título.
+[ ] Salve, feche o jogo, carregue e confirme que a decisão permanece.
+
+3. CONSEQUÊNCIA DENTRO DA JANELA
+[ ] Crie a condição indicada pela campanha dentro dos 10 dias seguintes.
+[ ] Confirme que o segundo acontecimento menciona naturalmente a decisão anterior.
+[ ] Confirme que os outros fundadores podem reagir sem tomar o protagonismo.
+[ ] Resolva a consequência e confirme histórico, recursos, felicidade e +20 XP no fundador correto.
+[ ] Recarregue o save e confirme que a consequência não é aplicada novamente.
+
+4. EXPIRAÇÃO SILENCIOSA
+[ ] Em outra campanha ou save de teste, evite a condição da cadeia por mais de 10 dias.
+[ ] Confirme que não aparece aviso de expiração, punição ou recompensa.
+[ ] Confirme que a decisão inicial continua na Ficha Histórica.
+[ ] Continue jogando e confirme que a consequência expirada não reaparece.
+
+5. QUATRO CADEIAS E CONTROLE DE REPETIÇÃO
+[ ] Teste os inícios previstos ao longo da campanha e confirme quatro fundadores distintos.
+[ ] Confirme as cadeias Reconhecimento, Responsabilidade, Pertencimento e Convicções.
+[ ] Confirme que nenhuma abertura ou consequência ocorre duas vezes.
+[ ] Observe acontecimentos aleatórios sucessivos e confirme que alternativas recentes são evitadas quando possível.
+
+6. VARIANTES DE CONTEXTO
+[ ] Compare uma cena em duas estações ou estados de construção diferentes.
+[ ] Confirme que o texto cita a estação e a obra realmente presentes.
+[ ] Troque a composição do Conselho e confirme o gatilho de Pertencimento.
+[ ] Conclua/eleve uma construção e confirme o gatilho de Convicções.
+[ ] Produza pressão de recursos/felicidade e confirme o gatilho de Responsabilidade.
+
+7. VESTÍGIOS VISUAIS
+[ ] Escolha uma resposta que promete um vestígio visual.
+[ ] Confirme que o objeto aparece na vila sem cobrir botões, moradores ou construções.
+[ ] Teste Estandarte, Marco, Banco e Lanterna em saves separados ou ferramentas internas.
+[ ] Salve/carregue e confirme que o vestígio permanece e não duplica.
+
+8. MIGRAÇÃO E RECRUTAMENTO DA ETAPA 7
+[ ] Carregue uma cópia de save válido v3.6.0 / formato 15.
+[ ] Confirme que as quatro memórias são inicializadas sem alterar progresso existente.
+[ ] Em uma oferta antiga, confira se pontos e nível do vínculo aparecem corretamente.
+[ ] Em empate de espécie, escolha a espécie, feche o jogo sem escolher a carta e carregue.
+[ ] Confirme que a espécie escolhida foi salva e a oferta volta à comparação das duas cartas.
+
+9. JANELA DE RECRUTAMENTO E ACESSIBILIDADE
+[ ] Teste na menor resolução suportada e em escala de UI elevada.
+[ ] Confirme uma coluna em largura estreita e duas em largura ampla.
+[ ] Navegue somente com teclado e depois somente com controle.
+[ ] Confirme foco visível, rolagem automática e ciclo contido entre as ações.
+[ ] Pressione Esc/cancelar e confirme que a decisão obrigatória continua visível.
+
+10. SAVE SEGURO E REGRESSÃO
+[ ] Salve duas vezes e confirme que a campanha atual carrega.
+[ ] Confirme que nenhuma decisão, efeito ou XP duplica após carregar.
+[ ] Teste capítulos, auditorias, relações, obras, Conselho e recrutamento.
+[ ] Rode TESTE INTERNO e registre qualquer erro ou aviso.
+
+CRITÉRIO DE APROVAÇÃO
+- Todos os itens essenciais passam no Godot.
+- Nenhuma campanha fica bloqueada por memória, recrutamento ou foco.
+- Saves v15 migram e saves v16 recarregam sem perda ou duplicação.
+- Somente após essa aprovação a v3.7.0 pode ser promovida a estável.

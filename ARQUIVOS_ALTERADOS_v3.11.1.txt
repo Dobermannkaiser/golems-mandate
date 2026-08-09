@@ -1,0 +1,32 @@
+GOLEM'S MANDATE — ARQUIVOS ALTERADOS — v3.11.1
+
+CONFIGURAÇÃO E VERSÃO
+- project.godot
+- scripts/UIManagerVariantB.gd
+- scripts/ui/MainMenu.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+
+CORREÇÃO DE RUNTIME
+- scripts/ui/CampaignWindow.gd
+
+LIMPEZA DOS AVISOS RELATADOS
+- scripts/campaign/CampaignIdentityCatalog.gd
+- scripts/buildings/BuildingManager.gd
+- scripts/council/CouncillorOpportunityManager.gd
+- scripts/ui/VillagerCard.gd
+- scripts/ui/CampaignWindow.gd
+
+VERIFICAÇÃO E ENTREGA
+- tools/verify_part3_stage12.py
+- tools/verify_part3_stage12_v3111.py
+- LEIA-ME_CORRECAO_ETAPA12_v3.11.1.md
+- ROTEIRO_DE_TESTE_CORRECAO_ETAPA12_v3.11.1.txt
+- ARQUIVOS_ALTERADOS_v3.11.1.txt
+- VERIFICACAO_CONSOLIDADA_ETAPA12_v3.11.1.txt
+
+NÃO ALTERADO
+- schema e caminho de save;
+- balanceamento e dificuldades;
+- geração de campanha;
+- conteúdo narrativo e assets;
+- simulação de 120 dias.

@@ -1,0 +1,34 @@
+SQUARE VILLAGE — ARQUIVOS PRINCIPAIS ALTERADOS — v2.10.0
+
+NOVOS
+- scripts/campaign/DifficultyCatalog.gd
+- scripts/campaign/CampaignRecords.gd
+- scripts/ui/MedalBadge.gd
+- tools/simulate_economy_stage10.py
+- tools/verify_stage10.py
+- LEIA-ME_PARTE2_ETAPA10.md
+- SIMULACAO_ECONOMICA_120_DIAS_v2.10.0.txt
+- AUDITORIA_BALANCEAMENTO_v2.10.0.txt
+- ROTEIRO_DE_TESTE_ETAPA10_v2.10.0.txt
+- VERIFICACAO_ETAPA10_v2.10.0.txt
+
+ALTERADOS
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/models/PlayerProfile.gd
+- scripts/models/PopulationState.gd
+- scripts/buildings/BuildingManager.gd
+- scripts/campaign/CampaignCatalog.gd
+- scripts/campaign/CampaignManager.gd
+- scripts/save/SaveManager.gd
+- scripts/dialogue/DialogueCatalog.gd
+- scripts/relationships/RelationshipDialogueCatalog.gd
+- scripts/tutorial/TutorialManager.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/ui/ProfileSetupWindow.gd
+- scripts/ui/CampaignWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/SaveWindow.gd
+- scripts/ui/DiagnosticsWindow.gd

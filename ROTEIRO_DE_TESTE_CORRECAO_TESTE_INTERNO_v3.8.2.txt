@@ -1,0 +1,16 @@
+GOLEM'S MANDATE — TESTE MANUAL DA CORREÇÃO v3.8.2
+
+1. Abra TESTE INTERNO > Relações da Vila.
+2. Confirme o aviso de que as conversas de teste não possuem limite diário.
+3. Escolha Silas ou Dália com 0 pontos e responda corretamente três vezes no mesmo dia.
+4. Reabra a roda após cada conversa e confirme: 18, 36 e 54 pontos.
+5. Repita uma vez com um personagem antigo e confirme o mesmo ganho.
+6. Fora do TESTE INTERNO, converse duas vezes no mesmo dia com outro personagem.
+7. Confirme que somente a primeira conversa normal altera os pontos.
+8. No mesmo dia, converse primeiro pelo TESTE INTERNO e depois pela roda normal com um personagem ainda não usado.
+9. Confirme que a conversa normal continua pontuável: o teste não consumiu seu limite diário.
+
+RESULTADO ESPERADO
+- Teste Interno: pontos em todas as respostas válidas, sem limite diário.
+- Jogo normal: uma conversa pontuável por personagem por dia.
+- Save permanece no formato 17 e carrega normalmente.

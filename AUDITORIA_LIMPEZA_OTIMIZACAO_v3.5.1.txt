@@ -1,0 +1,65 @@
+Golem's Mandate — auditoria de limpeza e otimização — v3.5.1
+
+BASE ANALISADA
+- Origem: v3.5.0 testada pelo usuário.
+- Método: análise estática, inventário, referências res://, hashes, verificadores e simulações.
+- Godot: não baixado, não instalado e não executado.
+
+MEDIDAS ANTES / DEPOIS
+- Arquivos totais: 459 -> 439
+- Tamanho descompactado: 73.34 MB -> 67.53 MB
+- Redução descompactada: 5.81 MB (7.92%)
+- Arquivos ativos em assets: 149 -> 120
+- Tamanho de assets: 70.68 MB -> 64.85 MB
+- Nós em main.tscn: 27 -> 10
+- Criações executadas em UIManager._ready: 17 -> 2
+- Grupos binários duplicados em assets: 5 -> 0
+- Bytes redundantes por cópias idênticas: 2.18 MB -> 0.00 MB
+
+RESULTADOS DA BUSCA DE ARQUIVOS
+- 29 arquivos ativos sem referência foram removidos.
+- Após a limpeza, os únicos arquivos de assets sem referência res:// são LICENSES.txt e SOURCES.txt, preservados deliberadamente por atribuição.
+- Nenhuma referência res:// quebrada foi encontrada em project.godot, scripts, scenes ou characters.
+- Nenhum script sem referência por caminho ou class_name foi identificado.
+
+OTIMIZAÇÕES DE EXECUÇÃO
+1. Catálogo de personagens
+- Antes: cada busca por ID ou retrato chamava load_all(), reabria a pasta characters e percorria todos os .tres.
+- Depois: catálogo, índice por ID, fundadores e texturas solicitadas ficam em cache.
+- Efeito esperado: menos acesso a diretório, menos laços e menos consultas repetidas ao ResourceLoader ao navegar por cartas, diálogos e relações.
+
+2. Janelas da interface
+- Antes: quinze janelas ocultas eram construídas durante a abertura.
+- Depois: apenas a interface e o menu inicial são construídos no startup; as demais janelas nascem no primeiro uso.
+- Efeito esperado: menor custo inicial de criação de Controls, estilos, sinais e filhos ocultos; menor árvore de nós durante o início da sessão.
+
+3. Cena principal
+- Foram removidos painel, fundo e chão legados já substituídos pela interface moderna.
+- World/Villagers foi preservado como contêiner dos modelos de dados e começa oculto.
+- O agendamento de layout legado agora retorna imediatamente quando VillageGround não existe.
+
+4. Organização do editor
+- 172 documentos históricos foram movidos para development_archive/history.
+- development_archive e tools possuem .gdignore.
+- Isso reduz ruído e varredura do editor, mas não é contado como ganho direto de FPS.
+
+ALTERAÇÕES NÃO REALIZADAS
+- Áudios não foram recomprimidos, para não introduzir perda de qualidade ou regressões sem teste de runtime.
+- Imagens ativas não foram redimensionadas ou recomprimidas; os sprites das builds ainda serão substituídos pelo usuário.
+- Nenhuma regra econômica, narrativa, de construção ou de save foi alterada.
+- Nenhum script foi removido: todos apresentaram referência por caminho ou class_name.
+
+COMPATIBILIDADE
+- Versão pública: 3.5.1.
+- Save: versão 15, inalterada.
+- Saves da v3.5.0 devem ser compatíveis; confirmação final depende do teste no Godot.
+
+VERIFICAÇÕES
+- Auditoria específica de otimização: 50 verificações, 0 falhas.
+- Etapa 3: 655 verificações, 0 falhas.
+- Etapa 4: 183 verificações, 0 falhas.
+- Etapa 5: 64 verificações, 0 falhas.
+- Etapa 6: 184 verificações, 0 falhas.
+- Imersão dos diálogos: 24 verificações, 0 falhas.
+- Escopo local: 67 scripts e 1.205 funções, 0 vazamentos detectados.
+- Transparência: 30 retratos únicos ativos, 0 falhas.

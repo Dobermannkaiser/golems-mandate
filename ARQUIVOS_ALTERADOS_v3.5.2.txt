@@ -1,0 +1,37 @@
+Golem's Mandate — arquivos alterados na v3.5.2
+
+BASE
+- GolemsMandate-Parte3-Etapa6-v3.5.1-otimizada.zip
+
+ARTES SUBSTITUÍDAS
+- assets/buildings/variants/barn_kitchen.png
+- assets/buildings/variants/barn_silo.png
+- assets/buildings/variants/palisade_bastion.png
+- assets/buildings/variants/palisade_gates.png
+- assets/buildings/variants/sawmill_carpentry.png
+- assets/buildings/variants/sawmill_intensive.png
+- assets/buildings/variants/square_garden.png
+- assets/buildings/variants/square_market.png
+- assets/buildings/variants/well_fountain.png
+- assets/buildings/variants/well_reservoir.png
+
+VERSÃO PÚBLICA ATUALIZADA
+- project.godot
+- scripts/UIManagerVariantB.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/ui/MainMenu.gd
+
+VERIFICADORES ATUALIZADOS
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- tools/verify_part3_stage5.py
+- tools/verify_part3_stage6.py
+
+NOVO VERIFICADOR
+- tools/verify_sprite_integration_v352.py
+
+DOCUMENTAÇÃO NOVA
+- LEIA-ME_INTEGRACAO_SPRITES_v3.5.2.md
+- ROTEIRO_DE_TESTE_SPRITES_v3.5.2.txt
+- ARQUIVOS_ALTERADOS_v3.5.2.txt
+- VERIFICACAO_INTEGRACAO_SPRITES_v3.5.2.txt

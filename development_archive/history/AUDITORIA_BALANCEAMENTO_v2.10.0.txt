@@ -1,0 +1,98 @@
+SQUARE VILLAGE — AUDITORIA DE BALANCEAMENTO — v2.10.0
+
+1. ESCOPO
+- 3 dificuldades selecionáveis ao criar a vila.
+- 6 auditorias × 4 recursos = 24 metas obrigatórias.
+- 120 dias e quatro estações.
+- Eventos aleatórios preservados sem aumento artificial de severidade.
+- Amizade e romance úteis, mas não necessários para vencer.
+
+2. MATRIZ FINAL DAS METAS
+ACOLHEDORA
+Dia  20: alimentação  40 | material 18 | felicidade 45 | população 11
+Dia  40: alimentação  60 | material 30 | felicidade 47 | população 15
+Dia  60: alimentação  84 | material 44 | felicidade 49 | população 19
+Dia  80: alimentação 108 | material 58 | felicidade 50 | população 24
+Dia 100: alimentação 132 | material 66 | felicidade 47 | população 29
+Dia 120: alimentação 160 | material 78 | felicidade 46 | população 34
+
+MODERADA
+Dia  20: alimentação  50 | material 22 | felicidade 53 | população 11
+Dia  40: alimentação  75 | material 38 | felicidade 55 | população 15
+Dia  60: alimentação 105 | material 55 | felicidade 57 | população 20
+Dia  80: alimentação 135 | material 72 | felicidade 58 | população 25
+Dia 100: alimentação 165 | material 82 | felicidade 55 | população 30
+Dia 120: alimentação 200 | material 98 | felicidade 54 | população 35
+
+DIFÍCIL
+Dia  20: alimentação  52 | material 22 | felicidade 53 | população 12
+Dia  40: alimentação  79 | material 39 | felicidade 55 | população 16
+Dia  60: alimentação 110 | material 56 | felicidade 57 | população 21
+Dia  80: alimentação 142 | material 73 | felicidade 58 | população 27
+Dia 100: alimentação 173 | material 84 | felicidade 55 | população 32
+Dia 120: alimentação 210 | material100 | felicidade 54 | população 37
+
+3. DIFERENÇAS ECONÔMICAS
+ACOLHEDORA
+- produção ×1,15;
+- consumo de alimentação ×0,85;
+- manutenção ×0,85;
+- custos de obras ×0,85;
+- desgaste de felicidade ×0,75;
+- metas de alimentação e material ×0,80;
+- maior tolerância para atração e abandono.
+
+MODERADA
+- referência central das fórmulas;
+- desgaste de felicidade ×0,95 para preservar a progressão aprovada;
+- atração e abandono usam o comportamento padrão.
+
+DIFÍCIL
+- produção ×1,05;
+- consumo e manutenção ×1,05;
+- custos de obras ×1,05;
+- metas maiores;
+- população cresce com menos margem para abandono;
+- eventos aleatórios permanecem iguais às outras dificuldades.
+
+4. ESTAÇÕES
+- Primavera: preparação e crescimento.
+- Verão: produção alta acompanhada de consumo e desgaste maiores.
+- Outono: alimentação e material favorecidos para formação de reservas.
+- Inverno: produção de alimentação ×0,80 e consumo ×1,20.
+
+5. SIMULAÇÃO AUTOMATIZADA
+Foram executadas 1.800 campanhas, com 200 sementes para cada combinação de
+3 dificuldades e 3 políticas. Total: 216.000 dias simulados.
+
+Taxas observadas:
+- Acolhedora / planejamento atento: 100,0%
+- Acolhedora / gestão casual: 100,0%
+- Acolhedora / negligente: 1,5%
+- Moderada / planejamento atento: 60,5%
+- Moderada / gestão casual: 0,0%
+- Moderada / negligente: 0,0%
+- Difícil / planejamento atento: 45,0%
+- Difícil / gestão casual: 0,0%
+- Difícil / negligente: 0,0%
+
+Interpretação:
+- Acolhedora permite explorar o conteúdo com ampla margem, mas negligência
+  completa ainda pode falhar no final.
+- Moderada exige planejamento e preparação para o inverno.
+- Difícil permanece matematicamente alcançável, mas aceita pouca improvisação.
+- O modelo automatizado troca profissões com eficiência e aproxima eventos;
+  portanto não representa exatamente o comportamento de uma pessoa.
+
+6. MEDALHAS
+- Bronze: campanha aprovada.
+- Prata: campanha aprovada com boa pontuação econômica.
+- Ouro: campanha aprovada com margens e estabilidade excelentes.
+- A dificuldade adiciona peso à pontuação, mas Ouro é possível nas três.
+- Melhor medalha e histórico são globais, separados do save da campanha.
+
+7. LIMITAÇÕES DA AUDITORIA
+- Não houve execução do projeto no Godot neste ambiente.
+- A simulação não reproduz integralmente escolhas narrativas e todos os eventos.
+- Ritmo, clareza visual, sensação de áudio e dificuldade percebida precisam ser
+  confirmados pelo roteiro manual dentro do Godot.

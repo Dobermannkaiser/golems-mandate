@@ -1,0 +1,27 @@
+Golem's Mandate — arquivos alterados na v3.11.5
+
+project.godot
+scenes/main.tscn
+scenes/villager.tscn
+scripts/UIManager.gd
+scripts/UIManagerVariantB.gd
+scripts/Villager.gd
+scripts/audio/AudioManager.gd
+scripts/campaign/CampaignRecords.gd
+scripts/council/CouncilRecruitmentManager.gd
+scripts/diagnostics/InternalDiagnostics.gd
+scripts/save/SaveManager.gd
+scripts/settings/GameSettings.gd
+scripts/tutorial/TutorialManager.gd
+scripts/ui/CouncilWindow.gd
+scripts/ui/MainMenu.gd
+scripts/ui/RecruitmentWindow.gd
+scripts/ui/SaveWindow.gd
+tools/verify_part3_stage12.py
+tools/verify_part3_stage12_v3115.py
+
+Documentação adicionada:
+ARQUIVOS_ALTERADOS_v3.11.5.txt
+LEIA-ME_REVISAO_SKILLS_3_v3.11.5.md
+ROTEIRO_DE_TESTE_REVISAO_SKILLS_3_v3.11.5.txt
+VERIFICACAO_CONSOLIDADA_ETAPA12_v3.11.5.txt

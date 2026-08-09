@@ -1,0 +1,7 @@
+VALIDAÇÃO REAL NO GODOT — v3.3.0
+
+Não executada neste ambiente.
+
+Foram tentadas formas de obter o binário Linux do Godot 4.7.1, mas o ambiente de execução não permitiu baixar/executar o pacote do motor. Por isso, nenhum resultado deste pacote deve ser descrito como teste real no Godot.
+
+A validação disponível é estática, por simulação independente e por extração limpa do ZIP. O roteiro de teste acompanha a entrega para validação real do usuário.

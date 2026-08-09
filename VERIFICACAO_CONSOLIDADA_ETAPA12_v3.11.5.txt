@@ -1,0 +1,37 @@
+Golem's Mandate — verificação consolidada da v3.11.5
+
+Base auditada:
+- v3.11.4 e ZIP correspondente: 531 arquivos, sem diferenças.
+- SHA-256 da origem: 2a8ba87dd8336edb2b8441592d29a35671e9e9f429cf826504c9780f413a146a
+
+Verificações da árvore de trabalho:
+- contratos gerais atuais: 249/249;
+- contratos corretivos Skills 3.0: 48/48;
+- escopo local GDScript: 76 scripts, 1.433 funções, 0 vazamentos;
+- relações/Teste Interno: 9/9;
+- transparência de retratos: 30 imagens, 0 falhas.
+
+Auditorias históricas classificadas:
+- os verificadores v3.11.1, v3.11.2, v3.11.3 e v3.11.4 exigem versões e
+  hashes substituídos; suas falhas de versionamento não são contratos atuais;
+- o verificador geral da Etapa 12 foi atualizado para a v3.11.5;
+- o verificador v3.11.4 permanece intacto como registro histórico.
+
+Escopo confirmado:
+- nenhum balanceamento de recursos, população, inverno, construção ou metas;
+- envelope global de save 18 e schema de campanha 5 preservados;
+- estado interno de recrutamento atualizado para 3, com importação de 1 e 2;
+- nenhuma referência res:// ausente;
+- nenhum padrão perigoso String(dicionário.get(..., número));
+- nenhum conteúdo removido sobre peso reapareceu.
+
+Não executado:
+- Godot, importação, compilação e warnings reais;
+- runtime, UI visual, foco, controle e áudio;
+- simulação extensa de campanha.
+
+Pacote final:
+- 536 arquivos de projeto, sem cache do editor, logs, temporários ou saves;
+- integridade do ZIP aprovada;
+- conteúdo reextraído sem diferenças em relação à árvore revisada;
+- os cinco verificadores atuais acima repetidos e aprovados na cópia extraída.

@@ -1,0 +1,96 @@
+Golem's Mandate — roteiro de teste
+Parte 3 — Etapa 7 — v3.6.0 candidata
+
+PREPARAÇÃO
+[ ] Extrair o ZIP em uma pasta nova.
+[ ] Abrir o projeto no Godot.
+[ ] Confirmar que o menu mostra v3.6.0.
+[ ] Confirmar que o projeto abre sem Parser Error.
+
+COMPATIBILIDADE
+[ ] Carregar uma campanha válida da v3.5.3.
+[ ] Confirmar que o save é aceito sem exigir campanha nova.
+[ ] Salvar, fechar o jogo e carregar novamente.
+[ ] Confirmar que Conselho, reserva e cartas recrutadas permanecem iguais.
+
+PAINEL DO CONSELHO
+[ ] Abrir GERENCIAR e entrar na troca de cartas.
+[ ] Confirmar o painel RECRUTAMENTO no topo da janela.
+[ ] Confirmar que ele mostra concluídos, próxima vaga ou vaga pendente.
+[ ] Confirmar que a reserva lista todas as cartas disponíveis, sem apagar ninguém.
+[ ] Confirmar que personalidade e passiva aparecem na comparação.
+
+AVALIAÇÃO E REQUISITO
+[ ] Aprovar a avaliação do Dia 20 com menos de 50 pontos em todos os vínculos elegíveis.
+[ ] Confirmar que nenhuma oferta inválida aparece.
+[ ] Confirmar que a vaga do Dia 20 fica marcada como PENDENTE.
+[ ] Confirmar que a interface informa requisito, melhor vínculo e pontos faltantes.
+[ ] Aumentar o relacionamento e aprovar a avaliação seguinte.
+[ ] Confirmar que a vaga antiga do Dia 20 é verificada antes da vaga do Dia 40.
+
+OFERTA NORMAL
+[ ] Cumprir o requisito de uma vaga com um único vínculo mais forte.
+[ ] Confirmar que aparecem exatamente duas candidatas da mesma espécie.
+[ ] Confirmar que nomes, retratos, personalidades e passivas são diferentes quando previsto.
+[ ] Confirmar que as duas passivas não são iguais.
+[ ] Escolher uma candidata.
+[ ] Confirmar que somente ela entra na reserva.
+[ ] Confirmar que o NPC fonte não volta a originar outra oferta.
+
+NÍVEIS FIXOS
+[ ] Conferir Dia 20 = nível 2.
+[ ] Conferir Dia 40 = nível 3.
+[ ] Conferir Dia 60 = nível 4.
+[ ] Conferir Dia 80 = nível 5.
+[ ] Conferir Dia 100 = nível 6.
+[ ] Conferir Dia 120 = nível 6.
+[ ] Atrasar uma vaga e confirmar que o nível continua sendo o da vaga original.
+
+EMPATE DE ESPÉCIE
+[ ] Criar, por teste ou campanha, empate exato na maior pontuação entre duas espécies elegíveis.
+[ ] Confirmar que a primeira tela pede a escolha da espécie.
+[ ] Confirmar que cada botão mostra espécie, NPC fonte e pontuação.
+[ ] Escolher uma espécie.
+[ ] Confirmar que a segunda tela mostra duas candidatas apenas daquela espécie.
+[ ] Salvar e carregar durante a escolha de espécie, caso o fluxo de teste permita.
+[ ] Confirmar que a oferta permanece consistente.
+
+VÁRIAS VAGAS PENDENTES
+[ ] Deixar duas ou mais vagas acumularem.
+[ ] Cumprir os requisitos posteriormente.
+[ ] Confirmar que o sistema resolve sempre a vaga mais antiga primeiro.
+[ ] Escolher uma candidata.
+[ ] Confirmar que a próxima vaga já desbloqueada é preparada em seguida.
+[ ] Confirmar que nenhuma vaga é apagada silenciosamente.
+
+DIA 120 E MODO LIVRE
+[ ] Chegar ao Dia 120 com ao menos uma vaga antiga ainda pendente.
+[ ] Confirmar que nenhuma sétima vaga é criada.
+[ ] Entrar no modo livre.
+[ ] Aumentar um vínculo elegível e encerrar a conversa.
+[ ] Confirmar que a vaga antiga é rechecada automaticamente.
+
+RESERVA MÁXIMA
+[ ] Concluir os seis recrutamentos.
+[ ] Confirmar quatro cartas ativas e até sete cartas na reserva, contando Mimo.
+[ ] Percorrer toda a lista da reserva.
+[ ] Trocar uma carta recrutada para o grupo ativo e depois devolvê-la à reserva.
+[ ] Salvar e carregar novamente.
+
+RETRATOS
+[ ] Confirmar que os retratos das espécies exibidas carregam sem quadro vazio.
+[ ] Confirmar que nenhum caminho de recurso gera erro no console.
+
+TUTORIAL E GUIA
+[ ] Abrir o Guia do Jogo.
+[ ] Confirmar a seção RECRUTAMENTO.
+[ ] Confirmar os requisitos 50/120/220/340/480/620.
+[ ] Confirmar os níveis 2/3/4/5/6/6.
+[ ] Confirmar que o guia não diz que existe apenas uma reserva.
+[ ] Confirmar que o guia não diz que os NPCs da história entram automaticamente no Conselho.
+
+REGRESSÃO
+[ ] Avançar dias normalmente.
+[ ] Abrir construções, Conselho, relacionamentos, save e menu.
+[ ] Confirmar que as builds da Etapa 6 e seus sprites continuam funcionando.
+[ ] Confirmar que não surgem erros novos no depurador.

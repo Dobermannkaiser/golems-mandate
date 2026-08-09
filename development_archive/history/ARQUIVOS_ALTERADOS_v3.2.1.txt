@@ -1,0 +1,10 @@
+scripts/models/NpcModel.gd
+scripts/ui/VillagerCard.gd
+scripts/UIManager.gd
+scripts/UIManagerVariantB.gd
+project.godot
+tools/verify_part3_stage3.py
+LEIA-ME_CORRECAO_PARTE3_ETAPA3_v3.2.1.md
+ROTEIRO_DE_TESTE_CORRECAO_PARTE3_ETAPA3_v3.2.1.txt
+VERIFICACAO_CORRECAO_PARTE3_ETAPA3_v3.2.1.txt
+SIMULACAO_CONSELHO_PARTE3_ETAPA3_v3.2.1.txt

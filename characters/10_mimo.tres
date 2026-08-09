@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "mimo"
+display_name = "Mimo"
+species_name = "Passos-Leves"
+pronouns = "ela/dela"
+role_name = "Faz-tudo e primeira amiga do Prefeito"
+personality = "Burra, engraçada, boba, muito fofa e surpreendentemente leal. Entende magia pela metade e completa o resto com confiança."
+biography = "Mimo foi a primeira Passos-Leves a conversar com o Golem-Prefeito. Ela costuma confundir feitiços, placas e palavras longas, mas nunca abandona alguém em perigo."
+portrait_path = "res://assets/dialogue/portraits/mimo.png"
+fallback_color = Color(0.313725, 0.435294, 0.568627, 1)
+is_special_npc = true
+
+romance_available = false

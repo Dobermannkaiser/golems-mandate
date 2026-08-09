@@ -1,0 +1,41 @@
+SQUARE VILLAGE — ARQUIVOS PRINCIPAIS ALTERADOS — v2.10.1
+
+NOVOS
+- scripts/ui/UIAccessibility.gd
+- tools/verify_skill_review.py
+- LEIA-ME_REVISAO_SKILLS_v2.10.1.md
+- AUDITORIA_ARQUITETURA_UX_UI_v2.10.1.txt
+- ROTEIRO_DE_TESTE_v2.10.1.txt
+- ARQUIVOS_ALTERADOS_v2.10.1.txt
+- SIMULACAO_ECONOMICA_120_DIAS_v2.10.1.txt
+- VERIFICACAO_ETAPA10_v2.10.1.txt
+- VERIFICACAO_SKILLS_v2.10.1.txt
+
+ALTERADOS
+- project.godot
+- scripts/MedievalTheme.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/settings/GameSettings.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/ui/ProfileSetupWindow.gd
+- scripts/ui/SaveWindow.gd
+- scripts/ui/BuildingWindow.gd
+- scripts/ui/RelationshipsWindow.gd
+- scripts/ui/CouncilWindow.gd
+- scripts/ui/EventWindow.gd
+- scripts/ui/CampaignWindow.gd
+- scripts/ui/VillageWindow.gd
+- scripts/ui/SeasonHintWindow.gd
+- scripts/ui/DiagnosticsWindow.gd
+- tools/verify_stage10.py
+- tools/simulate_economy_stage10.py
+- LEIA-ME_PARTE2_ETAPA10.md
+
+PRESERVADOS
+- scripts/save/SaveManager.gd e save v7
+- catálogos de economia, metas e dificuldades
+- campanha, história, eventos, relações e áudio
+- simulação econômica da v2.10.0

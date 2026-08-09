@@ -1,0 +1,9 @@
+Square Village — Parte 2 Etapa 9 — v2.9.1
+
+- scripts/ui/MainMenu.gd
+- scripts/ui/BuildingVisuals.gd
+- scripts/UIManagerVariantB.gd
+- project.godot
+- tools/verify_stage9.py
+- LEIA-ME_CORRECAO_v2.9.1.md
+- ROTEIRO_DE_TESTE_ETAPA9_v2.9.1.txt

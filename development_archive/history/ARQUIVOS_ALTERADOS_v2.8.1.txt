@@ -1,0 +1,12 @@
+Square Village — Parte 2 Etapa 8 — v2.8.1
+
+- scripts/relationships/RelationshipDialogueCatalog.gd
+- scripts/models/RelationshipState.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/ui/RelationshipsWindow.gd
+- scripts/UIManagerVariantB.gd
+- tools/verify_stage8.py
+- project.godot
+- LEIA-ME_CORRECAO_RELACIONAMENTOS_v2.8.1.md

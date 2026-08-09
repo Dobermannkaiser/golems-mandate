@@ -1,0 +1,47 @@
+Golem's Mandate — roteiro de teste dos sprites das builds — v3.5.2
+
+IMPORTANTE
+- Não é necessário iniciar campanha nova em relação à v3.5.0/v3.5.1.
+- O save continua na versão 15.
+
+1. ABERTURA
+[ ] O projeto abre sem Parser Error.
+[ ] O menu mostra a versão 3.5.2.
+[ ] Uma campanha nova e um save existente podem ser abertos.
+
+2. JANELA DE ESCOLHA DA BUILD
+Para cada uma das cinco construções únicas no nível 2:
+[ ] Abrir a escolha do nível 3.
+[ ] Conferir se as duas artes corretas aparecem lado a lado.
+[ ] Conferir se não existe retângulo preto atrás da arte.
+[ ] Conferir se a arte não está cortada nem deformada.
+
+3. VILA APÓS A CONCLUSÃO
+[ ] Silo de Reserva aparece no lugar do celeiro nível 3.
+[ ] Cozinha Comunitária aparece no lugar do celeiro nível 3.
+[ ] Serraria Intensiva aparece corretamente.
+[ ] Oficina de Carpintaria aparece corretamente.
+[ ] Reservatório Profundo aparece corretamente.
+[ ] Fonte Comunitária aparece corretamente.
+[ ] Mercado Comunitário aparece corretamente.
+[ ] Jardim Público aparece corretamente.
+[ ] Bastião de Pedra aparece corretamente.
+[ ] Portões Vigilantes aparecem corretamente.
+
+4. ESCALAS E CAMADAS
+[ ] Cada sprite cabe no espaço reservado da vila.
+[ ] Nenhum sprite cobre botões, textos ou moradores de forma indevida.
+[ ] A aparência permanece correta na visão normal e na visão ampliada.
+[ ] Muralhas e portões mantêm o posicionamento esperado.
+
+5. SAVE E LOAD
+[ ] Salvar com ao menos uma build concluída.
+[ ] Fechar e abrir o save.
+[ ] A build escolhida e sua nova arte permanecem corretas.
+[ ] A escolha continua irreversível.
+
+6. REGRESSÃO
+[ ] Efeitos econômicos das builds continuam funcionando.
+[ ] Reações dos NPCs continuam aparecendo.
+[ ] Opções especiais de acontecimentos continuam funcionando.
+[ ] Fila de obras, cancelamento e conclusão continuam funcionando.

@@ -1,0 +1,73 @@
+GOLEM'S MANDATE — ROTEIRO DE TESTE MANUAL — PARTE 3 / ETAPA 12 / v3.11.0
+
+REGRA DESTA ENTREGA
+O projeto não foi executado pelo assistente. Este roteiro deve ser realizado pelo usuário no Godot.
+
+1. ABERTURA E IDENTIDADE
+- Confirmar que o menu mostra v3.11.0.
+- Iniciar nova campanha.
+- Verificar nome do Prefeito, gênero, nome da vila, dificuldade e semente.
+- Digitar uma palavra na semente e confirmar que ela vira um número.
+- Usar NOVA SEMENTE e confirmar que o nome sugerido muda apenas se o nome ainda era a sugestão.
+- Usar COPIAR e colar a semente em um campo externo.
+
+2. DIFICULDADES
+- Criar uma campanha Acolhedora: 44 alimentação, 18 material e 70 felicidade.
+- Criar uma campanha Moderada: 34 alimentação, 12 material e 62 felicidade.
+- Criar uma campanha Difícil: 30 alimentação, 10 material e 60 felicidade.
+- Confirmar que a descrição explica as diferenças sem esconder informações.
+
+3. SAVE E IDENTIDADE
+- Salvar e voltar ao menu.
+- Confirmar nome da vila, dificuldade, semente e versão do gerador no cartão.
+- Carregar e confirmar que a identidade permanece igual.
+- Salvar após uma avaliação e confirmar que o relatório reaparece depois do carregamento.
+
+4. PREPARAÇÃO PARA A AVALIAÇÃO
+- Abrir AVALIAÇÃO sem obra na fila.
+- Confirmar “Agora”, “Projeção” e “Meta” em cada linha.
+- Confirmar rótulo textual SEGURA, APERTADA ou RISCO.
+- Contratar uma obra que termine antes da avaliação e reabrir o relatório.
+- Confirmar nome, dia previsto e efeito da obra nas premissas.
+- Contratar uma obra que termine depois da avaliação e confirmar que ela não altera a projeção daquele checkpoint.
+
+5. AVALIAÇÃO
+- Chegar ao dia 20 e abrir o resultado.
+- Confirmar que as quatro linhas são as metas julgadas no dia 20, não as metas do dia 40.
+- Conferir início, produção, custos, outros ajustes e final de cada recurso.
+- Conferir contribuições individuais, dias ativos e profissões.
+- Conferir medalhas comportamentais e o texto “sem bônus”.
+- Continuar e só então confirmar que aparecem as metas do dia 40.
+
+6. COMPARAÇÃO E PERSISTÊNCIA
+- Chegar à segunda avaliação.
+- Confirmar a comparação numérica com a avaliação anterior.
+- Salvar, carregar e abrir o relatório novamente.
+- Confirmar que os dois relatórios permanecem disponíveis no estado da campanha.
+
+7. ENCERRAMENTO
+- Testar uma derrota em avaliação e uma derrota por crise fora da avaliação.
+- Confirmar estatísticas e perfil descritivo em ambos os casos.
+- Vencer a campanha no dia 120.
+- Confirmar duração, avaliações, população, felicidade, reservas, escassez, obras, decisões, relações e reconhecimentos finais.
+- Confirmar que nenhuma tela mostra pontuação geral, Bronze, Prata ou Ouro como resultado da campanha.
+- Abrir o histórico no menu e confirmar vila, estado, perfil, dificuldade, Prefeito, população, semente e data.
+
+8. REPRODUÇÃO MANUAL
+- Anotar uma semente e uma sequência curta de decisões.
+- Criar duas campanhas com mesma dificuldade, mesma semente e mesmas decisões.
+- Comparar elenco inicial, acontecimentos, opções de relação e resultados de testes.
+- Variações apenas visuais/sonoras podem diferir.
+
+9. ACESSIBILIDADE E LAYOUT
+- Navegar nas telas novas com teclado/controle.
+- Confirmar foco visível, retorno com ui_cancel/Esc e leitura do relatório rolável.
+- Testar em janela pequena sem perda dos botões principais.
+- Confirmar que estados importantes são indicados por texto, não apenas por cor.
+
+10. REGRESSÃO MÍNIMA
+- Conselho, profissões, recrutamento e reserva.
+- Construções, fila, cancelamento, reordenação e variantes.
+- Acontecimentos, história, memórias e relações.
+- Áudio, configurações, tutorial, salvar/carregar e Modo Livre.
+

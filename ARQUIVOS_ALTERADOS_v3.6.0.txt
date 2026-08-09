@@ -1,0 +1,36 @@
+Golem's Mandate — arquivos alterados na v3.6.0
+
+CÓDIGO E CONFIGURAÇÃO
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/council/CouncilRecruitmentManager.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/dialogue/CharacterCatalog.gd
+- scripts/save/SaveManager.gd
+- scripts/tutorial/TutorialManager.gd
+- scripts/ui/CouncilWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/RecruitmentWindow.gd
+
+VERIFICADORES ATUALIZADOS
+- tools/verify_lazy_windows_v353.py
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- tools/verify_part3_stage5.py
+- tools/verify_part3_stage6.py
+- tools/verify_project_optimization_v351.py
+- tools/verify_sprite_integration_v352.py
+
+NOVOS VERIFICADORES E SIMULAÇÕES
+- tools/verify_part3_stage7.py
+- tools/simulate_recruitment_stage7.py
+
+DOCUMENTAÇÃO NOVA
+- AUDITORIA_RECRUTAMENTO_PARTE3_ETAPA7_v3.6.0.txt
+- LEIA-ME_PARTE3_ETAPA7_v3.6.0.md
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA7_v3.6.0.txt
+- SIMULACAO_RECRUTAMENTO_PARTE3_ETAPA7_v3.6.0.txt
+- VERIFICACAO_CONSOLIDADA_PARTE3_ETAPA7_v3.6.0.txt
+- ARQUIVOS_ALTERADOS_v3.6.0.txt

@@ -1,0 +1,12 @@
+[OK] Janela raiz usa z absoluto 1000
+[OK] Overlay não depende de z relativo alto
+[OK] Tutorial assume mouse ao abrir
+[OK] Tutorial move raiz e overlay para frente
+[OK] Tutorial libera mouse ao fechar
+[OK] Botões têm foco explícito
+[OK] Próximo recebe foco inicial
+[OK] Esc fecha como segurança
+[OK] Seta esquerda retorna
+[OK] Seta direita avança
+
+Resumo: 10 verificações, 0 falha(s).

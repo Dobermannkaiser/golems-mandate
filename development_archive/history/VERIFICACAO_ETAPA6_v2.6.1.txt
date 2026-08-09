@@ -1,0 +1,403 @@
+[OK] Delimitadores: scripts/GameManager.gd — ok
+[OK] Funções únicas: scripts/GameManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/GameManager.gd — ok
+[OK] Callbacks existem: scripts/GameManager.gd — ok
+[OK] Preload existe: scripts/GameManager.gd -> scripts/events/EventManager.gd — scripts/events/EventManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/campaign/CampaignManager.gd — scripts/campaign/CampaignManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/buildings/BuildingManager.gd — scripts/buildings/BuildingManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/save/SaveManager.gd — scripts/save/SaveManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/foundation/Part2FoundationManager.gd — scripts/foundation/Part2FoundationManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/dialogue/CharacterCatalog.gd — scripts/dialogue/CharacterCatalog.gd
+[OK] Recurso existe: scripts/GameManager.gd -> scripts/events/EventManager.gd — scripts/events/EventManager.gd
+[OK] Recurso existe: scripts/GameManager.gd -> scripts/campaign/CampaignManager.gd — scripts/campaign/CampaignManager.gd
+[OK] Recurso existe: scripts/GameManager.gd -> scripts/buildings/BuildingManager.gd — scripts/buildings/BuildingManager.gd
+[OK] Recurso existe: scripts/GameManager.gd -> scripts/save/SaveManager.gd — scripts/save/SaveManager.gd
+[OK] Recurso existe: scripts/GameManager.gd -> scripts/foundation/Part2FoundationManager.gd — scripts/foundation/Part2FoundationManager.gd
+[OK] Recurso existe: scripts/GameManager.gd -> scripts/dialogue/CharacterCatalog.gd — scripts/dialogue/CharacterCatalog.gd
+[OK] Indentação por tab: scripts/GameManager.gd — ok
+[OK] Delimitadores: scripts/MedievalTheme.gd — ok
+[OK] Funções únicas: scripts/MedievalTheme.gd — ok
+[OK] Sem override nativo draw_*: scripts/MedievalTheme.gd — ok
+[OK] Callbacks existem: scripts/MedievalTheme.gd — ok
+[OK] Indentação por tab: scripts/MedievalTheme.gd — ok
+[OK] Delimitadores: scripts/UIManager.gd — ok
+[OK] Funções únicas: scripts/UIManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/UIManager.gd — ok
+[OK] Callbacks existem: scripts/UIManager.gd — ok
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/EventWindow.gd — scripts/ui/EventWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/CampaignWindow.gd — scripts/ui/CampaignWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/SeasonHintWindow.gd — scripts/ui/SeasonHintWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/BuildingWindow.gd — scripts/ui/BuildingWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/VillageWindow.gd — scripts/ui/VillageWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/SaveWindow.gd — scripts/ui/SaveWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/MainMenu.gd — scripts/ui/MainMenu.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/TutorialWindow.gd — scripts/ui/TutorialWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/tutorial/TutorialManager.gd — scripts/tutorial/TutorialManager.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/CouncilWindow.gd — scripts/ui/CouncilWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/DialogueWindow.gd — scripts/ui/DialogueWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/dialogue/DialogueCatalog.gd — scripts/dialogue/DialogueCatalog.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/DiagnosticsWindow.gd — scripts/ui/DiagnosticsWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scenes/ui/villager_card.tscn — scenes/ui/villager_card.tscn
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/EventWindow.gd — scripts/ui/EventWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/CampaignWindow.gd — scripts/ui/CampaignWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/SeasonHintWindow.gd — scripts/ui/SeasonHintWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/BuildingWindow.gd — scripts/ui/BuildingWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/VillageWindow.gd — scripts/ui/VillageWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/SaveWindow.gd — scripts/ui/SaveWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/MainMenu.gd — scripts/ui/MainMenu.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/TutorialWindow.gd — scripts/ui/TutorialWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/tutorial/TutorialManager.gd — scripts/tutorial/TutorialManager.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/CouncilWindow.gd — scripts/ui/CouncilWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/DialogueWindow.gd — scripts/ui/DialogueWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/dialogue/DialogueCatalog.gd — scripts/dialogue/DialogueCatalog.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scripts/ui/DiagnosticsWindow.gd — scripts/ui/DiagnosticsWindow.gd
+[OK] Recurso existe: scripts/UIManager.gd -> scenes/ui/villager_card.tscn — scenes/ui/villager_card.tscn
+[OK] Indentação por tab: scripts/UIManager.gd — ok
+[OK] Delimitadores: scripts/UIManagerVariantB.gd — ok
+[OK] Funções únicas: scripts/UIManagerVariantB.gd — ok
+[OK] Sem override nativo draw_*: scripts/UIManagerVariantB.gd — ok
+[OK] Callbacks existem: scripts/UIManagerVariantB.gd — ok
+[OK] Recurso existe: scripts/UIManagerVariantB.gd -> scripts/UIManager.gd — scripts/UIManager.gd
+[OK] Indentação por tab: scripts/UIManagerVariantB.gd — ok
+[OK] Delimitadores: scripts/Villager.gd — ok
+[OK] Funções únicas: scripts/Villager.gd — ok
+[OK] Sem override nativo draw_*: scripts/Villager.gd — ok
+[OK] Callbacks existem: scripts/Villager.gd — ok
+[OK] Indentação por tab: scripts/Villager.gd — ok
+[OK] Delimitadores: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Funções únicas: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Sem override nativo draw_*: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Callbacks existem: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Indentação por tab: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Delimitadores: scripts/buildings/BuildingManager.gd — ok
+[OK] Funções únicas: scripts/buildings/BuildingManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/buildings/BuildingManager.gd — ok
+[OK] Callbacks existem: scripts/buildings/BuildingManager.gd — ok
+[OK] Preload existe: scripts/buildings/BuildingManager.gd -> scripts/buildings/BuildingCatalog.gd — scripts/buildings/BuildingCatalog.gd
+[OK] Recurso existe: scripts/buildings/BuildingManager.gd -> scripts/buildings/BuildingCatalog.gd — scripts/buildings/BuildingCatalog.gd
+[OK] Indentação por tab: scripts/buildings/BuildingManager.gd — ok
+[OK] Delimitadores: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Funções únicas: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Sem override nativo draw_*: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Callbacks existem: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Indentação por tab: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Delimitadores: scripts/campaign/CampaignManager.gd — ok
+[OK] Funções únicas: scripts/campaign/CampaignManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/campaign/CampaignManager.gd — ok
+[OK] Callbacks existem: scripts/campaign/CampaignManager.gd — ok
+[OK] Indentação por tab: scripts/campaign/CampaignManager.gd — ok
+[OK] Delimitadores: scripts/diagnostics/InternalDiagnostics.gd — ok
+[OK] Funções únicas: scripts/diagnostics/InternalDiagnostics.gd — ok
+[OK] Sem override nativo draw_*: scripts/diagnostics/InternalDiagnostics.gd — ok
+[OK] Callbacks existem: scripts/diagnostics/InternalDiagnostics.gd — ok
+[OK] Preload existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/dialogue/CharacterCatalog.gd — scripts/dialogue/CharacterCatalog.gd
+[OK] Preload existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/dialogue/DialogueCatalog.gd — scripts/dialogue/DialogueCatalog.gd
+[OK] Preload existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/events/EventCatalog.gd — scripts/events/EventCatalog.gd
+[OK] Preload existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/events/EventManager.gd — scripts/events/EventManager.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/dialogue/CharacterCatalog.gd — scripts/dialogue/CharacterCatalog.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/dialogue/DialogueCatalog.gd — scripts/dialogue/DialogueCatalog.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/events/EventCatalog.gd — scripts/events/EventCatalog.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/events/EventManager.gd — scripts/events/EventManager.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> assets/dialogue/alagard.ttf — assets/dialogue/alagard.ttf
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/ui/DialogueWindow.gd — scripts/ui/DialogueWindow.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/ui/DiagnosticsWindow.gd — scripts/ui/DiagnosticsWindow.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/dialogue/DialogueManager.gd — scripts/dialogue/DialogueManager.gd
+[OK] Recurso existe: scripts/diagnostics/InternalDiagnostics.gd -> scripts/dialogue/DialogueCatalog.gd — scripts/dialogue/DialogueCatalog.gd
+[OK] Indentação por tab: scripts/diagnostics/InternalDiagnostics.gd — ok
+[OK] Delimitadores: scripts/dialogue/CharacterCatalog.gd — ok
+[OK] Funções únicas: scripts/dialogue/CharacterCatalog.gd — ok
+[OK] Sem override nativo draw_*: scripts/dialogue/CharacterCatalog.gd — ok
+[OK] Callbacks existem: scripts/dialogue/CharacterCatalog.gd — ok
+[OK] Indentação por tab: scripts/dialogue/CharacterCatalog.gd — ok
+[OK] Delimitadores: scripts/dialogue/CharacterDefinition.gd — ok
+[OK] Funções únicas: scripts/dialogue/CharacterDefinition.gd — ok
+[OK] Sem override nativo draw_*: scripts/dialogue/CharacterDefinition.gd — ok
+[OK] Callbacks existem: scripts/dialogue/CharacterDefinition.gd — ok
+[OK] Indentação por tab: scripts/dialogue/CharacterDefinition.gd — ok
+[OK] Delimitadores: scripts/dialogue/DialogueCatalog.gd — ok
+[OK] Funções únicas: scripts/dialogue/DialogueCatalog.gd — ok
+[OK] Sem override nativo draw_*: scripts/dialogue/DialogueCatalog.gd — ok
+[OK] Callbacks existem: scripts/dialogue/DialogueCatalog.gd — ok
+[OK] Indentação por tab: scripts/dialogue/DialogueCatalog.gd — ok
+[OK] Delimitadores: scripts/dialogue/DialogueManager.gd — ok
+[OK] Funções únicas: scripts/dialogue/DialogueManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/dialogue/DialogueManager.gd — ok
+[OK] Callbacks existem: scripts/dialogue/DialogueManager.gd — ok
+[OK] Indentação por tab: scripts/dialogue/DialogueManager.gd — ok
+[OK] Delimitadores: scripts/events/EventCatalog.gd — ok
+[OK] Funções únicas: scripts/events/EventCatalog.gd — ok
+[OK] Sem override nativo draw_*: scripts/events/EventCatalog.gd — ok
+[OK] Callbacks existem: scripts/events/EventCatalog.gd — ok
+[OK] Preload existe: scripts/events/EventCatalog.gd -> scripts/events/MagicalEventCatalog.gd — scripts/events/MagicalEventCatalog.gd
+[OK] Recurso existe: scripts/events/EventCatalog.gd -> scripts/events/MagicalEventCatalog.gd — scripts/events/MagicalEventCatalog.gd
+[OK] Indentação por tab: scripts/events/EventCatalog.gd — ok
+[OK] Delimitadores: scripts/events/EventManager.gd — ok
+[OK] Funções únicas: scripts/events/EventManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/events/EventManager.gd — ok
+[OK] Callbacks existem: scripts/events/EventManager.gd — ok
+[OK] Preload existe: scripts/events/EventManager.gd -> scripts/events/EventCatalog.gd — scripts/events/EventCatalog.gd
+[OK] Recurso existe: scripts/events/EventManager.gd -> scripts/events/EventCatalog.gd — scripts/events/EventCatalog.gd
+[OK] Indentação por tab: scripts/events/EventManager.gd — ok
+[OK] Delimitadores: scripts/events/MagicalEventCatalog.gd — ok
+[OK] Funções únicas: scripts/events/MagicalEventCatalog.gd — ok
+[OK] Sem override nativo draw_*: scripts/events/MagicalEventCatalog.gd — ok
+[OK] Callbacks existem: scripts/events/MagicalEventCatalog.gd — ok
+[OK] Indentação por tab: scripts/events/MagicalEventCatalog.gd — ok
+[OK] Delimitadores: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Funções únicas: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Callbacks existem: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PlayerProfile.gd — scripts/models/PlayerProfile.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PopulationState.gd — scripts/models/PopulationState.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/CalendarState.gd — scripts/models/CalendarState.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/NpcModel.gd — scripts/models/NpcModel.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/RelationshipState.gd — scripts/models/RelationshipState.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/specialists/SpecialistCatalog.gd — scripts/specialists/SpecialistCatalog.gd
+[OK] Recurso existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PlayerProfile.gd — scripts/models/PlayerProfile.gd
+[OK] Recurso existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PopulationState.gd — scripts/models/PopulationState.gd
+[OK] Recurso existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/CalendarState.gd — scripts/models/CalendarState.gd
+[OK] Recurso existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/NpcModel.gd — scripts/models/NpcModel.gd
+[OK] Recurso existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/RelationshipState.gd — scripts/models/RelationshipState.gd
+[OK] Recurso existe: scripts/foundation/Part2FoundationManager.gd -> scripts/specialists/SpecialistCatalog.gd — scripts/specialists/SpecialistCatalog.gd
+[OK] Indentação por tab: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Delimitadores: scripts/models/CalendarState.gd — ok
+[OK] Funções únicas: scripts/models/CalendarState.gd — ok
+[OK] Sem override nativo draw_*: scripts/models/CalendarState.gd — ok
+[OK] Callbacks existem: scripts/models/CalendarState.gd — ok
+[OK] Indentação por tab: scripts/models/CalendarState.gd — ok
+[OK] Delimitadores: scripts/models/NpcModel.gd — ok
+[OK] Funções únicas: scripts/models/NpcModel.gd — ok
+[OK] Sem override nativo draw_*: scripts/models/NpcModel.gd — ok
+[OK] Callbacks existem: scripts/models/NpcModel.gd — ok
+[OK] Indentação por tab: scripts/models/NpcModel.gd — ok
+[OK] Delimitadores: scripts/models/PlayerProfile.gd — ok
+[OK] Funções únicas: scripts/models/PlayerProfile.gd — ok
+[OK] Sem override nativo draw_*: scripts/models/PlayerProfile.gd — ok
+[OK] Callbacks existem: scripts/models/PlayerProfile.gd — ok
+[OK] Indentação por tab: scripts/models/PlayerProfile.gd — ok
+[OK] Delimitadores: scripts/models/PopulationState.gd — ok
+[OK] Funções únicas: scripts/models/PopulationState.gd — ok
+[OK] Sem override nativo draw_*: scripts/models/PopulationState.gd — ok
+[OK] Callbacks existem: scripts/models/PopulationState.gd — ok
+[OK] Indentação por tab: scripts/models/PopulationState.gd — ok
+[OK] Delimitadores: scripts/models/RelationshipState.gd — ok
+[OK] Funções únicas: scripts/models/RelationshipState.gd — ok
+[OK] Sem override nativo draw_*: scripts/models/RelationshipState.gd — ok
+[OK] Callbacks existem: scripts/models/RelationshipState.gd — ok
+[OK] Indentação por tab: scripts/models/RelationshipState.gd — ok
+[OK] Delimitadores: scripts/save/SaveManager.gd — ok
+[OK] Funções únicas: scripts/save/SaveManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/save/SaveManager.gd — ok
+[OK] Callbacks existem: scripts/save/SaveManager.gd — ok
+[OK] Indentação por tab: scripts/save/SaveManager.gd — ok
+[OK] Delimitadores: scripts/settings/GameSettings.gd — ok
+[OK] Funções únicas: scripts/settings/GameSettings.gd — ok
+[OK] Sem override nativo draw_*: scripts/settings/GameSettings.gd — ok
+[OK] Callbacks existem: scripts/settings/GameSettings.gd — ok
+[OK] Indentação por tab: scripts/settings/GameSettings.gd — ok
+[OK] Delimitadores: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Funções únicas: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Sem override nativo draw_*: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Callbacks existem: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Indentação por tab: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Delimitadores: scripts/tutorial/TutorialManager.gd — ok
+[OK] Funções únicas: scripts/tutorial/TutorialManager.gd — ok
+[OK] Sem override nativo draw_*: scripts/tutorial/TutorialManager.gd — ok
+[OK] Callbacks existem: scripts/tutorial/TutorialManager.gd — ok
+[OK] Indentação por tab: scripts/tutorial/TutorialManager.gd — ok
+[OK] Delimitadores: scripts/ui/BuildingVisuals.gd — ok
+[OK] Funções únicas: scripts/ui/BuildingVisuals.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/BuildingVisuals.gd — ok
+[OK] Callbacks existem: scripts/ui/BuildingVisuals.gd — ok
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_01.png — assets/etapa5/cat_01.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_02.png — assets/etapa5/cat_02.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_03.png — assets/etapa5/cat_03.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_04.png — assets/etapa5/cat_04.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_spring.png — assets/etapa5/ground_spring.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_summer.png — assets/etapa5/ground_summer.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_autumn.png — assets/etapa5/ground_autumn.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_winter.png — assets/etapa5/ground_winter.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/empty_lot.png — assets/etapa5/empty_lot.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/house_level1.png — assets/etapa5/house_level1.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/house_level2.png — assets/etapa5/house_level2.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/house_level3.png — assets/etapa5/house_level3.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/barn_level1.png — assets/etapa5/barn_level1.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/barn_level2.png — assets/etapa5/barn_level2.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/barn_level3.png — assets/etapa5/barn_level3.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/sawmill_level1.png — assets/etapa5/sawmill_level1.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/sawmill_level2.png — assets/etapa5/sawmill_level2.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/sawmill_level3.png — assets/etapa5/sawmill_level3.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/well_level1.png — assets/etapa5/well_level1.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/well_level2.png — assets/etapa5/well_level2.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/well_level3.png — assets/etapa5/well_level3.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/square_level1.png — assets/etapa5/square_level1.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/square_level2.png — assets/etapa5/square_level2.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/square_level3.png — assets/etapa5/square_level3.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/wall_line.png — assets/etapa5/wall_line.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/wall_corner.png — assets/etapa5/wall_corner.png
+[OK] Recurso existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/wall_gate.png — assets/etapa5/wall_gate.png
+[OK] Indentação por tab: scripts/ui/BuildingVisuals.gd — ok
+[OK] Delimitadores: scripts/ui/BuildingWindow.gd — ok
+[OK] Funções únicas: scripts/ui/BuildingWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/BuildingWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/BuildingWindow.gd — ok
+[OK] Indentação por tab: scripts/ui/BuildingWindow.gd — ok
+[OK] Delimitadores: scripts/ui/CampaignWindow.gd — ok
+[OK] Funções únicas: scripts/ui/CampaignWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/CampaignWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/CampaignWindow.gd — ok
+[OK] Indentação por tab: scripts/ui/CampaignWindow.gd — ok
+[OK] Delimitadores: scripts/ui/CouncilWindow.gd — ok
+[OK] Funções únicas: scripts/ui/CouncilWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/CouncilWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/CouncilWindow.gd — ok
+[OK] Indentação por tab: scripts/ui/CouncilWindow.gd — ok
+[OK] Delimitadores: scripts/ui/DiagnosticsWindow.gd — ok
+[OK] Funções únicas: scripts/ui/DiagnosticsWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/DiagnosticsWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/DiagnosticsWindow.gd — ok
+[OK] Preload existe: scripts/ui/DiagnosticsWindow.gd -> scripts/diagnostics/InternalDiagnostics.gd — scripts/diagnostics/InternalDiagnostics.gd
+[OK] Preload existe: scripts/ui/DiagnosticsWindow.gd -> assets/dialogue/alagard.ttf — assets/dialogue/alagard.ttf
+[OK] Recurso existe: scripts/ui/DiagnosticsWindow.gd -> scripts/diagnostics/InternalDiagnostics.gd — scripts/diagnostics/InternalDiagnostics.gd
+[OK] Recurso existe: scripts/ui/DiagnosticsWindow.gd -> assets/dialogue/alagard.ttf — assets/dialogue/alagard.ttf
+[OK] Indentação por tab: scripts/ui/DiagnosticsWindow.gd — ok
+[OK] Delimitadores: scripts/ui/DialogueWindow.gd — ok
+[OK] Funções únicas: scripts/ui/DialogueWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/DialogueWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/DialogueWindow.gd — ok
+[OK] Preload existe: scripts/ui/DialogueWindow.gd -> scripts/dialogue/DialogueManager.gd — scripts/dialogue/DialogueManager.gd
+[OK] Preload existe: scripts/ui/DialogueWindow.gd -> scripts/dialogue/CharacterCatalog.gd — scripts/dialogue/CharacterCatalog.gd
+[OK] Preload existe: scripts/ui/DialogueWindow.gd -> assets/dialogue/alagard.ttf — assets/dialogue/alagard.ttf
+[OK] Recurso existe: scripts/ui/DialogueWindow.gd -> scripts/dialogue/DialogueManager.gd — scripts/dialogue/DialogueManager.gd
+[OK] Recurso existe: scripts/ui/DialogueWindow.gd -> scripts/dialogue/CharacterCatalog.gd — scripts/dialogue/CharacterCatalog.gd
+[OK] Recurso existe: scripts/ui/DialogueWindow.gd -> assets/dialogue/alagard.ttf — assets/dialogue/alagard.ttf
+[OK] Indentação por tab: scripts/ui/DialogueWindow.gd — ok
+[OK] Delimitadores: scripts/ui/EventWindow.gd — ok
+[OK] Funções únicas: scripts/ui/EventWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/EventWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/EventWindow.gd — ok
+[OK] Preload existe: scripts/ui/EventWindow.gd -> assets/dialogue/alagard.ttf — assets/dialogue/alagard.ttf
+[OK] Recurso existe: scripts/ui/EventWindow.gd -> assets/dialogue/alagard.ttf — assets/dialogue/alagard.ttf
+[OK] Indentação por tab: scripts/ui/EventWindow.gd — ok
+[OK] Delimitadores: scripts/ui/MainMenu.gd — ok
+[OK] Funções únicas: scripts/ui/MainMenu.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/MainMenu.gd — ok
+[OK] Callbacks existem: scripts/ui/MainMenu.gd — ok
+[OK] Indentação por tab: scripts/ui/MainMenu.gd — ok
+[OK] Delimitadores: scripts/ui/SaveWindow.gd — ok
+[OK] Funções únicas: scripts/ui/SaveWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/SaveWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/SaveWindow.gd — ok
+[OK] Indentação por tab: scripts/ui/SaveWindow.gd — ok
+[OK] Delimitadores: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Funções únicas: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Indentação por tab: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Delimitadores: scripts/ui/TutorialWindow.gd — ok
+[OK] Funções únicas: scripts/ui/TutorialWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/TutorialWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/TutorialWindow.gd — ok
+[OK] Indentação por tab: scripts/ui/TutorialWindow.gd — ok
+[OK] Delimitadores: scripts/ui/VillageWindow.gd — ok
+[OK] Funções únicas: scripts/ui/VillageWindow.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/VillageWindow.gd — ok
+[OK] Callbacks existem: scripts/ui/VillageWindow.gd — ok
+[OK] Preload existe: scripts/ui/VillageWindow.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Recurso existe: scripts/ui/VillageWindow.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Indentação por tab: scripts/ui/VillageWindow.gd — ok
+[OK] Delimitadores: scripts/ui/VillagerCard.gd — ok
+[OK] Funções únicas: scripts/ui/VillagerCard.gd — ok
+[OK] Sem override nativo draw_*: scripts/ui/VillagerCard.gd — ok
+[OK] Callbacks existem: scripts/ui/VillagerCard.gd — ok
+[OK] Indentação por tab: scripts/ui/VillagerCard.gd — ok
+[OK] Chamadas MedievalTheme válidas — ok
+[OK] Cadastro referencia script: characters/01_passos_leves_andarilho.tres
+[OK] Retrato do cadastro existe: characters/01_passos_leves_andarilho.tres — assets/dialogue/portraits/passos_leves_andarilho.png
+[OK] Cadastro possui ID: characters/01_passos_leves_andarilho.tres
+[OK] Cadastro referencia script: characters/02_passos_leves_artifice.tres
+[OK] Retrato do cadastro existe: characters/02_passos_leves_artifice.tres — assets/dialogue/portraits/passos_leves_artifice.png
+[OK] Cadastro possui ID: characters/02_passos_leves_artifice.tres
+[OK] Cadastro referencia script: characters/03_passos_leves_batedor.tres
+[OK] Retrato do cadastro existe: characters/03_passos_leves_batedor.tres — assets/dialogue/portraits/passos_leves_batedor.png
+[OK] Cadastro possui ID: characters/03_passos_leves_batedor.tres
+[OK] Cadastro referencia script: characters/04_felix_pescador.tres
+[OK] Retrato do cadastro existe: characters/04_felix_pescador.tres — assets/dialogue/portraits/felix_pescador.png
+[OK] Cadastro possui ID: characters/04_felix_pescador.tres
+[OK] Cadastro referencia script: characters/05_lumi_cozinheira.tres
+[OK] Retrato do cadastro existe: characters/05_lumi_cozinheira.tres — assets/dialogue/portraits/lumi_cozinheira.png
+[OK] Cadastro possui ID: characters/05_lumi_cozinheira.tres
+[OK] Cadastro referencia script: characters/10_mimo.tres
+[OK] Retrato do cadastro existe: characters/10_mimo.tres — assets/dialogue/portraits/mimo.png
+[OK] Cadastro possui ID: characters/10_mimo.tres
+[OK] Cadastro referencia script: characters/20_brunna_ana_barbara.tres
+[OK] Retrato do cadastro existe: characters/20_brunna_ana_barbara.tres — assets/dialogue/portraits/brunna_ana_barbara.png
+[OK] Cadastro possui ID: characters/20_brunna_ana_barbara.tres
+[OK] Cadastro referencia script: characters/21_orion_draconato.tres
+[OK] Retrato do cadastro existe: characters/21_orion_draconato.tres — assets/dialogue/portraits/orion_draconato.png
+[OK] Cadastro possui ID: characters/21_orion_draconato.tres
+[OK] Cadastro referencia script: characters/22_rubra_meio_demonia.tres
+[OK] Retrato do cadastro existe: characters/22_rubra_meio_demonia.tres — assets/dialogue/portraits/rubra_meio_demonia.png
+[OK] Cadastro possui ID: characters/22_rubra_meio_demonia.tres
+[OK] Cadastro referencia script: characters/23_kobi_mercante.tres
+[OK] Retrato do cadastro existe: characters/23_kobi_mercante.tres — assets/dialogue/portraits/kobi_mercante.png
+[OK] Cadastro possui ID: characters/23_kobi_mercante.tres
+[OK] Script CharacterDefinition existe
+[OK] Dez bustos incorporados — 10
+[OK] Retrato com transparência: brunna_ana_barbara.png — (0, 255)
+[OK] Retrato com transparência: felix_pescador.png — (0, 255)
+[OK] Retrato com transparência: kobi_mercante.png — (0, 255)
+[OK] Retrato com transparência: lumi_cozinheira.png — (0, 255)
+[OK] Retrato com transparência: mimo.png — (0, 255)
+[OK] Retrato com transparência: orion_draconato.png — (0, 255)
+[OK] Retrato com transparência: passos_leves_andarilho.png — (0, 255)
+[OK] Retrato com transparência: passos_leves_artifice.png — (0, 255)
+[OK] Retrato com transparência: passos_leves_batedor.png — (0, 255)
+[OK] Retrato com transparência: rubra_meio_demonia.png — (0, 255)
+[OK] Fonte Alagard incorporada
+[OK] Versão 2.6.1
+[OK] Layout aprovado permanece ativo
+[OK] Save v4 preservado
+[OK] Caminho de save compatível preservado
+[OK] Quarenta nomes aleatórios — 40
+[OK] Sorteio de nomes sem repetição
+[OK] Vinte acontecimentos originais — 20
+[OK] Vinte acontecimentos mágicos novos — 20
+[OK] Quarenta acontecimentos totais — 40
+[OK] Catálogo mágico anexado
+[OK] Chance de evento reduzida em 25%
+[OK] Retrato persistente exportado
+[OK] Retrato persistente importado
+[OK] Fundadores recebem retratos únicos
+[OK] Mimo recebe retrato fixo
+[OK] Saves antigos recebem retratos
+[OK] Componente Etapa 6 existe: scripts/dialogue/CharacterDefinition.gd
+[OK] Componente Etapa 6 existe: scripts/dialogue/CharacterCatalog.gd
+[OK] Componente Etapa 6 existe: scripts/dialogue/DialogueManager.gd
+[OK] Componente Etapa 6 existe: scripts/dialogue/DialogueCatalog.gd
+[OK] Componente Etapa 6 existe: scripts/ui/DialogueWindow.gd
+[OK] Componente Etapa 6 existe: scripts/diagnostics/InternalDiagnostics.gd
+[OK] Componente Etapa 6 existe: scripts/ui/DiagnosticsWindow.gd
+[OK] Diálogo criado pela interface
+[OK] Segundo clique abre conversa
+[OK] Histórico de conversa disponível
+[OK] Fallback de retrato disponível
+[OK] Prefeito sem retrato
+[OK] Mimo possui diálogo próprio
+[OK] Personalidade de Mimo preservada
+[OK] Teste interno acessível
+[OK] Janela de diagnóstico integrada
+[OK] Teste de diálogo integrado
+[OK] Catálogo de personagens validado
+[OK] Catálogo de eventos validado
+[OK] Grafos de diálogo validados
+[OK] Fonte pixel usada nos diálogos
+[OK] Fonte pixel usada nos eventos
+[OK] Eventos apresentados como presságios
+[OK] Sem função inexistente create_button
+[OK] Diagnóstico permite chance fixa sem atributo
+[OK] Quatro escolhas fixas continuam sem teste de atributo
+
+Resumo: 401 verificações, 0 falha(s).

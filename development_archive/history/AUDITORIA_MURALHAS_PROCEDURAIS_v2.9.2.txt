@@ -1,0 +1,33 @@
+SQUARE VILLAGE — AUDITORIA DAS MURALHAS PROCEDURAIS — v2.9.2
+
+RESULTADO: APROVADO NA VERIFICAÇÃO ESTRUTURAL
+
+1. PNGs antigos removidos
+- assets/etapa5/wall_line.png
+- assets/etapa5/wall_corner.png
+- assets/etapa5/wall_gate.png
+- nenhuma cena ou script ativo referencia esses arquivos.
+
+2. Desenho em tempo real
+- nível 1: paliçada de madeira com estacas e postes laterais;
+- nível 2: segmentos de pedra, juntas, merlões e torres;
+- nível 3: muralha de pedra com gatehouse, abertura e grade central;
+- a largura é calculada a partir do retângulo atual da vila;
+- a visão ampliada usa escala 2.0 e a normal usa escala 1.0.
+
+3. Interface
+- o ícone da Muralha também é gerado em tempo de execução;
+- não existe dependência de sprite para a construção;
+- os níveis possuem miniaturas distintas.
+
+4. Proteções contra o bug anterior
+- segmentos terminam na borda das torres;
+- segmentos do nível 3 terminam nas bordas do portão;
+- não existe textura esticada por baixo de cantos ou portão;
+- toda a composição é desenhada no mesmo sistema de coordenadas.
+
+5. Validação
+- tools/verify_stage9.py: 725 verificações, 0 falhas;
+- delimitadores, funções, recursos e chamadas foram verificados;
+- prévia visual criada com as mesmas proporções do código;
+- ZIP deve ser testado no Godot para confirmação gráfica final.

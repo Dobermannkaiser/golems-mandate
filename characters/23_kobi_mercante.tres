@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "kobi_mercante"
+display_name = "Kobi Cobre-Fino"
+species_name = "Kobold"
+pronouns = "ele/dele"
+role_name = "Mercador de relíquias e quinquilharias mágicas"
+personality = "Simpático, rápido nas contas e completamente incapaz de admitir que um produto é amaldiçoado."
+biography = "Um mercador kobold itinerante, preparado para aparecer futuramente em eventos e capítulos comerciais."
+portrait_path = "res://assets/dialogue/portraits/kobi_mercante.png"
+fallback_color = Color(0.462745, 0.607843, 0.333333, 1)
+is_special_npc = true
+hidden_until_story = true
+
+romance_available = true

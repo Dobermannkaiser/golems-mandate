@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "carta_meio_vampiro_mulher"
+display_name = "Aparência: Meio-vampira II"
+species_name = "Meio-vampiro"
+pronouns = "variáveis"
+role_name = "Aparência de carta recrutável"
+personality = "A personalidade é definida proceduralmente quando a carta é criada."
+biography = "Retrato destinado ao sistema de recrutamento de cartas do Conselho."
+portrait_path = "res://assets/council/portraits/meio_vampiros/meio_vampiro_mulher.png"
+fallback_color = Color(0.42, 0.36, 0.29, 1)

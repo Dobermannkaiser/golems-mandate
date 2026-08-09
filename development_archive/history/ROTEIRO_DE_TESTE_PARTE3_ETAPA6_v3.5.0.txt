@@ -1,0 +1,82 @@
+Golem’s Mandate — Roteiro de teste — Parte 3 / Etapa 6 / v3.5.0
+
+IMPORTANTE
+- Inicie uma campanha nova.
+- A versão do save é 15.
+
+1. ABERTURA E REGRESSÃO
+[ ] O projeto abre sem Parser Error.
+[ ] O menu mostra v3.5.0.
+[ ] Uma campanha nova inicia normalmente.
+[ ] Conselho, passivas, sinergias, relações, fila de obras e diálogos anteriores continuam funcionando.
+
+2. ESCOLHA DA BUILD
+[ ] Eleve uma construção única ao nível 2.
+[ ] Ao planejar o nível 3, o botão indica ESCOLHER BUILD FINAL.
+[ ] O modal mostra duas opções lado a lado.
+[ ] Cada opção mostra imagem, identidade, efeitos, custo, duração e interações.
+[ ] Nenhuma opção é confirmada sem seleção.
+[ ] O aviso informa que a escolha será irreversível após a conclusão.
+[ ] ESC fecha primeiro o modal de build.
+
+3. CANCELAMENTO
+[ ] Escolha uma build e coloque a obra na fila.
+[ ] Cancele antes da conclusão.
+[ ] A construção continua no nível 2.
+[ ] Ao planejar novamente, é possível escolher a outra build.
+
+4. IRREVERSIBILIDADE
+[ ] Conclua a obra de nível 3.
+[ ] A build escolhida permanece visível na janela.
+[ ] Não existe botão para trocar a build.
+[ ] O dia de conclusão é mostrado.
+[ ] Salve, feche e carregue a campanha.
+[ ] A build, o dia e seus efeitos permanecem.
+
+5. EFEITOS ECONÔMICOS
+[ ] Silo de Reserva aumenta alimentação.
+[ ] Cozinha Comunitária reduz consumo e aumenta felicidade.
+[ ] Serraria Intensiva aumenta material.
+[ ] Oficina de Carpintaria reduz custos de obras futuras.
+[ ] Reservatório Profundo reduz desgaste de felicidade.
+[ ] Fonte Comunitária gera felicidade diária.
+[ ] Mercado Comunitário melhora alimentação, material e felicidade.
+[ ] Jardim Público gera mais felicidade que o Mercado.
+[ ] Bastião reduz mais manutenção que Portões Vigilantes.
+[ ] A previsão detalhada mostra os modificadores aplicados.
+
+6. APARÊNCIAS
+[ ] Cada build possui aparência própria na vila.
+[ ] As duas builds do mesmo edifício são visualmente distinguíveis.
+[ ] O Bastião e os Portões possuem detalhes de muralha diferentes.
+[ ] Nenhuma imagem aparece com fundo preto ou textura quebrada.
+
+7. ACONTECIMENTOS
+[ ] Uma opção de build só aparece quando a build exigida existe.
+[ ] A opção mostra claramente qual build a habilitou.
+[ ] A escolha aplica custos e efeitos corretos.
+[ ] O uso é contado na janela da construção.
+[ ] Salvar e carregar preserva essa contagem.
+
+8. REAÇÕES DOS NPCS
+[ ] Ao concluir uma build, uma reação narrativa é enfileirada.
+[ ] O NPC preferencial reage quando está disponível.
+[ ] Kobi reage especificamente ao Mercado Comunitário.
+[ ] Caso o NPC preferencial não esteja disponível, Mimo reage.
+[ ] A fala é diegética e não menciona interface, mecânica, save ou nível 3.
+[ ] Reações não apagam capítulos ou diálogos já pendentes.
+
+9. CINCO CONSTRUÇÕES
+Repita os testes de escolha, conclusão, aparência e save para:
+[ ] Celeiro
+[ ] Serraria
+[ ] Poço
+[ ] Praça
+[ ] Muralha
+
+10. TUTORIAL E GUIA
+[ ] O tutorial explica que a escolha ocorre ao planejar o nível 3.
+[ ] Explica que cancelar antes da conclusão permite escolher novamente.
+[ ] Explica que a conclusão torna a escolha irreversível.
+[ ] O Guia do Jogo descreve efeitos, eventos e persistência das builds.
+[ ] Não há instruções antigas ou contraditórias.

@@ -1,0 +1,24 @@
+SQUARE VILLAGE — AUDITORIA DE DIÁLOGOS DE RELACIONAMENTO — v2.8.1
+
+Tópicos comuns encontrados: 30
+IDs únicos: 30
+Campos line: 30
+Campos good: 30
+Campos neutral: 30
+Campos bad: 30
+Campos good_reply: 30
+Campos neutral_reply: 30
+Campos bad_reply: 30
+
+Mimo: 5 tópicos comuns + fala sazonal/pós-romance
+Aelric: 5 tópicos comuns + fala sazonal/pós-romance
+Kobi: 5 tópicos comuns + fala sazonal/pós-romance
+Orion: 5 tópicos comuns + fala sazonal/pós-romance
+Rubra: 5 tópicos comuns + fala sazonal/pós-romance
+Brunna: 5 tópicos comuns + fala sazonal/pós-romance
+
+Embaralhamentos de escolhas encontrados: 3.
+O último assunto é salvo em last_conversation_topic_id e excluído da seleção seguinte.
+O teste interno usa get_relationship_test_overview(), incluindo personagens ainda não recrutados.
+
+RESULTADO: APROVADO

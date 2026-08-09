@@ -1,0 +1,33 @@
+GOLEM'S MANDATE — ARQUIVOS ALTERADOS — v3.11.2
+
+VERSÃO E APRESENTAÇÃO
+- project.godot
+- scripts/UIManagerVariantB.gd
+- scripts/ui/MainMenu.gd
+
+BALANCEAMENTO ACOLHEDORA
+- scripts/campaign/DifficultyCatalog.gd
+- scripts/campaign/CampaignManager.gd
+
+GUIA E DIAGNÓSTICO
+- scripts/UIManager.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/ui/DiagnosticsWindow.gd
+
+VERIFICAÇÃO
+- tools/verify_part3_stage12.py
+- tools/verify_part3_stage12_v3112.py
+
+DOCUMENTAÇÃO
+- LEIA-ME_AJUSTE_BALANCEAMENTO_ACOLHEDORA_v3.11.2.md
+- ROTEIRO_DE_TESTE_BALANCEAMENTO_ACOLHEDORA_v3.11.2.txt
+- ARQUIVOS_ALTERADOS_v3.11.2.txt
+- VERIFICACAO_CONSOLIDADA_ETAPA12_v3.11.2.txt
+
+PRESERVADO
+- SaveManager e envelope global v18;
+- schema da campanha 5;
+- metas-base da Moderada;
+- economia diária e GameManager;
+- Moderada e Difícil;
+- construções, acontecimentos, relações, narrativa, RNG e assets.

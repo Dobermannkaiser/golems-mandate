@@ -1,0 +1,21 @@
+PARTE 3 — ETAPA 10 — v3.9.0
+
+NOVOS
+scripts/relationships/NpcRelationshipCatalog.gd
+scripts/relationships/NpcRelationshipManager.gd
+tools/verify_part3_stage10.py
+LEIA-ME_PARTE3_ETAPA10_v3.9.0.md
+ROTEIRO_DE_TESTE_PARTE3_ETAPA10_v3.9.0.txt
+ARQUIVOS_ALTERADOS_v3.9.0.txt
+VERIFICACAO_CONSOLIDADA_PARTE3_ETAPA10_v3.9.0.txt
+
+ALTERADOS
+project.godot
+scripts/GameManager.gd
+scripts/UIManager.gd
+scripts/UIManagerVariantB.gd
+scripts/diagnostics/InternalDiagnostics.gd
+scripts/save/SaveManager.gd
+scripts/ui/MainMenu.gd
+scripts/ui/ForecastDetailsWindow.gd
+scripts/ui/RelationshipsWindow.gd

@@ -1,0 +1,18 @@
+Square Village — Parte 2 Etapa 9 — v2.9.2
+
+Arquivos alterados:
+- scripts/ui/BuildingVisuals.gd
+- scripts/UIManagerVariantB.gd
+- project.godot
+- tools/verify_stage9.py
+- LEIA-ME_ETAPA9.md
+- LEIA-ME_PARTE2_ETAPA9.md
+- LEIA-ME_CORRECAO_MURALHAS_v2.9.2.md
+- ROTEIRO_DE_TESTE_ETAPA9_v2.9.2.txt
+
+Arquivos removidos:
+- assets/etapa5/wall_line.png
+- assets/etapa5/wall_corner.png
+- assets/etapa5/wall_gate.png
+- AUDITORIA_MURALHAS_PROCEDURAIS_v2.9.2.txt
+- PREVIA_MURALHAS_PROCEDURAIS_v2.9.2.png

@@ -1,0 +1,13 @@
+ROTEIRO DE TESTE — CORREÇÃO v3.3.2
+
+1. Extraia o ZIP em uma pasta nova.
+2. Importe o `project.godot` dessa pasta.
+3. Confirme que o editor não apresenta o erro:
+   Identifier "active_projects_applied" not declared in the current scope.
+4. Inicie uma campanha da Etapa 4.
+5. Avance dias até surgir um marcador ! em uma carta.
+6. Abra o diálogo, escolha uma decisão e confirme que o projeto é iniciado.
+7. Avance o dia e confira no resumo diário a linha "PROJETO ATIVO".
+8. Continue até o término do projeto e confirme a mensagem de conclusão.
+9. Verifique previsão do próximo dia, produção, XP, histórico e recrutamento.
+10. Saves da v3.3.1 usam o mesmo schema 13; não há migração adicional nesta correção.

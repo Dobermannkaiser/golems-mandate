@@ -1,0 +1,18 @@
+Square Village — arquivos alterados na v2.6.1
+
+- scripts/diagnostics/InternalDiagnostics.gd
+  Corrige a validação de escolhas com chance fixa sem atributo.
+
+- project.godot
+  Atualiza a versão para 2.6.1.
+
+- scripts/UIManagerVariantB.gd
+  Atualiza o texto visual da versão.
+
+- tools/verify_stage6.py
+  Acrescenta verificações de regressão para a correção.
+
+- LEIA-ME_CORRECAO_v2.6.1.md
+- ROTEIRO_DE_TESTE_ETAPA6_v2.6.1.txt
+
+Nenhum evento, efeito, chance, diálogo ou formato de save foi alterado.

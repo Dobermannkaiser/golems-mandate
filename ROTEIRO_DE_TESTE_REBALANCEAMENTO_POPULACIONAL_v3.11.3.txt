@@ -1,0 +1,51 @@
+GOLEM'S MANDATE — TESTE MANUAL DO REBALANCEAMENTO POPULACIONAL — v3.11.3
+
+REGRA DESTA ENTREGA
+O projeto não foi executado pelo assistente. Este roteiro verifica somente crescimento, metas populacionais e regressões próximas.
+
+1. VERSÃO E METAS
+- Confirmar que o menu mostra v3.11.3.
+- Em TESTE INTERNO, abrir SIMULAR METAS / VER METAS.
+- Conferir as populações dos dias 20/40/60/80/100/120:
+  Acolhedora: 9/12/16/20/24/28.
+  Moderada: 10/13/17/21/25/29.
+  Difícil: 11/14/18/23/27/31.
+- Confirmar que o Oráculo não acusa erro de balanceamento ou versão.
+
+2. ATRAÇÃO ACOLHEDORA
+- Criar campanha Acolhedora nova.
+- Confirmar felicidade mínima 52 e atração após 1 dia favorável no Guia/Teste Interno.
+- Com vaga, reservas e felicidade suficientes, encerrar um dia favorável.
+- Resultado esperado: a população aumenta de 8 para 9 e o resumo registra CHEGADA.
+
+3. ATRAÇÃO MODERADA
+- Criar campanha Moderada nova.
+- Confirmar felicidade mínima 55 e atração após 2 dias favoráveis.
+- Encerrar um primeiro dia favorável e confirmar ATRAÇÃO 1/2.
+- Salvar e carregar nesse ponto.
+- Encerrar outro dia favorável.
+- Resultado esperado: a população aumenta em 1; o progresso sobrevive ao save/load.
+
+4. ATRAÇÃO DIFÍCIL
+- Criar campanha Difícil nova.
+- Confirmar felicidade mínima 58 e atração após 2 dias favoráveis.
+- Encerrar dois dias favoráveis com vaga e reservas.
+- Resultado esperado: chega 1 habitante; o abandono continua exigindo 2 dias preocupantes.
+
+5. SAVE EXISTENTE
+- Carregar um save v3.11.2 em qualquer dificuldade.
+- Abrir AVALIAÇÃO e confirmar que a próxima meta populacional diminuiu.
+- Conferir no tooltip da população que a nova felicidade mínima e o novo tempo de atração estão ativos.
+- Salvar, carregar novamente e confirmar população, moradia, recursos e progresso intactos.
+- Nenhum habitante ou recurso deve ser concedido no carregamento.
+
+6. REGRESSÃO
+- Abrir AVALIAÇÃO sem travamento.
+- Confirmar que alimentação, material e felicidade mantêm as metas da v3.11.2.
+- Confirmar ausência de novas mensagens E ou W relacionadas a DifficultyCatalog, PopulationState, GameManager, UIManager ou InternalDiagnostics.
+
+RESULTADO ESPERADO
+- Crescimento populacional perceptivelmente mais acessível nas três dificuldades.
+- Todas as metas populacionais menores que na v3.11.2.
+- Diferenças entre dificuldades preservadas e explicadas.
+- Save/load preservado sem concessões retroativas.

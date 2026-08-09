@@ -1,0 +1,7 @@
+# Godot 4+
+.godot/
+/android/
+
+# Ferramentas de auditoria em Python
+__pycache__/
+*.pyc

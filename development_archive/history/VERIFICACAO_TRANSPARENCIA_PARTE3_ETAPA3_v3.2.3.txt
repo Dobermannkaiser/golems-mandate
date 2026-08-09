@@ -1,0 +1,7 @@
+VERIFICAÇÃO — TRANSPARÊNCIA DOS RETRATOS — v3.2.3
+Imagens verificadas: 30
+Falhas: 0
+Resultado: APROVADO
+
+/mnt/data/gm_v323_work/tools/verify_transparent_portraits_stage3.py:46: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(alpha.getdata())

@@ -1,0 +1,66 @@
+GOLEM'S MANDATE — PLANO DE SIMULAÇÃO — PARTE 3 / ETAPA 12 / v3.11.0
+
+STATUS
+- Plano preparado.
+- Nenhuma simulação extensa foi executada.
+- A execução depende de autorização específica do usuário.
+
+OBJETIVOS
+1. Medir aprovação em cada avaliação e vitória final por dificuldade.
+2. Identificar metas impossíveis, dominantes ou irrelevantes.
+3. Medir crises, abandono, crescimento, obras e reservas por estação.
+4. Verificar se os perfis finais e medalhas comportamentais variam de forma coerente.
+5. Confirmar que a mesma semente e a mesma sequência de decisões reproduzem o mesmo estado.
+
+MATRIZ PROPOSTA
+A. Casos determinísticos de referência
+- 3 dificuldades.
+- 4 políticas: planejada, casual, reativa e negligente.
+- 5 sementes fixas por combinação.
+- Total: 60 campanhas.
+
+B. Monte Carlo de balanceamento
+- 3 dificuldades.
+- 4 políticas.
+- 1.000 sementes por combinação.
+- Total: 12.000 campanhas.
+
+C. Reprodução
+- 100 pares de execuções idênticas.
+- Comparação diária de acontecimentos, recursos, população, Conselho, obras, avaliações, medalhas e perfil final.
+- Qualquer divergência é falha.
+
+D. Casos-limite dirigidos
+- crise alimentar e material no limite de cada dificuldade;
+- felicidade em 0, 39, 40, 59, 60 e 100;
+- população no limite de moradia;
+- obra concluída exatamente no dia da avaliação e no dia seguinte;
+- fila cheia, cancelamento e reordenação;
+- avaliação aprovada e reprovada por cada meta isoladamente;
+- encerramento por crise fora de uma avaliação;
+- save/load antes e depois de uma avaliação;
+- campanha antiga sem os novos campos opcionais.
+
+MÉTRICAS DE SAÍDA
+- taxa de aprovação por checkpoint;
+- taxa de vitória e dia médio de derrota;
+- déficit e margem por meta;
+- dias de escassez e de reserva zerada;
+- população final/máxima e felicidade final/média/mínima;
+- obras e casas construídas;
+- distribuição de medalhas e perfis;
+- frequência de decisões e profissões;
+- divergências de reprodução;
+- intervalos de confiança das taxas principais.
+
+CRITÉRIOS INICIAIS PARA REVISÃO HUMANA
+- nenhuma política planejada deve encontrar uma meta matematicamente impossível;
+- Acolhedora deve perdoar mais erros que Moderada;
+- Difícil deve exigir mais planejamento sem esconder informação;
+- uma única profissão ou construção não deve dominar todas as políticas vencedoras;
+- perfis e medalhas não devem colapsar quase sempre na mesma categoria;
+- mesmas entradas devem produzir estado idêntico.
+
+OBSERVAÇÃO DE MODELO
+Uma simulação externa replica regras e políticas, mas não substitui o runtime do Godot. O relatório deverá separar resultados do modelo, verificações determinísticas e teste manual no motor.
+

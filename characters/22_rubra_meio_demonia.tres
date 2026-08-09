@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "rubra_meio_demonia"
+display_name = "Rubra Verbum"
+species_name = "Meio-demônia"
+pronouns = "ela/dela"
+role_name = "Estudiosa de história proibida"
+personality = "Gentil, erudita, curiosa e incapaz de resistir a um livro selado com avisos ameaçadores."
+biography = "Uma estudiosa meio-demônia que pesquisa a história das vilas esquecidas. Preparada como futura opção de amizade e romance."
+portrait_path = "res://assets/dialogue/portraits/rubra_meio_demonia.png"
+fallback_color = Color(0.717647, 0.274510, 0.258824, 1)
+is_special_npc = true
+romance_available = true
+hidden_until_story = true

@@ -1,0 +1,36 @@
+SIMULAÇÃO ECONÔMICA INICIAL — ETAPA 5
+Modelo comparativo de 120 dias; não executa o Godot nem substitui o teste de runtime.
+Valores de dificuldade, consumo, manutenção e recursos iniciais seguem os catálogos do projeto.
+O modelo mede impacto relativo; não tenta reproduzir construções, eventos, relações ou aprovação de avaliações.
+
+DIFICULDADE: Acolhedora
+- equilibrado: entrada acumulada 5621.6 (+3.02% vs. a mesma composição sem a Etapa 5)
+- quatro_profissoes: entrada acumulada 5837.6 (+2.70% vs. a mesma composição sem a Etapa 5)
+- concentracao_alimento: entrada acumulada 5935.3 (+1.14% vs. a mesma composição sem a Etapa 5)
+- concentracao_material: entrada acumulada 5347.2 (-1.78% vs. a mesma composição sem a Etapa 5)
+- quatro_iguais: entrada acumulada 5656.8 (-11.29% vs. a mesma composição sem a Etapa 5)
+- passivas_fixadas: entrada acumulada 5626.8 (+3.11% vs. a mesma composição sem a Etapa 5)
+- mimo_ativa: entrada acumulada 5920.8 (+4.17% vs. a mesma composição sem a Etapa 5)
+
+DIFICULDADE: Moderada
+- equilibrado: entrada acumulada 4888.3 (+3.02% vs. a mesma composição sem a Etapa 5)
+- quatro_profissoes: entrada acumulada 5076.2 (+2.70% vs. a mesma composição sem a Etapa 5)
+- concentracao_alimento: entrada acumulada 5161.1 (+1.14% vs. a mesma composição sem a Etapa 5)
+- concentracao_material: entrada acumulada 4649.8 (-1.78% vs. a mesma composição sem a Etapa 5)
+- quatro_iguais: entrada acumulada 4919.0 (-11.29% vs. a mesma composição sem a Etapa 5)
+- passivas_fixadas: entrada acumulada 4899.5 (+3.25% vs. a mesma composição sem a Etapa 5)
+- mimo_ativa: entrada acumulada 5148.6 (+4.17% vs. a mesma composição sem a Etapa 5)
+
+DIFICULDADE: Difícil
+- equilibrado: entrada acumulada 5132.7 (+3.02% vs. a mesma composição sem a Etapa 5)
+- quatro_profissoes: entrada acumulada 5330.0 (+2.70% vs. a mesma composição sem a Etapa 5)
+- concentracao_alimento: entrada acumulada 5419.2 (+1.14% vs. a mesma composição sem a Etapa 5)
+- concentracao_material: entrada acumulada 4882.3 (-1.78% vs. a mesma composição sem a Etapa 5)
+- quatro_iguais: entrada acumulada 5164.9 (-11.29% vs. a mesma composição sem a Etapa 5)
+- passivas_fixadas: entrada acumulada 5144.2 (+3.25% vs. a mesma composição sem a Etapa 5)
+- mimo_ativa: entrada acumulada 5406.0 (+4.17% vs. a mesma composição sem a Etapa 5)
+
+Variação média da entrada: +0.17%
+Maior aumento: +4.17%
+Maior redução: -11.29%
+Limite de +12%: APROVADO

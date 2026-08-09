@@ -1,0 +1,35 @@
+GOLEM'S MANDATE — CORREÇÃO DA PARTE 3 / ETAPA 9 — v3.8.1
+
+NOVOS
+- LEIA-ME_CORRECAO_CONTEUDO_RETRATO_v3.8.1.md
+- ROTEIRO_DE_TESTE_CORRECAO_CONTEUDO_RETRATO_v3.8.1.txt
+- VERIFICACAO_CONSOLIDADA_CORRECAO_v3.8.1.txt
+- ARQUIVOS_ALTERADOS_v3.8.1.txt
+
+ALTERADOS — JOGO E CONTEÚDO
+- project.godot
+- characters/24_bruxinha_ruiva.tres
+- scripts/relationships/RelationshipExpansionCatalog.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/UIManagerVariantB.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- LEIA-ME_PARTE3_ETAPA9_v3.8.0.md
+
+ALTERADOS — VERIFICADORES ACUMULADOS
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- tools/verify_part3_stage5.py
+- tools/verify_part3_stage6.py
+- tools/verify_part3_stage7.py
+- tools/verify_part3_stage8.py
+- tools/verify_part3_stage9.py
+- tools/verify_lazy_windows_v353.py
+- tools/verify_project_optimization_v351.py
+- tools/verify_sprite_integration_v352.py
+
+OBSERVAÇÕES
+- Save global permanece na versão 17.
+- O PNG de Dália não foi modificado; a correção remove a recoloração aplicada pela interface.
+- Nenhuma imagem foi gerada ou substituída.
+- A v3.7.0 estável e a v3.8.0 candidata permaneceram intactas fora desta cópia.

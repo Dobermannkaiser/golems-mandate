@@ -1,0 +1,39 @@
+Golem's Mandate — arquivos ativos removidos na limpeza v3.5.1
+
+Todos os itens abaixo não possuíam referência no projeto ativo. A v3.5.0 original permanece como cópia de segurança.
+
+assets/dialogue/portraits/deusa_auditoria_provisoria.png
+assets/etapa5/alagard.ttf
+assets/etapa5/barn.png
+assets/etapa5/cat_sheet.png
+assets/etapa5/grass_autumn.png
+assets/etapa5/grass_spring.png
+assets/etapa5/grass_summer.png
+assets/etapa5/grass_winter.png
+assets/etapa5/house.png
+assets/etapa5/path_dirt.png
+assets/etapa5/sawmill.png
+assets/etapa5/square.png
+assets/etapa5/well.png
+assets/relationships/portraits/LEIA-ME.txt
+assets/relationships/portraits/aelric_ferreiro.png
+assets/relationships/portraits/brunna_ana_barbara.png
+assets/relationships/portraits/bruxinha_ruiva.png
+assets/relationships/portraits/kobi_mercante.png
+assets/relationships/portraits/meio_vampiro_emo_gotico.png
+assets/relationships/portraits/mimo.png
+assets/relationships/portraits/orion_draconato.png
+assets/relationships/portraits/rubra_meio_demonia.png
+assets/relationships/scenes/LEIA-ME.txt
+assets/council/portraits/anoes/LEIA-ME.txt
+assets/council/portraits/draconatos/LEIA-ME.txt
+assets/council/portraits/elfos/LEIA-ME.txt
+assets/council/portraits/kobolds/LEIA-ME.txt
+assets/council/portraits/meio_demonios/LEIA-ME.txt
+assets/council/portraits/passos_leves/LEIA-ME.txt
+
+Também foi movido para o arquivo de desenvolvimento:
+characters/character_template.tres.example
+
+Documentação histórica movida, não apagada:
+172 arquivos de relatório/roteiro/README da raiz foram movidos para development_archive/history.

@@ -1,0 +1,44 @@
+SQUARE VILLAGE — FONTES DO ÁUDIO — ETAPA 9 v2.9.0
+
+1. MÚSICAS
+Arquivos finais:
+- music_menu.ogg
+- music_spring_01.ogg
+- music_spring_02.ogg
+- music_summer.ogg
+- music_autumn.ogg
+- music_winter_01.ogg
+- music_winter_02.ogg
+- music_story_special.ogg
+- music_fun.ogg
+
+Origem declarada pelo usuário: músicas geradas por inteligência artificial.
+Tratamento realizado: conversão de WAV para OGG Vorbis, normalização de volume,
+renomeação e organização por contexto de uso.
+A ferramenta de geração original e os links de origem não foram informados.
+
+2. AMBIENTE DA VILA
+Arquivos finais:
+- ambience_spring.ogg
+- ambience_summer.ogg
+- ambience_autumn.ogg
+- ambience_winter.ogg
+
+Origem declarada pelo usuário: efeito comum da internet, descrito como copy free.
+Tratamento realizado: conversão de M4A para OGG, normalização e quatro variações
+de equalização para as estações.
+O link e a licença específica da fonte não foram informados.
+
+3. EFEITOS FORNECIDOS
+- ui_click.wav: derivado de “botão click.m4a”. O silêncio inicial foi removido.
+- event_positive.wav: derivado de “acerto ou recompensa.m4a”. Foram removidos
+  aproximadamente 3,24 segundos de silêncio no começo e o silêncio final.
+
+Origem declarada pelo usuário: efeitos comuns da internet descritos como copy free.
+Tratamento realizado: recorte, conversão para WAV PCM mono e normalização.
+Os links e as licenças específicas das fontes não foram informados.
+
+4. EFEITOS CRIADOS PARA O PROJETO
+Todos os outros arquivos WAV em assets/audio/sfx e assets/audio/ambience/occasional
+foram produzidos proceduralmente para esta versão, por síntese matemática de tons,
+ruído, envelopes e varreduras. Eles não contêm amostras de terceiros.

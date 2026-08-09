@@ -1,0 +1,81 @@
+Golem's Mandate — auditoria do recrutamento de cartas
+Parte 3 — Etapa 7 — v3.6.0 candidata
+Base auditada: v3.5.3 estável
+
+ESCOPO
+- avaliações dos dias 20, 40, 60, 80, 100 e 120;
+- requisitos de avaliação e relacionamento;
+- seleção do NPC fonte e da espécie;
+- geração de duas candidatas;
+- nível, atributos, personalidade, passiva, nome e retrato;
+- reserva ampliada;
+- salvamento, carregamento e migração do estado antigo;
+- tutorial, Guia do Jogo, diagnóstico interno e mensagens de interface.
+
+O QUE JÁ ESTAVA CORRETO NA v3.5.3
+- a avaliação precisava ser aprovada;
+- existiam seis verificações, até o Dia 120;
+- cada oferta possuía duas candidatas da mesma espécie;
+- o NPC fonte não podia ser reutilizado;
+- a carta escolhida entrava na reserva;
+- os níveis das vagas já seguiam 2, 3, 4, 5, 6 e 6;
+- os pontos adicionais de atributo já chegavam distribuídos;
+- as passivas das duas candidatas eram diferentes;
+- passivas ainda ausentes no elenco recebiam prioridade;
+- cartas recrutadas já eram salvas como moradores dinâmicos;
+- os oito catálogos de espécie já possuíam nomes e ao menos dois retratos.
+
+PROBLEMAS ENCONTRADOS
+1. A oferta só era preparada no dia exato da avaliação. Se o requisito não fosse cumprido, a oportunidade desaparecia.
+2. Não existiam requisitos progressivos de relacionamento.
+3. Empates entre espécies eram resolvidos automaticamente, sem escolha do jogador.
+4. A interface não mostrava claramente vagas futuras, pendentes, prontas ou concluídas.
+5. O tutorial ainda falava como se existisse apenas uma carta na reserva.
+6. Um texto antigo afirmava incorretamente que personagens da história entravam diretamente no Conselho.
+7. O save interno de recrutamento não guardava uma fila de vagas pendentes.
+8. A validação do estado salvo não verificava completamente espécie, fonte, candidatas, retratos, passivas, níveis e atributos.
+9. Depois do Dia 120 não existem novas avaliações. Sem uma exceção, uma vaga antiga ainda pendente poderia ficar presa para sempre.
+10. A média de nível do Conselho ainda era calculada e enviada ao recrutamento, embora os níveis já fossem definidos pela vaga original.
+
+CORREÇÕES E CONSOLIDAÇÃO
+- estado interno do recrutamento elevado de 1 para 2;
+- fila persistente de vagas pendentes;
+- a vaga mais antiga sempre tem prioridade;
+- uma vaga só é removida quando uma candidata é realmente escolhida;
+- requisitos: 50, 120, 220, 340, 480 e 620 pontos;
+- os valores reutilizam os inícios dos níveis 2 a 7 do sistema de relacionamento;
+- o vínculo elegível mais forte define a espécie;
+- empate exato na maior pontuação entre espécies diferentes abre uma escolha automática de interface;
+- depois da espécie, são mostradas duas candidatas;
+- o nível continua vinculado à vaga original, mesmo quando a oferta acontece atrasada;
+- várias vagas atrasadas podem ser resolvidas em sequência, sem apagar as seguintes;
+- nenhuma vaga nova nasce depois do Dia 120;
+- vagas antigas ainda pendentes são rechecadas quando um vínculo muda no modo livre;
+- remoção do cálculo sem uso da média de nível do Conselho;
+- painel persistente de recrutamento dentro da janela do Conselho;
+- reserva permanece dinâmica e suporta Mimo mais seis cartas recrutadas;
+- tutorial e Guia do Jogo revisados;
+- diagnóstico interno ampliado;
+- mensagens antigas de save neutralizadas para a Parte 3;
+- validação de save reforçada para fonte, espécie, opções de empate, duas candidatas, IDs, nomes, retratos, passivas, nível e soma de atributos;
+- migração automática do estado de recrutamento v1 para v2.
+
+REGRAS FINAIS
+Dia 20  — 50 pontos  — candidata nível 2
+Dia 40  — 120 pontos — candidata nível 3
+Dia 60  — 220 pontos — candidata nível 4
+Dia 80  — 340 pontos — candidata nível 5
+Dia 100 — 480 pontos — candidata nível 6
+Dia 120 — 620 pontos — candidata nível 6
+
+A vaga depende de uma avaliação aprovada. O NPC fonte precisa ser conhecido, possuir uma espécie recrutável, alcançar o requisito e ainda não ter originado outra oferta. O sistema escolhe automaticamente o vínculo elegível mais forte. O jogador só escolhe a espécie quando há empate exato entre espécies diferentes na maior pontuação.
+
+COMPATIBILIDADE
+- versão pública: 3.6.0;
+- save global preservado na versão 15;
+- estado interno do recrutamento migra de v1 para v2;
+- não exige campanha nova em relação à v3.5.3;
+- saves incompatíveis ou estruturalmente corrompidos continuam sendo rejeitados.
+
+LIMITAÇÃO DA AUDITORIA
+O projeto não foi executado no Godot. Toda validação foi estática, por simulações, verificadores de referências e inspeção do estado salvo. O teste de runtime permanece responsabilidade do usuário.

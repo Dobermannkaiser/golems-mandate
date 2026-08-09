@@ -1,0 +1,10 @@
+SIMULAÇÃO DE ESTRESSE — PASSIVAS, SINERGIAS E CONCENTRAÇÃO — ETAPA 5
+Conselhos aleatórios simulados: 120000
+Passivas exercitadas: 15 / 15
+Uso de multiplicadores de concentração: {0.88: 911, 0.93: 15392, 0.97: 80625, 1.0: 23072}
+Quantidade de sinergias ativas: {0: 23796, 1: 80057, 2: 16147}
+Maior aumento de produção: +5.27%
+Maior redução de produção: -12.00%
+Maior ganho econômico combinado estimado: +4.91%
+Falhas: 0
+Resultado: APROVADO

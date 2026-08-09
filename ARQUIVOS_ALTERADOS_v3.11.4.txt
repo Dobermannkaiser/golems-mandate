@@ -1,0 +1,32 @@
+GOLEM'S MANDATE — ARQUIVOS ALTERADOS — v3.11.4
+
+Base de origem: v3.11.3
+Base estável preservada: v3.10.1
+
+Regra e apresentação:
+- project.godot
+- scripts/campaign/CampaignCatalog.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/ui/MainMenu.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+
+Verificação:
+- tools/verify_part3_stage12.py
+- tools/verify_part3_stage12_v3114.py
+
+Documentação da entrega:
+- LEIA-ME_REBALANCEAMENTO_INVERNO_v3.11.4.md
+- ROTEIRO_DE_TESTE_REBALANCEAMENTO_INVERNO_v3.11.4.txt
+- ARQUIVOS_ALTERADOS_v3.11.4.txt
+- VERIFICACAO_CONSOLIDADA_ETAPA12_v3.11.4.txt
+
+Arquivos explicitamente preservados:
+- scripts/GameManager.gd
+- scripts/campaign/DifficultyCatalog.gd
+- scripts/campaign/CampaignManager.gd
+- scripts/save/SaveManager.gd
+- scripts/buildings/BuildingManager.gd
+- produção-base, consumo-base, metas e economia fora do inverno
+
+Nenhum arquivo foi removido.

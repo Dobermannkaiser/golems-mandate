@@ -1,0 +1,51 @@
+AUDITORIA — BUILDS DAS CONSTRUÇÕES — v3.5.0
+
+ESCOPO
+- 5 construções únicas.
+- 2 builds por construção.
+- 10 builds finais.
+- Escolha no nível 3.
+- Irreversibilidade apenas após a conclusão.
+
+CATÁLOGO
+Celeiro
+- Silo de Reserva: foco em alimentação e proteção de estoque.
+- Cozinha Comunitária: alimentação menor, redução de consumo e felicidade.
+
+Serraria
+- Serraria Intensiva: foco em material bruto.
+- Oficina de Carpintaria: material menor e redução de custo de obras futuras.
+
+Poço
+- Reservatório Profundo: redução de desgaste de felicidade.
+- Fonte Comunitária: redução menor e felicidade diária.
+
+Praça
+- Mercado Comunitário: alimentação, material e felicidade.
+- Jardim Público: foco maior em felicidade.
+
+Muralha
+- Bastião de Pedra: maior redução de manutenção e proteção pesada.
+- Portões Vigilantes: redução menor e soluções preventivas.
+
+INTEGRAÇÕES
+- BuildingManager: seleção, conclusão, efeitos, histórico e save.
+- GameManager: produção, consumo, eventos e reações.
+- BuildingWindow: comparação e confirmação.
+- BuildingVisuals: aparências de nível 3.
+- EventCatalog/EventManager/EventWindow: 20 opções condicionais.
+- DialogueCatalog/StoryManager: 20 reações narrativas enfileiradas.
+- Tutorial e Guia: regras revisadas.
+
+UX
+- Comparação lado a lado.
+- Seleção obrigatória antes de confirmar.
+- Aviso explícito de irreversibilidade.
+- Cancelamento preserva liberdade antes da conclusão.
+- Informações persistentes após a escolha.
+
+NARRATIVA
+- Contexto narrado pelo Narrador.
+- NPCs falam apenas de acordo com personalidade e conhecimento do mundo.
+- Kobi possui reação específica ao Mercado Comunitário.
+- Mimo funciona como reação alternativa sem substituir um diálogo pendente.

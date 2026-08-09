@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "novo_personagem"
+display_name = "Novo Personagem"
+species_name = "Espécie"
+pronouns = "pronomes"
+role_name = "Papel na vila"
+personality = "Descrição curta da personalidade."
+biography = "Descrição narrativa do personagem."
+portrait_path = "res://assets/dialogue/portraits/novo_personagem.png"
+fallback_color = Color(0.435294, 0.501961, 0.376471, 1)
+is_founder_appearance = false
+is_special_npc = true
+romance_available = false
+hidden_until_story = true

@@ -1,0 +1,184 @@
+Golem’s Mandate — Parte 3, Etapa 2 — v3.1.2
+AUDITORIA DA FILA DE OBRAS
+
+1. BASE E ESCOPO
+
+Base usada:
+- Golem’s Mandate — Parte 3, Etapa 1 — v3.0.0;
+- versão testada pelo usuário;
+- base original mantida separada.
+
+Escopo ativado:
+- fila única de obras;
+- canteiros simultâneos por população;
+- trabalho por dias completos;
+- cancelamento e reembolso;
+- reordenação;
+- previsão;
+- visual procedural de obra;
+- tutorial, guia, save e diagnóstico.
+
+Escopo deliberadamente não ativado:
+- XP;
+- cartas;
+- passivas;
+- variantes de construção;
+- recrutamento;
+- relações cruzadas.
+
+2. INVARIANTES DA FILA
+
+- Custo pago ao entrar na fila.
+- Casas e prédios usam a mesma fila.
+- Ordem estrita: uma obra posterior não ultrapassa a primeira obra inelegível.
+- Somente ordens com status queued podem ser reordenadas.
+- Ordens active não podem ser pausadas.
+- Uma construção fixa possui no máximo uma melhoria pendente ou ativa.
+- Duração válida entre 1 e 3 dias.
+- IDs de ordem são únicos e persistentes.
+- Fila limitada a 256 entradas para proteção do save e da interface.
+
+3. CAPACIDADE
+
+Fórmula:
+1 + floor(população / 20), limitada entre 1 e 4.
+
+Faixas:
+- 1–19: 1;
+- 20–39: 2;
+- 40–59: 3;
+- 60+: 4.
+
+Queda populacional:
+- não cancela nem pausa obras já ativas;
+- pode deixar temporariamente active_count > capacity;
+- essa situação é aviso, não erro;
+- nenhuma nova obra começa até existir vaga real.
+
+4. LINHA DO TEMPO
+
+Solicitação no dia D:
+- custo pago em D;
+- earliest_start_day = D + 1;
+- nenhum benefício em D.
+
+Início:
+- ocorre na transição para um dia elegível;
+- started_day registra o primeiro dia de trabalho.
+
+Trabalho:
+- cada encerramento de dia ativo acrescenta 1 em progress_days;
+- ao alcançar work_days, status muda para completed_pending;
+- completed_work_day registra o último dia trabalhado;
+- available_day = completed_work_day + 1.
+
+Aplicação:
+- acontece somente após a avaliação do dia concluído;
+- casa aumenta house_count e capacidade habitacional;
+- prédio avança exatamente um nível;
+- a ordem aplicada é removida da fila persistente.
+
+Exemplos aprovados:
+- casa pedida em D10: início D11, disponível D12;
+- nível 2 pedido em D10: trabalho D11–D12, disponível D13;
+- nível 3 pedido em D10: trabalho D11–D13, disponível D14.
+
+5. ORDEM COM AVALIAÇÕES E NARRATIVA
+
+Fluxo preservado:
+1. produção e consumo do dia;
+2. progresso das obras ativas;
+3. capítulos/acontecimentos obrigatórios, quando existirem;
+4. avaliação da campanha para o dia concluído;
+5. liberação de obras concluídas;
+6. início de novas obras no novo dia;
+7. autosave.
+
+Consequência:
+- obra concluída durante o dia 20 não conta na avaliação do dia 20;
+- fica disponível no início do dia 21.
+
+6. CANCELAMENTO
+
+queued:
+- reembolso 100%;
+- remove a ordem e sua posição;
+- fila é renumerada.
+
+active:
+- reembolso 50%;
+- progresso perdido;
+- canteiro fica livre;
+- outra obra não começa no mesmo clique; o preenchimento ocorre na próxima resolução diária.
+
+completed_pending:
+- cancelamento bloqueado porque o trabalho já terminou.
+
+UX:
+- modal informa consequência e valor do reembolso;
+- ação segura “MANTER OBRA” recebe foco inicial;
+- Esc fecha a confirmação antes da janela principal;
+- foco é restaurado ou reposicionado após a ação.
+
+7. SAVE E MIGRAÇÃO
+
+Schema:
+- save version 9;
+- queue_state_version 1;
+- construction_orders persistente;
+- next_order_sequence persistente.
+
+Migração v8 -> v9:
+- preserva estado real da campanha;
+- inicializa a fila funcional vazia;
+- remove construction_queue preparatória da fundação.
+
+Justificativa:
+A fila da Etapa 1 era somente um contrato futuro. Ela não cobrava material, não trabalhava dias e não concedia benefícios. Convertê-la diretamente poderia criar obras gratuitas ou ambíguas. A decisão segura foi não promover dados preparatórios a gameplay real.
+
+8. VISUAL
+
+- canteiros são desenhados em BuildingVisuals.gd;
+- usam geometria procedural reutilizável;
+- exibem fundação, andaime e progresso;
+- casas usam a próxima área de moradia;
+- prédios fixos usam sua posição visual;
+- clip_contents permanece habilitado.
+
+9. DIAGNÓSTICO
+
+O Oráculo valida:
+- formato da fila;
+- IDs;
+- status;
+- duração;
+- progresso;
+- custos;
+- previsões;
+- posições;
+- duplicidades;
+- capacidade.
+
+A verificação do nome do projeto foi removida por decisão do usuário. Nome de pasta/projeto não é um invariante de gameplay.
+
+10. BALANCEAMENTO E LIMITES DE EVIDÊNCIA
+
+A simulação econômica antiga permaneceu byte a byte idêntica, logo as constantes econômicas preexistentes não foram modificadas.
+
+Isso não demonstra que a campanha completa já está equilibrada com atrasos de construção. O novo sistema muda o momento em que casas e bônus entram em vigor. É necessário:
+- testar avaliações dos dias 20–120;
+- observar gargalos de moradia;
+- observar dificuldade de recuperação;
+- comparar estratégias de fila;
+- incluir a fila no simulador econômico futuro.
+
+11. VALIDAÇÃO NÃO REALIZADA
+
+Godot não disponível no ambiente.
+Não foram executados:
+- parser real do Godot;
+- carregamento de cenas no motor;
+- teste visual em viewport;
+- navegação real por controle;
+- áudio;
+- campanha manual completa.

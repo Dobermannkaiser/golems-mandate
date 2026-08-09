@@ -1,0 +1,25 @@
+GOLEM'S MANDATE — TESTE MANUAL DO REBALANCEAMENTO DE INVERNO — v3.11.4
+
+Pré-condição
+- Use uma cópia do mesmo save de inverno em que a previsão mostrava 895,2 → 851,5 (-43,7).
+- Abra a cópia na v3.11.4 sem trocar profissões, construções ou Conselho.
+
+Passos
+1. Confirme que o menu mostra v3.11.4.
+2. Carregue o save e observe a previsão de alimentação.
+3. Passe o mouse sobre a previsão e confira produção, consumo e o texto do Inverno.
+4. Confirme que o texto informa -10% na produção e +10% no consumo.
+5. Avance um dia, desde que não exista diálogo ou acontecimento pendente.
+6. Compare o saldo realizado com a previsão.
+7. Abra TESTE INTERNO e confirme que a auditoria de campanha não relata erro sazonal.
+8. Salve, carregue novamente e confira se a previsão permanece igual.
+
+Resultado esperado
+- A perda diária é materialmente menor que -43,7 no mesmo estado.
+- Se a economia fora do inverno estiver aproximadamente equilibrada, a perda fica perto de -21,9.
+- A previsão e o avanço do dia concordam, salvo consequências de acontecimentos resolvidos entre eles.
+- Nenhum recurso é alterado retroativamente ao carregar.
+- Nenhum erro novo aparece no depurador.
+
+Observação
+- A mudança divide pela metade a pressão causada pelo inverno, não qualquer déficit-base da vila. Se ainda houver perda relevante, o tooltip mostrará quanto vem da diferença real entre produção e consumo.

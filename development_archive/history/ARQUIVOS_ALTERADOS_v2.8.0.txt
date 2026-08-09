@@ -1,0 +1,28 @@
+Square Village — Parte 2 Etapa 8 — v2.8.0
+
+Novos arquivos:
+- scripts/relationships/RelationshipCatalog.gd
+- scripts/relationships/RelationshipDialogueCatalog.gd
+- scripts/ui/RelationshipsWindow.gd
+- scripts/ui/ProfileSetupWindow.gd
+- tools/verify_stage8.py
+- LEIA-ME_PARTE2_ETAPA8.md
+- ROTEIRO_DE_TESTE_ETAPA8_v2.8.0.txt
+- AUDITORIA_RELACIONAMENTOS_v2.8.0.txt
+
+Arquivos principais atualizados:
+- scripts/models/RelationshipState.gd
+- scripts/models/PlayerProfile.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/GameManager.gd
+- scripts/save/SaveManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/dialogue/DialogueManager.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/ui/DiagnosticsWindow.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/specialists/SpecialistCatalog.gd
+- characters/10_mimo.tres
+- characters/23_kobi_mercante.tres
+- project.godot

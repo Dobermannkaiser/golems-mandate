@@ -1,0 +1,37 @@
+GOLEM'S MANDATE — VERIFICAÇÃO CONSOLIDADA — ETAPA 12 / v3.11.2
+
+ORIGEM
+- Candidata criada em cópia separada da v3.11.1 entregue anteriormente.
+- SHA-256 do ZIP de origem: 3fef96950358d1cdeb1a3e732ea723591c4590f987980498ea4392794ea9324c.
+- A base estável oficial v3.10.1 e a candidata v3.11.1 permaneceram intactas.
+
+AJUSTE ACOLHEDORA
+- Reservas iniciais: 48 alimentação, 22 material e 72 felicidade.
+- Metas de alimentação/material: 80% da Moderada.
+- Felicidade: meta da Moderada menos 8.
+- População: um habitante a menos em cada avaliação.
+- Crise de recurso: derrota após quatro dias consecutivos.
+- Recuperação pós-crise: +2,0 felicidade.
+- Atração 2 e abandono 4 foram preservados.
+
+PERSISTÊNCIA
+- SaveManager permanece idêntico à v3.11.1.
+- Envelope global permanece v18.
+- Schema da campanha permanece 5.
+- Nenhuma migração foi adicionada.
+
+RESULTADOS ESTÁTICOS
+- Contratos gerais da Etapa 12: 225/225 aprovados.
+- Contratos corretivos v3.11.2: 44/44 aprovados.
+- Escopo local GDScript: 76 scripts, 1.429 funções e 0 possíveis vazamentos.
+- Teste Interno de relações v3.8.2: 9 verificações e 0 falhas.
+- Transparência dos retratos: 30 imagens e 0 falhas.
+- Referências literais res://: 75 scripts de gameplay e 0 caminhos ausentes.
+- SaveManager, CampaignCatalog e GameManager conferidos por SHA-256 contra a v3.11.1.
+- Moderada e Difícil preservam os valores da v3.11.1.
+
+LIMITAÇÕES
+- O Godot não foi executado.
+- Não houve teste visual, parse/import pelo motor ou campanha interativa.
+- A simulação extensa dos 120 dias não foi executada.
+- A promoção para base estável depende do teste manual do usuário.

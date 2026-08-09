@@ -1,0 +1,38 @@
+GOLEM'S MANDATE — TESTE MANUAL DO BALANCEAMENTO ACOLHEDORA — v3.11.2
+
+REGRA DESTA ENTREGA
+O projeto não foi executado pelo assistente. Este roteiro verifica somente o ajuste Acolhedora e as regressões mais próximas.
+
+1. CAMPANHA NOVA ACOLHEDORA
+- Confirmar que o menu mostra v3.11.2.
+- Criar uma campanha Acolhedora.
+- Confirmar os valores iniciais: 48 alimentação, 22 material e 72 felicidade.
+- Abrir AVALIAÇÃO no dia 1.
+- Confirmar as metas do dia 20: 40 alimentação, 18 material, 45 felicidade e 10 habitantes.
+
+2. SAVE ACOLHEDOR EXISTENTE
+- Carregar o save Acolhedor usado no teste anterior.
+- Abrir AVALIAÇÃO e confirmar que as metas do próximo checkpoint diminuíram.
+- Salvar, carregar novamente e confirmar que a campanha permanece íntegra.
+- As reservas atuais não devem aumentar ao carregar; a melhora retroativa ocorre nas regras, não por injeção de recursos.
+
+3. TESTE INTERNO
+- Abrir TESTE INTERNO.
+- Selecionar Acolhedora e Dia 20 em SIMULAR METAS / VER METAS.
+- Confirmar 40 alimentação, 18 material, 45 felicidade e 10 população.
+- Confirmar reservas iniciais 48/22/72, derrota após 4 dias consecutivos sem recurso e recuperação de +2,0 felicidade.
+- Executar o Oráculo e confirmar que nenhuma verificação falha.
+
+4. REGRESSÃO MODERADA
+- Criar uma campanha Moderada.
+- Confirmar que ela ainda começa com 34 alimentação, 12 material e 62 felicidade.
+- Abrir AVALIAÇÃO e confirmar que o dia 20 ainda exige 50 alimentação, 22 material, 53 felicidade e 11 habitantes.
+
+5. DEBUGGER
+- Confirmar que abrir AVALIAÇÃO não encerra o jogo.
+- Confirmar que não surgem novas mensagens E ou W relacionadas a DifficultyCatalog, CampaignManager, DiagnosticsWindow ou UIManager.
+
+RESULTADO ESPERADO
+- Acolhedora oferece margem real no começo sem bônus oculto de produção ou custo.
+- Saves existentes continuam carregando e salvando.
+- Moderada e Difícil permanecem inalteradas.

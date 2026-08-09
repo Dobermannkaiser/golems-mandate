@@ -1,0 +1,16 @@
+project.godot
+scripts/GameManager.gd
+scripts/ui/MainMenu.gd
+scripts/UIManagerVariantB.gd
+scripts/diagnostics/InternalDiagnostics.gd
+tools/verify_part3_stage3.py
+tools/verify_part3_stage4.py
+tools/verify_gdscript_local_scope.py
+tools/simulate_councillor_opportunities_v332.py
+LEIA-ME_CORRECAO_PARTE3_ETAPA4_v3.3.2.md
+ROTEIRO_DE_TESTE_CORRECAO_PARTE3_ETAPA4_v3.3.2.txt
+VERIFICACAO_BASE_ETAPA3_v3.3.2.txt
+VERIFICACAO_CORRECAO_PARTE3_ETAPA4_v3.3.2.txt
+VERIFICACAO_ESCOPO_GDSCRIPT_v3.3.2.txt
+SIMULACAO_EXPERIENCIA_HISTORICO_v3.3.2.txt
+SIMULACAO_DIALOGOS_CONSEQUENCIA_v3.3.2.txt

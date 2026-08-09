@@ -1,0 +1,32 @@
+GOLEM'S MANDATE — CORREÇÃO DA PARTE 3 / ETAPA 9 — ROTEIRO v3.8.1
+
+PRÉ-CONDIÇÃO
+- Abra a v3.8.1 como projeto separado.
+- Use uma cópia de save da v3.8.0 ou uma campanha de teste em que Dália já esteja disponível.
+
+1. INICIALIZAÇÃO
+[ ] Confirme que o projeto abre sem erro de parser.
+[ ] Confirme no menu ou no TESTE INTERNO que a versão pública é 3.8.1 e o save continua na versão 17.
+
+2. RETRATO DE DÁLIA
+[ ] Abra a roda de relacionamentos e uma conversa com Dália.
+[ ] Compare o retrato com o PNG original: as cores devem permanecer vivas, sem camada cinza, azulada ou desbotada.
+[ ] Avance por respostas felizes, neutras e negativas; o retrato deve continuar com as cores originais.
+[ ] Confirme que o retrato não é cortado na resolução e escala de UI usadas normalmente.
+
+3. CONTEÚDO DE DÁLIA
+[ ] Converse com Dália até encontrar o assunto sobre a compostagem que aqueceu o galpão.
+[ ] Confirme que existem três respostas e reações coerentes ao novo assunto.
+[ ] Confira a biografia e os demais assuntos disponíveis.
+[ ] Confirme que nenhuma fala ou descrição comenta peso, corpo ou aparência física de Dália.
+
+4. SAVE E REGRESSÃO
+[ ] Salve e carregue após uma conversa com Dália.
+[ ] Confirme que afinidade, eventos, passiva e progresso romântico permanecem corretos.
+[ ] Abra uma conversa com outro personagem e confirme que seu retrato também mantém as cores originais.
+
+RESULTADO ESPERADO
+- Dália não possui diálogo corporal ou mensagem sobre peso.
+- O novo assunto de compostagem aparece normalmente.
+- Os PNGs são exibidos sem filtros de cor.
+- Saves da Etapa 9 continuam carregando sem migração ou perda de progresso.

@@ -1,0 +1,44 @@
+GOLEM'S MANDATE — VERIFICAÇÃO CONSOLIDADA — ETAPA 12 / v3.11.3
+
+ORIGEM E ESCOPO
+- Criada a partir do pacote íntegro v3.11.2.
+- Base estável oficial v3.10.1 preservada.
+- Mudança limitada a atração populacional, metas de população, transparência da interface, diagnóstico e versionamento.
+- Nenhum asset, conteúdo narrativo, construção, relação, recrutamento ou regra econômica diária foi alterado.
+
+REGRAS POPULACIONAIS
+- Acolhedora: chegada após 1 dia favorável; felicidade mínima 52.
+- Moderada: chegada após 2 dias favoráveis; felicidade mínima 55.
+- Difícil: chegada após 2 dias favoráveis; felicidade mínima 58.
+- Abandono preservado em 4/3/2 dias preocupantes.
+- Metas populacionais Acolhedora: 9/12/16/20/24/28.
+- Metas populacionais Moderada: 10/13/17/21/25/29.
+- Metas populacionais Difícil: 11/14/18/23/27/31.
+
+SAVES
+- Envelope global: 18.
+- Schema da campanha: 5.
+- Catálogo da campanha: 4.
+- SaveManager idêntico à v3.11.2.
+- Nenhuma migração nova.
+- Saves existentes reaplicam o tempo de atração da dificuldade e limitam o progresso antigo ao novo alvo.
+- Nenhum habitante, recurso ou moradia é concedido ao carregar.
+
+VERIFICAÇÕES EXECUTADAS
+- Contratos corretivos v3.11.3: 55/55 aprovados.
+- Contratos gerais da Etapa 12: 227/227 aprovados.
+- Escopo local GDScript: 76 scripts e 1.430 funções; 0 possível vazamento.
+- Regressão do Teste Interno de relações: 9/9 aprovada.
+- Transparência dos retratos: 30 imagens; 0 falha.
+- Referências res:// literais: nenhuma ausente.
+- Conversões numéricas perigosas da Avaliação: nenhuma encontrada.
+- Correções anteriores de warnings: preservadas pelos contratos corretivos.
+
+LIMITES DA EVIDÊNCIA
+- O Godot não foi executado.
+- Não houve teste visual, de input ou de runtime pelo assistente.
+- A simulação extensa dos 120 dias não foi executada.
+- Sensação de dificuldade e ritmo populacional dependem do teste manual do usuário.
+
+RESULTADO
+APROVADO nas verificações estáticas executadas. A candidata aguarda validação manual no Godot antes de qualquer promoção a base estável.

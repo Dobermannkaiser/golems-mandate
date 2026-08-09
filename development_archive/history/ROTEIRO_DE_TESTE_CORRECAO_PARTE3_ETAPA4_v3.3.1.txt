@@ -1,0 +1,58 @@
+ROTEIRO DE TESTE — PARTE 3 / ETAPA 4 — CORREÇÃO v3.3.1
+
+PREPARAÇÃO
+1. Extraia o ZIP em uma pasta nova.
+2. Importe o project.godot dessa pasta.
+3. Inicie uma campanha nova. Saves anteriores não são compatíveis com a versão 13.
+
+A. DIÁLOGOS COM CONSEQUÊNCIA
+1. Avance até o dia 4.
+2. Confirme que somente uma carta apresenta o selo dourado “!”.
+3. Clique na carta marcada. Se ela já estiver selecionada, clique novamente.
+4. Confirme que o diálogo mostra um problema ligado à profissão atual da carta.
+5. Confirme que as três opções informam custos e efeitos antes da decisão.
+6. Escolha uma opção sem custo ou uma opção para a qual a vila possua recursos.
+7. Confirme que o selo “!” desaparece e que a carta passa a informar um projeto ativo.
+8. Compare a previsão econômica antes e depois da escolha.
+9. Encerre os dias cobertos pelo projeto e confirme que o efeito permanece por 2 ou 3 dias, incluindo o dia de início.
+10. Ao final, confirme a mensagem de conclusão e o ganho de +6 XP para a carta responsável.
+11. Abra o histórico da carta e confirme o registro do início, decisão e conclusão.
+12. Clique duas vezes em uma carta sem “!” e confirme que nenhum diálogo decorativo é aberto.
+13. Continue avançando e confirme que o mesmo título de assunto não reaparece na mesma campanha.
+
+B. PONTO DE ATRIBUTO PENDENTE
+1. Faça uma carta subir de nível pelo XP diário, acontecimentos ou projetos.
+2. Confirme o selo vermelho “+1” no canto superior direito da carta.
+3. Passe o mouse sobre o selo e confira o tooltip.
+4. Expanda a carta, distribua o ponto e confirme:
+   - o atributo aumenta em 1;
+   - o ponto pendente diminui;
+   - o selo desaparece quando não restarem pontos.
+5. Salve e carregue antes de distribuir um ponto para confirmar a persistência do selo e do ponto.
+
+C. NÍVEL DAS NOVAS CARTAS
+1. Após a avaliação do dia 20, confira duas candidatas de nível 2.
+2. Após a avaliação do dia 40, confira duas candidatas de nível 3.
+3. Após a avaliação do dia 60, confira duas candidatas de nível 4.
+4. Após a avaliação do dia 80, confira duas candidatas de nível 5.
+5. Após as avaliações dos dias 100 e 120, confira candidatas de nível 6.
+6. Escolha uma carta e confirme que ela entra na reserva com:
+   - o nível mostrado na oferta;
+   - 0 XP dentro do nível atual;
+   - atributos adicionais já distribuídos;
+   - nenhum ponto pendente indevido.
+
+D. SAVE DE OPORTUNIDADE E PROJETO
+1. Salve com um selo “!” ainda pendente, carregue e confirme que o assunto permanece na mesma carta.
+2. Inicie um projeto, salve durante sua duração, carregue e confirme:
+   - título do projeto;
+   - representante responsável;
+   - dia final;
+   - modificadores econômicos ainda ativos.
+3. Termine o projeto e confirme que a conclusão não ocorre duas vezes após salvar/carregar.
+
+E. REGRESSÃO RÁPIDA
+1. Confirme que profissão, produção, XP diário, marcos e histórico continuam funcionando.
+2. Confirme que Mimo permanece com atributos 3/3/3/3.
+3. Confirme que as relações, fila de obras e avaliações continuam acessíveis.
+4. Observe o console do Godot e registre qualquer erro com a linha completa.

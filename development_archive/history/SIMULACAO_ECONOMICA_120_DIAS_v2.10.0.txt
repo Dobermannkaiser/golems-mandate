@@ -1,0 +1,60 @@
+SQUARE VILLAGE — SIMULAÇÃO ECONÔMICA DE 120 DIAS — v2.10.0
+
+Modelo: fórmulas centrais da campanha, atributos médios 6, quatro representantes,
+cinco recrutamentos narrativos e acontecimentos aleatórios aproximados.
+As políticas automatizadas podem trocar profissões diariamente e não substituem o teste no Godot.
+
+DIFICULDADE: ACOLHEDORA
+  Planejamento atento: 100.0% de vitórias | população final mediana 35 | comida no início do inverno 3765.9 | comida final 4234.3
+  Gestão casual: 100.0% de vitórias | população final mediana 35 | comida no início do inverno 2635.2 | comida final 2765.6
+  Gestão negligente:   1.5% de vitórias | população final mediana 35 | comida no início do inverno 1782.6 | comida final 1559.7 | falha típica no dia 120
+
+DIFICULDADE: MODERADA
+  Planejamento atento:  60.5% de vitórias | população final mediana 39 | comida no início do inverno 1236.9 | comida final 855.9 | falha típica no dia 120
+  Gestão casual:   0.0% de vitórias | população final mediana 29 | comida no início do inverno 370.5 | comida final 0.0 | falha típica no dia 100
+  Gestão negligente:   0.0% de vitórias | população final mediana 11 | comida no início do inverno 239.9 | comida final 40.7 | falha típica no dia 40
+
+DIFICULDADE: DIFÍCIL
+  Planejamento atento:  45.0% de vitórias | população final mediana 40 | comida no início do inverno 1243.9 | comida final 829.5 | falha típica no dia 120
+  Gestão casual:   0.0% de vitórias | população final mediana 26 | comida no início do inverno 437.6 | comida final 50.8 | falha típica no dia 100
+  Gestão negligente:   0.0% de vitórias | população final mediana 11 | comida no início do inverno 281.5 | comida final 107.0 | falha típica no dia 40
+
+MATRIZ DAS 24 METAS
+  Acolhedora:
+    Dia  20: alimentação  40 | material  18 | felicidade 45 | população 11
+    Dia  40: alimentação  60 | material  30 | felicidade 47 | população 15
+    Dia  60: alimentação  84 | material  44 | felicidade 49 | população 19
+    Dia  80: alimentação 108 | material  58 | felicidade 50 | população 24
+    Dia 100: alimentação 132 | material  66 | felicidade 47 | população 29
+    Dia 120: alimentação 160 | material  78 | felicidade 46 | população 34
+  Moderada:
+    Dia  20: alimentação  50 | material  22 | felicidade 53 | população 11
+    Dia  40: alimentação  75 | material  38 | felicidade 55 | população 15
+    Dia  60: alimentação 105 | material  55 | felicidade 57 | população 20
+    Dia  80: alimentação 135 | material  72 | felicidade 58 | população 25
+    Dia 100: alimentação 165 | material  82 | felicidade 55 | população 30
+    Dia 120: alimentação 200 | material  98 | felicidade 54 | população 35
+  Difícil:
+    Dia  20: alimentação  52 | material  22 | felicidade 53 | população 12
+    Dia  40: alimentação  79 | material  39 | felicidade 55 | população 16
+    Dia  60: alimentação 110 | material  56 | felicidade 57 | população 21
+    Dia  80: alimentação 142 | material  73 | felicidade 58 | população 27
+    Dia 100: alimentação 173 | material  84 | felicidade 55 | população 32
+    Dia 120: alimentação 210 | material 100 | felicidade 54 | população 37
+
+CRITÉRIOS DE LEITURA
+- Acolhedora deve aceitar gestão casual e oferecer ampla margem à política planejada.
+- Moderada deve recompensar planejamento e punir negligência.
+- Difícil pode exigir várias tentativas, mas deve permanecer matematicamente alcançável.
+- Outono acumula reservas; inverno consome parte relevante delas.
+
+Taxas observadas:
+- Acolhedora / planned: 100.0%
+- Acolhedora / casual: 100.0%
+- Acolhedora / neglectful: 1.5%
+- Moderada / planned: 60.5%
+- Moderada / casual: 0.0%
+- Moderada / neglectful: 0.0%
+- Difícil / planned: 45.0%
+- Difícil / casual: 0.0%
+- Difícil / neglectful: 0.0%

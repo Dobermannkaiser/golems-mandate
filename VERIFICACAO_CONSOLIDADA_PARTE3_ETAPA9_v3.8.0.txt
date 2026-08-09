@@ -1,0 +1,42 @@
+GOLEM'S MANDATE — PARTE 3 / ETAPA 9 — VERIFICAÇÃO CONSOLIDADA v3.8.0
+
+RESULTADO
+- Auditorias estáticas: APROVADAS.
+- Teste no Godot: NÃO EXECUTADO; o motor não está instalado neste ambiente.
+- Status da entrega: CANDIDATA PARA TESTE MANUAL.
+
+VERIFICADORES EXECUTADOS
+- Etapa 3: 679 verificações, 0 falhas.
+- Etapa 4: 183 verificações, 0 falhas.
+- Etapa 5: 64 verificações, 0 falhas.
+- Etapa 6: 184 verificações, 0 falhas.
+- Etapa 7: 511 verificações, 0 falhas.
+- Etapa 8: 77 verificações, 0 falhas.
+- Etapa 9: 60 verificações, 0 falhas.
+- Janelas sob demanda: 96 verificações, 0 falhas.
+- Integração de sprites: 106 verificações, 0 falhas.
+- Limpeza e otimização: 50 verificações, 0 falhas.
+- Escopo local GDScript: 70 scripts e 1.314 funções; 0 possíveis vazamentos.
+
+CONTRATOS ESPECÍFICOS CONFIRMADOS POR INSPEÇÃO
+- Silas e Dália cadastrados como o sexto e o sétimo personagens narrativos, nos dias 90 e 105.
+- Mesma roda, pontos, eventos pessoais, conversas e compromisso dos personagens antigos.
+- Quatro falas sazonais, quatro assuntos e quatro eventos pessoais para cada personagem novo.
+- Duas demonstrações explícitas de interesse nos níveis 4 e 6 para todas as sete rotas.
+- Amizade profunda quando os dois marcadores não existem ou já há parceiro.
+- Rejeição permanente da intimidade com amizade preservada.
+- Compromisso exclusivo por campanha.
+- Canção de Vigília com recuperação de 1 e cooldown persistente de cinco dias.
+- Horta Partilhada com +4% apenas quando a produção diária prevista não cobre o consumo.
+- Comentários de Silas e Dália sobre felicidade e alimentação reais da vila.
+- Requisitos genéricos de amizade e parceiro oficial em acontecimentos.
+- Capítulos, diálogos de abertura e quatro desfechos do Dia 105 cadastrados.
+- Final do Dia 120 preservado e atualizado para sete aliados conhecidos.
+- Migração do save 16 para 17, mantendo suporte acumulado ao save 15.
+- Infraestrutura de retrato por expressão e feedback temporário para seis estados.
+
+LIMITES
+- As verificações estáticas não executam o parser, o runtime ou o renderizador do Godot.
+- Não comprovam foco real por dispositivo, escala, recorte, áudio, cadência percebida ou aparência final.
+- Nenhuma imagem foi gerada e nenhuma simulação extensa foi executada.
+- A aprovação final exige o roteiro ROTEIRO_DE_TESTE_PARTE3_ETAPA9_v3.8.0.txt.

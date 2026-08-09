@@ -1,0 +1,11 @@
+SIMULAÇÃO — CARTAS DO CONSELHO — ETAPA 3
+Campanhas simuladas: 10000
+Cartas geradas: 40000
+Falhas de invariantes: 0
+Conselhos distintos: 10000
+Distribuição de valores de atributo: {1: 28126, 2: 57044, 3: 47601, 4: 21162, 5: 6067}
+Uso de nomes: {'Luma Pata-Leve': 6732, 'Nilo Brisa-Mansa': 6664, 'Pico Trilha-Fina': 6635, 'Rino Salta-Orvalho': 6691, 'Tiri Musgo-Claro': 6643, 'Vela Dedo-Ágil': 6635}
+Uso de retratos: {'felix_pescador': 7935, 'lumi_cozinheira': 8009, 'passos_leves_andarilho': 7944, 'passos_leves_artifice': 8070, 'passos_leves_batedor': 8042}
+Uso de passivas: {'adaptavel': 10000, 'cooperativo': 10000, 'economico': 10000, 'motivador': 10000}
+Uso de personalidades: {'ambitious': 4949, 'cautious': 4913, 'kind': 4941, 'optimistic': 5004, 'pessimistic': 5055, 'playful': 5055, 'practical': 5027, 'stubborn': 5056}
+Resultado: APROVADO

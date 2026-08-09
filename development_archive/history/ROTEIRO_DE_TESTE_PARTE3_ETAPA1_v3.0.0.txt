@@ -1,0 +1,45 @@
+GOLEM'S MANDATE — ROTEIRO DE TESTE — PARTE 3, ETAPA 1 — v3.0.0
+
+1. ABERTURA
+- Abra project.godot no Godot 4.7.
+- Confirme o nome Golem's Mandate e a versão 3.0.0.
+- Confirme que o menu, o HUD e o título principal usam o novo nome.
+
+2. NOVA CAMPANHA OBRIGATÓRIA
+- Confirme que um save antigo da v2.10.1 não aparece como campanha carregável.
+- Inicie uma nova campanha.
+- Salve e feche o jogo.
+- Abra novamente e carregue a campanha da Parte 3.
+
+3. PRESERVAÇÃO DA PARTE 2
+- Jogue ao menos três dias.
+- Confirme que produção, consumo, crescimento, eventos e construções funcionam como na v2.10.1.
+- Confirme que construções ainda terminam imediatamente; a fila não deve estar ativa nesta etapa.
+
+4. HISTÓRICO E SAVE
+- Avance dois dias, troque um membro do Conselho, melhore uma construção e resolva um acontecimento.
+- Salve, feche e carregue.
+- Abra o Oráculo de Diagnóstico.
+- Confirme que “Fundação da Parte 3” aparece como OK e mostra contagens maiores que zero para dias e decisões.
+
+5. RELACIONAMENTOS
+- Converse com um NPC e escolha uma resposta que altere o relacionamento.
+- Salve e carregue.
+- Confirme que o relacionamento permanece e que o Oráculo não acusa corrupção da fundação.
+
+6. CAMPANHA ANTIGA
+- Abra separadamente a cópia original v2.10.1.
+- Confirme que o save antigo continua disponível nela.
+- Não copie manualmente o arquivo da Parte 2 para o caminho da Parte 3.
+
+7. REGRESSÃO VISUAL
+- Teste menu, Conselho, Construções, Campanha, Relações, Vila ampliada, Configurações e Tutorial.
+- Teste mouse, teclado, Esc e foco por controle, quando disponível.
+- Confirme que nenhum modal invisível bloqueia cliques.
+
+8. RESULTADO A INFORMAR
+- versão exibida;
+- se nova campanha salvou e carregou;
+- contagem mostrada pelo Oráculo;
+- qualquer erro do painel Output/Debugger do Godot;
+- capturas de tela de problemas visuais.

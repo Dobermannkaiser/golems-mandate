@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://baupy2xs346s7"]
+
+[ext_resource type="PackedScene" uid="uid://c2kj8fuwchdbx" path="res://scenes/villager.tscn" id="1_o5qli"]
+[ext_resource type="Script" path="res://scripts/UIManagerVariantB.gd" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=482152402]
+
+[node name="World" type="Node2D" parent="." unique_id=594356068]
+
+[node name="Villagers" type="Node2D" parent="World" unique_id=921455245]
+visible = false
+
+[node name="Villager1" parent="World/Villagers" unique_id=500916518 instance=ExtResource("1_o5qli")]
+position = Vector2(760, 170)
+randomize_on_ready = false
+representative_id = "representante_01"
+
+[node name="Villager2" parent="World/Villagers" unique_id=572663485 instance=ExtResource("1_o5qli")]
+position = Vector2(960, 170)
+randomize_on_ready = false
+representative_id = "representante_02"
+
+[node name="Villager3" parent="World/Villagers" unique_id=1698541681 instance=ExtResource("1_o5qli")]
+position = Vector2(760, 370)
+randomize_on_ready = false
+representative_id = "representante_03"
+
+[node name="Villager4" parent="World/Villagers" unique_id=1150691596 instance=ExtResource("1_o5qli")]
+position = Vector2(960, 370)
+randomize_on_ready = false
+representative_id = "representante_04"
+
+[node name="Mimo" parent="World/Villagers" instance=ExtResource("1_o5qli")]
+visible = false
+position = Vector2(860, 500)
+randomize_on_ready = false
+representative_id = "passos_leves_faz_tudo"
+villager_name = "Mimo"
+species_name = "Passos-Leves"
+is_council_active = false
+is_special_npc = true
+specialization = 0
+passive_id = "faz_tudo"
+passive_name = "Faz-tudo"
+passive_description = "+5% em qualquer profissão e +5% adicional quando sua profissão é única no Conselho."
+strength = 3
+intelligence = 3
+charisma = 3
+agility = 3
+current_profession = 5
+
+[node name="Interface" type="CanvasLayer" parent="." unique_id=41435430]
+
+[node name="UIManager" type="Control" parent="Interface" unique_id=2130418282]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_0wfyh")

@@ -1,0 +1,33 @@
+GOLEM'S MANDATE — ARQUIVOS PRINCIPAIS ALTERADOS — v3.0.0
+
+NOVOS
+- scripts/foundation/Part3FoundationManager.gd
+- tools/verify_part3_stage1.py
+- tools/verify_part3_skill_review.py
+- LEIA-ME_PARTE3_ETAPA1_v3.0.0.md
+- AUDITORIA_FUNDACAO_E_ESTRATEGIAS_v3.0.0.txt
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA1_v3.0.0.txt
+- ARQUIVOS_ALTERADOS_v3.0.0.txt
+- VERIFICACAO_PARTE3_ETAPA1_v3.0.0.txt
+- CHECKSUM_ARQUIVOS_v3.0.0.txt
+
+ALTERADOS
+- project.godot
+- scenes/main.tscn
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/save/SaveManager.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/ui/MainMenu.gd
+
+PRESERVADOS SEM ALTERAÇÃO DE GAMEPLAY
+- economia e dificuldades;
+- metas e avaliações;
+- construções e efeitos;
+- campanha narrativa;
+- relacionamentos;
+- áudio;
+- tutorial e guia;
+- vila visual;
+- ferramentas históricas e relatórios da v2.10.1.

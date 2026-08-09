@@ -1,0 +1,61 @@
+ROTEIRO DE TESTE — PARTE 3 / ETAPA 5 — v3.4.0
+
+PREPARAÇÃO
+1. Extraia o ZIP em uma pasta vazia.
+2. Importe o project.godot dessa pasta.
+3. Inicie uma campanha nova. Saves anteriores não são compatíveis com o save 14.
+
+ABERTURA E INTERFACE
+4. Confirme que o menu mostra v3.4.0.
+5. Confirme que a campanha abre sem erro de parser ou recurso ausente.
+6. Verifique se cada carta mostra passiva, descrição e estado ATIVA, CONDICIONAL ou INATIVA.
+7. Confirme que o texto das cartas permanece legível e sem regressão de sombra.
+
+PASSIVAS
+8. Troque profissões e observe a atualização imediata dos estados das passivas.
+9. Para Dedicado, mantenha a mesma profissão por cinco dias completos e confirme a ativação no dia seguinte.
+10. Para Inquieto, faça uma troca real entre duas profissões definidas e confirme o bônus nos três primeiros dias.
+11. Verifique Incansável: a carta deve receber 3 XP ao encerrar o dia, enquanto as demais recebem 2.
+12. Confira no detalhamento as reduções de Autossuficiente e Econômico.
+13. Quando houver evento apropriado, confira Improvisador, Protetor ou Mediador no resultado/registro.
+
+SINERGIAS
+14. Monte Agricultor + Coletor e confira Ciclo de Sustento.
+15. Monte Ferreiro + Coletor e confira Forja Abastecida.
+16. Monte Ferreiro + Guarda e confira Obras Protegidas.
+17. Monte Servidor Público + Guarda e confira Ordem Comunitária.
+18. Monte quatro profissões diferentes e confira Conselho Diverso.
+19. Crie uma composição elegível a mais de uma sinergia e confirme que o sistema escolhe automaticamente.
+20. Confirme que nenhuma carta participa de duas sinergias ao mesmo tempo.
+21. Confirme que nunca existem mais de duas sinergias ativas.
+
+CONCENTRAÇÃO
+22. Use duas cartas na mesma profissão e confira 97% de entrada final.
+23. Use três cartas na mesma profissão e confira 93%.
+24. Use quatro cartas na mesma profissão e confira 88%.
+25. Confirme que a ficha histórica continua registrando a produção pessoal sem essa penalidade geral.
+
+PREVISÃO
+26. Clique em DETALHAR MODIFICADORES.
+27. Confira produção base, entrada final, passivas, sinergias, concentração, consumo e manutenção.
+28. Troque uma profissão com o painel fechado, reabra e confirme que os valores mudaram.
+29. Confirme que sinergias qualificadas, mas excluídas, aparecem como limitadas.
+30. Verifique se o painel cabe na janela e possui rolagem e fechamento por Esc.
+
+RECRUTAMENTO E SAVE
+31. Após uma avaliação, confirme que as duas candidatas possuem passivas diferentes.
+32. Ao longo da campanha, observe se passivas ausentes no elenco são priorizadas.
+33. Salve, feche e carregue a campanha.
+34. Confirme persistência de profissão, sequência na profissão, passiva, nível, XP e histórico.
+
+TUTORIAIS
+35. Abra o Guia do Jogo e confira a seção PASSIVAS E COMPOSIÇÃO.
+36. Confira o tutorial contextual do Conselho.
+37. Confirme que o guia diz que sinergias são automáticas e que a concentração reduz a entrada final.
+
+RESULTADO ESPERADO
+- Nenhum erro de parser.
+- Passivas com estados e condições coerentes.
+- Sinergias automáticas, limitadas e sem sobreposição de cartas.
+- Penalidade de concentração aplicada ao estoque final.
+- Previsão detalhada coerente com a variação real ao encerrar o dia.

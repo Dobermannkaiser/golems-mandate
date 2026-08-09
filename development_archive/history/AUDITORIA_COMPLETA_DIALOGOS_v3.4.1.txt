@@ -1,0 +1,29 @@
+AUDITORIA COMPLETA DOS DIÁLOGOS — v3.4.1
+
+ESCOPO REVISADO
+- diálogos de oportunidades dos representantes;
+- diálogos de subida de nível e marcos pessoais;
+- reações a sucesso e falha em acontecimentos;
+- prólogo e capítulos principais;
+- conversas sazonais e românticas;
+- eventos pessoais de relacionamento;
+- encontros;
+- diálogo interno de diagnóstico.
+
+PROBLEMAS ENCONTRADOS E CORRIGIDOS
+1. Explicação direta de que as três respostas alteravam a economia.
+2. Explicação verbal de duração do projeto e registro na ficha histórica.
+3. Explicação verbal da recompensa mecânica de +1 recurso.
+4. Falas que mencionavam “nível máximo” e “esta etapa”.
+5. Reações de sistema usadas como fala substituta em sucessos e falhas.
+6. Narração em terceira pessoa atribuída ao nome e retrato do próprio NPC.
+7. Premissas de eventos pessoais atribuídas como se fossem fala do personagem.
+8. Diagnóstico interno listando elementos da interface na voz de Mimo.
+
+CRITÉRIO APLICADO
+- NPC: somente percepção, opinião, emoção, intenção e conhecimento plausível do mundo.
+- Narrador: contexto externo, descrição de gestos, consequências narrativas e premissas.
+- Interface: custos, porcentagens, duração, recompensas, estados e detalhamento econômico.
+
+RESULTADO
+Os catálogos ativos não contêm mais as frases metalinguísticas detectadas. As informações mecânicas continuam acessíveis ao jogador fora da fala dos personagens.

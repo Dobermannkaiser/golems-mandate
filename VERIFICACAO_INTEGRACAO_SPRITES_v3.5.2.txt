@@ -1,0 +1,38 @@
+Golem's Mandate — verificação da integração dos sprites — v3.5.2
+
+ORIGEM DAS ARTES
+- Arquivo recebido: pngs contruções novas.zip
+- Imagens encontradas: 10
+- Formato recebido: JPEG RGB
+- Resolução recebida: 352 × 240 em todas as imagens
+- Fundo recebido: preto, sem canal alfa
+
+TRATAMENTO
+- Mapeamento das dez imagens para as dez builds concluído.
+- Conversão para PNG RGBA concluída.
+- Fundo preto conectado às bordas removido.
+- Resolução final preservada em 352 × 240.
+- Caminhos ativos do projeto preservados.
+
+RESULTADOS DOS VERIFICADORES
+- Integração de sprites: 106 verificações, 0 falhas.
+- Parte 3 / Etapa 3: 655 verificações, 0 falhas.
+- Parte 3 / Etapa 4: 183 verificações, 0 falhas.
+- Parte 3 / Etapa 5: 64 verificações, 0 falhas.
+- Parte 3 / Etapa 6: 184 verificações, 0 falhas.
+- Escopo local GDScript: 67 scripts e 1.205 funções analisadas, 0 possíveis vazamentos.
+
+VALIDAÇÕES DE IMAGEM
+- 10/10 arquivos são PNG válidos.
+- 10/10 arquivos têm modo RGBA.
+- 10/10 arquivos têm 352 × 240 pixels.
+- 10/10 arquivos possuem transparência real.
+- 10/10 arquivos possuem cantos transparentes.
+- Nenhuma referência ativa aponta para JPG.
+
+VERSÕES
+- Versão pública: 3.5.2.
+- Save: versão 15, sem alteração.
+
+LIMITAÇÃO
+- O projeto não foi executado no Godot. A validação final de escala, posicionamento e aparência dentro da vila depende do teste do usuário.

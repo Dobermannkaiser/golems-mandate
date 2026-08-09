@@ -1,0 +1,12 @@
+Square Village — Parte 2 Etapa 7 — v2.7.1
+
+Arquivos principais alterados:
+- assets/dialogue/portraits/sanctuary_void.png
+- characters/18_deusa_auditoria.tres
+- scripts/dialogue/DialogueCatalog.gd
+- scripts/UIManagerVariantB.gd
+- project.godot
+- tools/verify_stage7.py
+- LEIA-ME_PARTE2_ETAPA7.md
+- ROTEIRO_DE_TESTE_ETAPA7_v2.7.1.txt
+- LEIA-ME_ESTABILIZACAO_v2.7.1.md

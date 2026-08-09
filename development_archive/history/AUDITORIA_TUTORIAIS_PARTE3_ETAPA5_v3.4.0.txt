@@ -1,0 +1,33 @@
+AUDITORIA DOS TUTORIAIS — ETAPA 5 — v3.4.0
+
+Versão do tutorial: 5
+
+CONTEÚDOS REVISADOS
+- tutorial básico: leitura da previsão;
+- tutorial básico: atributos, profissões e estado das passivas;
+- tutorial básico: acontecimentos e passivas da carta responsável;
+- Guia do Jogo: recursos;
+- Guia do Jogo: representantes, XP e histórico;
+- nova seção: Passivas e Composição;
+- Guia do Jogo: Conselho e recrutamento;
+- Guia do Jogo: acontecimentos;
+- Guia do Jogo: salvar e carregar;
+- tutorial contextual da área do Conselho.
+
+REGRAS EXPLICITADAS
+- ATIVA, CONDICIONAL e INATIVA;
+- sinergias selecionadas automaticamente;
+- limite de duas sinergias;
+- uma sinergia por carta;
+- penalidades gerais de 3%, 7% e 12%;
+- uso do botão DETALHAR MODIFICADORES;
+- necessidade de campanha nova.
+
+REFERÊNCIAS OBSOLETAS PROCURADAS
+- passiva Cooperativo provisória;
+- Econômico reduzindo 0,15 por habitante;
+- retornos individuais 100/98/95/90;
+- promessa de migração de saves antigos;
+- versões públicas anteriores na interface ativa.
+
+Resultado da busca nos scripts ativos: nenhuma referência econômica obsoleta encontrada.

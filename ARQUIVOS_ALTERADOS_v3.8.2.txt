@@ -1,0 +1,27 @@
+GOLEM'S MANDATE — ARQUIVOS ALTERADOS NA v3.8.2
+
+- project.godot
+- scripts/models/RelationshipState.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/relationships/RelationshipDialogueCatalog.gd
+- scripts/UIManager.gd
+- scripts/GameManager.gd
+- scripts/ui/RelationshipsWindow.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/UIManagerVariantB.gd
+- scripts/ui/MainMenu.gd
+- tools/verify_part3_stage9.py
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- tools/verify_part3_stage5.py
+- tools/verify_part3_stage6.py
+- tools/verify_part3_stage7.py
+- tools/verify_part3_stage8.py
+- tools/verify_lazy_windows_v353.py
+- tools/verify_project_optimization_v351.py
+- tools/verify_sprite_integration_v352.py
+- tools/test_internal_relationship_test_v382.gd
+- tools/verify_internal_relationship_test_v382.py
+- LEIA-ME_CORRECAO_TESTE_INTERNO_v3.8.2.md
+- ROTEIRO_DE_TESTE_CORRECAO_TESTE_INTERNO_v3.8.2.txt
+- VERIFICACAO_CORRECAO_TESTE_INTERNO_v3.8.2.txt

@@ -1,0 +1,29 @@
+Square Village — arquivos principais da revisão v2.5.2
+
+Código:
+- scripts/ui/BuildingVisuals.gd
+- scripts/ui/VillageWindow.gd
+- scripts/UIManager.gd
+- tools/verify_stage5.py
+- project.godot
+
+Recursos revisados:
+- assets/etapa5/cat_01.png
+- assets/etapa5/cat_02.png
+- assets/etapa5/cat_03.png
+- assets/etapa5/cat_04.png
+- assets/etapa5/empty_lot.png
+- assets/etapa5/house_level1.png até house_level3.png
+- assets/etapa5/barn_level1.png até barn_level3.png
+- assets/etapa5/sawmill_level1.png até sawmill_level3.png
+- assets/etapa5/well_level1.png até well_level3.png
+- assets/etapa5/square_level1.png até square_level3.png
+- assets/etapa5/ground_spring.png
+- assets/etapa5/ground_summer.png
+- assets/etapa5/ground_autumn.png
+- assets/etapa5/ground_winter.png
+
+Compatibilidade:
+- nenhuma regra econômica foi alterada;
+- formato de save permanece versão 4;
+- saves anteriores continuam compatíveis.

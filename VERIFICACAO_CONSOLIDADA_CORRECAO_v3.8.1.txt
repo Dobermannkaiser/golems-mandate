@@ -1,0 +1,26 @@
+GOLEM'S MANDATE — CORREÇÃO DA PARTE 3 / ETAPA 9 — VERIFICAÇÃO v3.8.1
+
+ESCOPO
+- Remoção do assunto corporal de Dália.
+- Substituição por um assunto de compostagem comunitária.
+- Remoção de referência corporal da biografia.
+- Preservação das cores originais dos PNGs na janela de diálogo.
+- Manutenção do save global versão 17.
+
+RESULTADOS
+- Auditoria específica da Etapa 9: 63 verificações, 0 falhas.
+- Escopo GDScript: 70 scripts e 1.314 funções analisados, 0 possíveis vazamentos.
+- Transparência: 30 retratos verificados, 0 falhas.
+- Verificadores acumulados das Etapas 3 a 9: aprovados.
+- Janelas sob demanda, sprites e otimização: aprovados.
+- Busca nos arquivos de jogo: nenhuma ocorrência residual do assunto removido ou de mensagem corporal sobre Dália.
+- PNG de Dália: preservado, sem edição.
+
+OBSERVAÇÃO SOBRE AUDITOR HISTÓRICO
+- O verificador de imersão v3.4.1 mantém uma expectativa anterior à Etapa 9 sobre atribuição de respostas narrativas.
+- Essa expectativa já não correspondia à arquitetura da v3.8.0 e não foi causada por esta correção.
+- Nenhuma regra de diálogo fora do escopo foi alterada para mascarar o resultado.
+
+LIMITAÇÕES
+- O executável Godot não está disponível neste ambiente.
+- A abertura do projeto, o resultado visual no motor e a continuidade real do save dependem do roteiro manual v3.8.1.

@@ -1,0 +1,62 @@
+Golem’s Mandate — Parte 3 / Etapa 4 — v3.3.0
+ROTEIRO DE TESTE NO GODOT
+
+PREPARAÇÃO
+1. Extraia o ZIP em uma pasta nova.
+2. Importe o `project.godot` dessa pasta.
+3. Inicie uma campanha nova. Saves v11 ou anteriores não pertencem à Etapa 4.
+4. Abra o Oráculo e confirme que não há falhas em Experiência e histórico.
+
+XP DIÁRIO
+5. Anote o XP das quatro cartas ativas.
+6. Encerre um dia.
+7. Confirme +2 XP para as quatro cartas que terminaram o dia ativas.
+8. Confirme que Mimo ou outra carta na reserva não recebeu XP diário.
+9. Troque uma carta antes de encerrar o próximo dia e confirme que só a formação final recebeu XP.
+
+RESPONSABILIDADE EM ACONTECIMENTOS
+10. Aguarde ou inicie um acontecimento pelo Teste Interno.
+11. Confirme que a carta selecionada já aparece como responsável.
+12. Troque o responsável uma vez e confirme que chances/textos são atualizados.
+13. Resolva o evento e confirme +20 XP para o responsável.
+14. Abra a ficha e confira título, dia, escolha e sucesso/falha/solução garantida.
+
+PRODUÇÃO E MARCOS
+15. Mantenha uma carta produzindo o mesmo recurso até ultrapassar 100 unidades pessoais.
+16. Confirme +10 XP e a fala de marco coerente com a personalidade.
+17. Verifique que alimentação, material e felicidade têm marcos separados.
+18. Confirme que recursos recebidos diretamente por eventos não aumentam a produção pessoal.
+
+NÍVEL E DIÁLOGO
+19. Faça uma carta atingir o próximo nível.
+20. Confirme que o nível sobe automaticamente e surge 1 ponto pendente.
+21. Confirme que a conversa especial abre antes de continuar o fluxo do dia/evento.
+22. Leia as três respostas e escolha a que respeita a personalidade da carta.
+23. Confirme +1 do recurso dominante informado.
+24. Em outra subida, escolha uma resposta neutra ou inadequada e confirme que não há recurso extra.
+25. Salve durante uma conquista pendente, carregue e confirme que a conversa retorna corretamente.
+
+ATRIBUTOS
+26. Expanda a carta e use +FOR, +INT, +CAR ou +AGI.
+27. Confirme consumo de exatamente 1 ponto e atualização da produção prevista.
+28. Guarde um ponto por alguns dias e confirme que ele permanece disponível após salvar/carregar.
+29. Confirme que nenhum atributo ultrapassa 8.
+
+FICHA HISTÓRICA
+30. Abra a ficha apenas pela carta expandida.
+31. Confira: entrada na vila, XP vitalício, dias ativos/reserva, produção, profissão principal, marcos, eventos, avaliações, pontos e crônica.
+32. Confirme que fechar a ficha restaura o foco e não altera a partida.
+
+RECRUTAMENTO
+33. Após uma avaliação, recrute uma nova carta.
+34. Confirme nível `floor(média ativa) − 1`, mínimo 1.
+35. Confirme que os pontos de níveis anteriores já estão distribuídos e não aparecem como pendentes.
+36. Confirme que o histórico da nova carta começa no dia de recrutamento.
+
+NÍVEL MÁXIMO
+37. Em teste prolongado, alcance o nível 6.
+38. Confirme `NÍVEL 6 — MÁXIMO`, XP atual parado e XP vitalício continuando a crescer.
+
+SAVE E REGRESSÕES
+39. Salve, feche e carregue: XP, pontos, histórico, profissões, reserva e diálogos pendentes devem permanecer.
+40. Confirme que fila de obras, relações, recrutamento, avaliações e produção base continuam funcionando.

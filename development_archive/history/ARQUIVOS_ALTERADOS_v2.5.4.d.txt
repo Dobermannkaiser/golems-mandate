@@ -1,0 +1,18 @@
+Square Village v2.5.4.d — Arquivos alterados ou adicionados
+
+ALTERADOS
+- project.godot
+- scripts/UIManagerVariantB.gd
+
+ADICIONADOS
+- LEIA-ME_LAYOUT_EXPERIMENTAL_v2.5.4.d.md
+- ROTEIRO_DE_TESTE_LAYOUT_v2.5.4.d.txt
+- ARQUIVOS_ALTERADOS_v2.5.4.d.txt
+- tools/verify_layout_variant_d.py
+- VERIFICACAO_LAYOUT_v2.5.4.d.txt
+
+PRINCIPAIS MUDANÇAS
+- Avaliação e Obras movidas da barra superior para a barra lateral.
+- Barra superior reduzida e simplificada.
+- Recursos receberam maior largura útil.
+- Versão atualizada para v2.5.4.d.

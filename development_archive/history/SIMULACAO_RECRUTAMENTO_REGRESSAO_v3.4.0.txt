@@ -1,0 +1,7 @@
+SIMULAÇÃO — RECRUTAMENTO DE CARTAS — v3.2.3
+Campanhas simuladas: 10000
+Ofertas simuladas: 60000
+Falhas: 0
+Casos em que a segunda maior amizade foi usada: 46535
+Uso de espécies: {'Anã': 10000, 'Draconato': 10000, 'Elfo': 10000, 'Kobold': 10000, 'Meio-demônia': 10000, 'Passos-Leves': 10000}
+Resultado: APROVADO

@@ -1,0 +1,70 @@
+SQUARE VILLAGE — ROTEIRO DE TESTE DA ETAPA 9 — v2.9.2
+
+1. MENU E CONFIGURAÇÕES
+- Inicie com F5 e confirme a música do menu.
+- Abra CONFIGURAÇÕES.
+- Teste Volume Geral, Música, Ambiente, Efeitos e Interface.
+- Reduza cada canal até 0 e confirme que apenas aquele tipo de áudio desaparece.
+- Ative SILENCIAR TUDO e confirme silêncio total.
+- Desative e confirme que os volumes individuais foram preservados.
+- Use RESTAURAR ÁUDIO e confirme os padrões 80/60/45/70/55.
+
+2. INTERFACE
+- Passe o mouse por botões e confirme um som discreto, sem repetição excessiva.
+- Abra e feche Conselho, Relações, Registro, Avaliação, Obras e Salvar/Carregar.
+- Confirme sons de clique, confirmação, cancelamento e abertura.
+
+3. CAMPANHA E ESTAÇÕES
+- Entre numa campanha e confirme música e ambiente de Primavera.
+- Use Teste Interno ou avance até as outras estações.
+- Confirme troca suave para Verão, Outono e Inverno.
+- Em Primavera e Inverno, reinicie algumas vezes e confirme que há duas faixas
+  possíveis, sem troca constante durante a mesma estação.
+
+4. DIÁLOGOS E HISTÓRIA
+- Abra uma conversa comum e confirme redução da música e do ambiente.
+- Confirme o som discreto da escrita do texto.
+- Feche o diálogo e confirme restauração gradual dos volumes.
+- Teste prólogo, capítulo e Dia 120 pelo Oráculo.
+- Confirme música especial e efeitos de capítulo/Sanctuary-Void.
+
+5. ADMINISTRAÇÃO E ACONTECIMENTOS
+- Troque profissão e representante.
+- Construa e melhore uma obra.
+- Encerre um dia, salve e carregue.
+- Resolva acontecimentos positivos e negativos.
+- Teste avaliação, vitória e derrota.
+
+6. RELACIONAMENTOS
+- Responda uma opção boa e outra ruim.
+- Confirme efeitos distintos para ganho e perda.
+- Teste encontro e compromisso romântico.
+
+7. RECOMPENSA CORRIGIDA
+- Resolva um acontecimento positivo.
+- O efeito deve começar imediatamente, sem os 3,24 segundos de silêncio do
+  arquivo original.
+
+8. FOCO E COMPATIBILIDADE
+- Troque para outra janela e confirme redução do volume.
+- Volte ao jogo e confirme restauração.
+- Carregue um save da v2.8.3 e confirme campanha e relações intactas.
+
+
+CORREÇÕES VISUAIS v2.9.2
+1. Abra Configurações em 1152×648 e role até o final.
+2. Confirme que TELA CHEIA, REDUZIR ANIMAÇÕES, a observação e VOLTAR permanecem dentro do painel.
+3. Construa ou simule Muralha nível 2 e nível 3.
+4. Abra a vila ampliada e confirme que cantos, trechos retos e portão se encostam sem se sobrepor.
+5. Repita na visão normal da vila.
+
+
+MURALHAS PROCEDURAIS v2.9.2
+----------------------------
+1. Construa a Muralha no nível 1 e confirme a paliçada de madeira.
+2. Melhore para o nível 2 e confirme a muralha de pedra com torres laterais.
+3. Melhore para o nível 3 e confirme o portão central com abertura própria.
+4. Abra a vila ampliada e confirme que a muralha dobra de escala sem sobreposição.
+5. Volte à visão normal e confirme que torres, segmentos e portão continuam alinhados.
+6. Confira o ícone da Muralha na interface de construções; ele também deve ser procedural.
+7. Confirme que nenhum trecho antigo de PNG aparece sobre o novo desenho.

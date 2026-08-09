@@ -1,0 +1,15 @@
+SQUARE VILLAGE — ROTEIRO DE TESTE DA ETAPA 8 — v2.8.3
+
+1. Inicie uma campanha nova ou carregue um save da v2.8.x.
+2. Abra CONSELHO pela primeira vez.
+3. Confirme que a dica contextual aparece acima de Gerenciar Conselho.
+4. Clique em PRÓXIMO, VOLTAR e FECHAR DICA.
+5. Reabra CONSELHO e confirme que a dica não reaparece automaticamente.
+6. Abra RELAÇÕES pela primeira vez.
+7. Repita o teste dos três botões.
+8. Teste as setas esquerda/direita e Esc enquanto uma dica estiver aberta.
+9. Abra REGISTRO, AVALIAÇÃO, OBRAS, AMPLIAR e SALVAR/CARREGAR e confirme a navegação das dicas.
+10. Depois de fechar cada dica, confirme que a janela inferior continua utilizável.
+11. Abra AJUDA e percorra o Guia do Jogo completo.
+12. Feche o guia e confirme que nenhum painel invisível bloqueia a interface.
+13. Salve, carregue e confirme que campanha, relações e história permanecem intactas.

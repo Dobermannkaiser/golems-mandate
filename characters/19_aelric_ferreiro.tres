@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "aelric_ferreiro"
+display_name = "Aelric Brasa-Clara"
+species_name = "Elfo"
+pronouns = "ele/dele"
+role_name = "Mestre ferreiro e runista"
+personality = "Reservado, meticuloso e protetor. Fala com seriedade, mas possui humor seco e se desconcerta quando recebe elogios sinceros."
+biography = "Um ferreiro élfico marcado por uma forja destruída e por juramentos antigos. Chega à vila no vigésimo dia e pode desenvolver amizade ou romance com o Prefeito."
+portrait_path = "res://assets/dialogue/portraits/aelric_ferreiro.png"
+fallback_color = Color(0.58, 0.36, 0.22, 1)
+is_special_npc = true
+romance_available = true
+hidden_until_story = true

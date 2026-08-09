@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "felix_pescador"
+display_name = "Aparência: Pescador do Luar"
+species_name = "Passos-Leves"
+pronouns = "ele/dele"
+role_name = "Pescador e barqueiro"
+personality = "Prático, paciente e cheio de histórias absurdas sobre peixes mágicos."
+biography = "Félix também serve como aparência genérica de fundador. Seu traje remete a rios, lagos e viagens sob a lua."
+portrait_path = "res://assets/dialogue/portraits/felix_pescador.png"
+fallback_color = Color(0.607843, 0.431373, 0.247059, 1)
+is_founder_appearance = true

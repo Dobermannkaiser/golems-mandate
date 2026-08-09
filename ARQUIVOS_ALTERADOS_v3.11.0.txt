@@ -1,0 +1,39 @@
+GOLEM'S MANDATE — ARQUIVOS ALTERADOS — v3.11.0
+
+BASE ALTERADA
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/buildings/BuildingManager.gd
+- scripts/campaign/CampaignManager.gd
+- scripts/campaign/CampaignRecords.gd
+- scripts/campaign/DifficultyCatalog.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/dialogue/DialogueCatalog.gd
+- scripts/events/EventManager.gd
+- scripts/events/FounderMemoryManager.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/foundation/Part3FoundationManager.gd
+- scripts/models/PlayerProfile.gd
+- scripts/relationships/RelationshipDialogueCatalog.gd
+- scripts/save/SaveManager.gd
+- scripts/ui/CampaignWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/ProfileSetupWindow.gd
+
+NOVOS ARQUIVOS DE CÓDIGO
+- scripts/campaign/CampaignIdentityCatalog.gd
+- scripts/campaign/CampaignOutcomeCatalog.gd
+- tools/verify_part3_stage12.py
+
+NOVOS DOCUMENTOS
+- LEIA-ME_PARTE3_ETAPA12_v3.11.0.md
+- PLANO_SIMULACAO_ETAPA12_v3.11.0.txt
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA12_v3.11.0.txt
+- VERIFICACAO_CONSOLIDADA_PARTE3_ETAPA12_v3.11.0.txt
+- ARQUIVOS_ALTERADOS_v3.11.0.txt
+
+ARQUIVOS DA ETAPA 11
+Os documentos, ferramentas e ativos da v3.10.1 foram mantidos como histórico e não foram reescritos.
+

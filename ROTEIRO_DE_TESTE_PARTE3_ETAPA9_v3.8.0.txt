@@ -1,0 +1,93 @@
+GOLEM'S MANDATE — PARTE 3 / ETAPA 9 — ROTEIRO MANUAL v3.8.0
+
+STATUS ESPERADO AO INICIAR
+- A v3.8.0 é candidata, não estável.
+- Preserve a v3.7.0 e use uma cópia do save para o teste de migração.
+
+1. INICIALIZAÇÃO E REGRESSÃO BÁSICA
+[ ] Abra project.godot e confirme que o projeto inicia sem erro de parser.
+[ ] Inicie uma campanha nova e confirme prólogo, Conselho, recursos e avanço de dia.
+[ ] Abra RELAÇÕES e confirme que apenas personagens já apresentados aparecem.
+[ ] Rode TESTE INTERNO e registre qualquer erro ou aviso.
+
+2. MIGRAÇÃO v16 PARA v17
+[ ] Carregue uma cópia de save válido da v3.7.0 / formato 16.
+[ ] Confirme que recursos, dia, Conselho, obras, memórias e relacionamentos antigos permanecem.
+[ ] Confirme que a campanha salva novamente no formato 17 e recarrega.
+[ ] Confirme que nenhum evento pessoal, efeito ou ponto é duplicado.
+
+3. CADÊNCIA DE QUINZE DIAS
+[ ] Avance uma campanha até o Dia 90 e conclua o capítulo de Silas.
+[ ] Confirme que Silas é apresentado e passa a aparecer na mesma roda dos demais.
+[ ] Avance até o Dia 105 e conclua o capítulo de Dália.
+[ ] Confirme que Dália entra na mesma roda, sem janela ou categoria especial.
+[ ] Confirme que o capítulo final do Dia 120 ainda inicia e resolve normalmente.
+
+4. IDENTIDADE E RETRATOS
+[ ] Confirme nomes, pronomes e textos de Silas Nocturno e Dália Folhaverde.
+[ ] Verifique os retratos nas introduções, roda, conversas e eventos pessoais.
+[ ] Confirme que neutro, feliz, triste, irritado, surpreso e afetivo possuem feedback visual distinto quando usados.
+[ ] Teste escala de UI elevada e menor resolução suportada; confirme que retrato, texto e escolhas não são cortados.
+
+5. CONVERSAS SAZONAIS E COMENTÁRIOS
+[ ] Converse com Silas e Dália na primavera, verão, outono e inverno.
+[ ] Confirme variação sazonal e ausência de repetição imediata do último assunto.
+[ ] Reduza a felicidade abaixo de 30 e confirme que Silas pode comentar o estado real da vila.
+[ ] Produza saldo diário negativo de alimentação e confirme que Dália pode comentar a previsão.
+[ ] Confirme que as respostas boas, neutras e ruins usam expressão e reação coerentes.
+
+6. PASSIVA DE DÁLIA
+[ ] Eleve Dália ao nível 4 e mantenha a produção diária de alimentação maior ou igual ao consumo.
+[ ] Confirme que Horta Partilhada não concede bônus nessa condição.
+[ ] Faça a produção prevista ficar menor que o consumo.
+[ ] Confirme +4% de produção de alimentação e atualização coerente da previsão.
+[ ] Salve/carregue e confirme que a condição continua sendo calculada, sem bônus fixo indevido.
+
+7. PASSIVA DE SILAS
+[ ] Eleve Silas ao nível 4.
+[ ] Termine um dia com perda líquida de felicidade e confirme recuperação de 1 ponto no resumo.
+[ ] Provoque nova perda antes de cinco dias e confirme que a passiva não repete.
+[ ] Provoque perda no primeiro dia elegível após o intervalo e confirme nova ativação.
+[ ] Salve/carregue durante o intervalo e confirme que o cooldown permanece.
+
+8. INTERESSE NOS NÍVEIS 4 E 6
+[ ] Em uma rota romântica, conclua o evento do nível 4 escolhendo a fala clara de interesse.
+[ ] Confirme na roda “Interesse demonstrado: 1/2 escolhas”.
+[ ] No evento do nível 6, escolha novamente a fala de interesse.
+[ ] Confirme “2/2 escolhas”, salve, carregue e confira persistência.
+[ ] Repita em um personagem antigo para confirmar que a regra não é exclusiva de Silas e Dália.
+
+9. AMIZADE PROFUNDA SEM INTERESSE
+[ ] Em outra rota, conclua os eventos dos níveis 4 e 6 sem escolher interesse.
+[ ] Alcance o evento do nível 8.
+[ ] Confirme que o texto oferece amizade profunda, não romance.
+[ ] Resolva o evento e confirme que conversas e amizade continuam disponíveis.
+
+10. ROMANCE, REJEIÇÃO E EXCLUSIVIDADE
+[ ] Com 2/2 escolhas e nenhum parceiro, alcance o evento do nível 8.
+[ ] Aceite o romance e confirme parceiro oficial e encontros a cada sete dias.
+[ ] Em save separado, rejeite a proposta e confirme “Rota íntima encerrada; amizade preservada”.
+[ ] Continue ganhando pontos e conversando após a rejeição; confirme que o romance não reaparece.
+[ ] Com um parceiro oficial, avance outra rota ao nível 8 e confirme apenas amizade profunda.
+
+11. AMIZADE E ROMANCE NOS ACONTECIMENTOS
+[ ] Antes do Dia 90, obtenha 340 pontos com Rubra e confirme a opção especial no capítulo de Silas.
+[ ] Sem 340 pontos, confirme que a mesma opção aparece bloqueada com requisito legível.
+[ ] Antes do Dia 105, obtenha 340 pontos com Aelric e teste a irrigação rúnica.
+[ ] Com parceiro oficial, confirme a opção da semente de compromisso no capítulo de Dália.
+[ ] Sem parceiro, confirme o bloqueio com motivo explícito.
+[ ] Compare os resultados e confirme que opções de vínculo não tornam as alternativas comuns inúteis.
+
+12. SAVE, FOCO E REGRESSÃO FINAL
+[ ] Salve durante uma rota com 1/2 escolhas, carregue e conclua a segunda.
+[ ] Navegue pela roda e diálogos somente com teclado e depois somente com controle.
+[ ] Confirme foco visível, rolagem e retorno correto após fechar diálogos.
+[ ] Teste acontecimentos comuns, memórias da Etapa 8, obras, recrutamento e auditorias.
+[ ] Salve duas vezes, feche o jogo e carregue a campanha final.
+
+CRITÉRIO DE APROVAÇÃO
+- Todos os itens essenciais passam no Godot.
+- Silas e Dália usam a mesma cadência e a mesma roda dos personagens antigos.
+- Passivas, duas escolhas de interesse, rejeição e exclusividade persistem corretamente.
+- Nenhum save, acontecimento, ponto, passiva ou romance duplica após carregar.
+- Somente após essa aprovação a v3.8.0 pode ser promovida a estável.

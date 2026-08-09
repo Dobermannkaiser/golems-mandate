@@ -1,0 +1,12 @@
+ROTEIRO DE TESTE — CORREÇÃO v3.2.1
+
+1. Crie uma vila nova.
+2. Confirme que não aparece erro ao preparar Orion.
+3. Na área CARTAS DO CONSELHO, verifique se cada carta ativa possui o campo PROFISSÃO.
+4. Escolha profissões diferentes e encerre o dia.
+5. Confirme que alimentação, material e felicidade respondem às profissões escolhidas.
+6. Verifique a nitidez do texto com a carta normal, selecionada e sob o mouse.
+7. Abra TESTE INTERNO > Relações da Vila.
+8. Confirme a presença de Mimo, Aelric, Kobi, Orion, Rubra e Brunna.
+9. Avance até os dias 15, 30, 45, 60 e 75 para testar as chegadas narrativas.
+10. Confirme que as avaliações continuam nos dias 20, 40, 60, 80, 100 e 120.

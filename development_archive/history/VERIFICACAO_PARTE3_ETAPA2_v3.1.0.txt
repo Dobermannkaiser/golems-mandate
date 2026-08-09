@@ -1,0 +1,153 @@
+Golem’s Mandate — Parte 3, Etapa 2 — v3.1.0
+RELATÓRIO DE VERIFICAÇÃO
+
+DATA DA ENTREGA: 2026-07-30
+BASE: Parte 3, Etapa 1, v3.0.0 testada pelo usuário
+STATUS: versão candidata; não promovida a base estável
+
+1. VERIFICADOR PRINCIPAL DA ETAPA 2
+
+Comando:
+python3 tools/verify_part3_stage2.py
+
+Resultado:
+- 899 verificações;
+- 0 falhas.
+
+Cobertura principal:
+- delimitadores e estrutura dos scripts;
+- funções duplicadas;
+- callbacks conectados;
+- preloads e recursos referenciados;
+- contratos de classes e constantes;
+- versão 3.1.0;
+- save version 9 e schema exclusivo;
+- migração v8 -> v9;
+- fila persistente;
+- capacidade por população;
+- tempos 1/2/3;
+- ordem estrita;
+- cancelamento 100%/50%;
+- reordenação;
+- ordem de avaliação e liberação;
+- interface e tutorial;
+- visual procedural;
+- Oráculo de Diagnóstico;
+- cenários temporais de referência;
+- preservação das fórmulas econômicas existentes.
+
+2. REVISÃO DE UX/UI DA PARTE 3
+
+Comando:
+python3 tools/verify_part3_skill_review.py
+
+Resultado:
+- 72 verificações;
+- 0 falhas.
+
+Cobertura adicional:
+- foco e restauração;
+- ui_cancel;
+- contraste;
+- alvos mínimos;
+- acessibilidade persistente;
+- modal seguro de cancelamento;
+- previsão na fila;
+- canteiros procedurais;
+- clipping;
+- remoção da validação do nome do projeto.
+
+3. REVISÃO GERAL DAS SKILLS
+
+Comando:
+python3 tools/verify_skill_review.py
+
+Resultado:
+- 65 verificações;
+- 0 falhas.
+
+4. SIMULAÇÃO INDEPENDENTE DA FILA
+
+Comando:
+python3 tools/simulate_construction_queue_stage2.py
+
+Resultado:
+- todos os cenários passaram.
+
+Cenários:
+- solicitação no dia 10 com disponibilidade nos dias 12, 13 e 14;
+- capacidades nas faixas populacionais;
+- limite de quatro;
+- reordenação;
+- bloqueio de reordenação ativa;
+- reembolso integral e parcial;
+- ausência de substituição imediata ao cancelar;
+- continuidade após queda populacional;
+- avaliação antes da liberação;
+- stress com 100 ordens sem duplicação de conclusão.
+
+Limitação:
+O simulador é um modelo Python independente. Ele não executa o GDScript nem o Godot.
+
+5. SIMULAÇÃO ECONÔMICA ANTERIOR
+
+Comando:
+python3 tools/simulate_economy_stage10.py
+
+SHA-256 do relatório v2.10.1 antes e depois:
+a628f226a540465205bfc1d3e0a0e50f6bd7d23cac86719a4702d065cf01b87f
+
+SHA-256 do relatório v2.10.0 antes e depois:
+2d3d5f5969edf4f21ddadeacdd5141687108d409a92534baabe9ba1e3aef7b63
+
+Conclusão restrita:
+As fórmulas e o relatório econômico antigos permaneceram idênticos. A simulação antiga ainda não modela atrasos da fila e não prova o balanceamento completo da v3.1.0.
+
+6. FERRAMENTAS PYTHON
+
+Comando:
+python3 -m compileall -q tools
+
+Resultado:
+- compilação concluída sem erros.
+
+Os diretórios __pycache__ foram removidos antes do empacotamento.
+
+7. VERIFICAÇÃO DO NOME DO PROJETO
+
+A busca nos scripts do Oráculo não encontrou:
+- application/config/name;
+- checagem de “Nome público”;
+- validação equivalente do nome da pasta/projeto.
+
+A verificação foi removida conforme decisão do usuário.
+
+8. GODOT
+
+Executáveis procurados:
+- godot;
+- godot4;
+- Godot.
+
+Resultado:
+- nenhum executável encontrado no ambiente.
+
+Consequência:
+Não foi possível realizar:
+- parse real do GDScript pelo motor;
+- execução headless;
+- carregamento de cenas;
+- teste visual dos canteiros;
+- teste real de cliques, foco e controle;
+- teste de save/load em runtime;
+- campanha completa.
+
+9. PACOTE
+
+O projeto foi empacotado em uma pasta versionada separada.
+O arquivo ZIP foi testado com `unzip -t` e não apresentou erros de dados comprimidos.
+O SHA-256 do ZIP é entregue em arquivo separado para evitar autorreferência do pacote.
+
+10. CONCLUSÃO
+
+A versão passou pelas verificações estáticas e modelos disponíveis, mas precisa do roteiro manual no Godot antes de ser tratada como base estável.

@@ -1,0 +1,41 @@
+SIMULAÇÃO ECONÔMICA INICIAL — BUILDS DAS CONSTRUÇÕES — ETAPA 6
+Modelo comparativo de 120 dias; não executa o Godot e não substitui o teste de runtime.
+As builds entram em vigor no dia 61 para isolar o impacto econômico.
+Acontecimentos especiais e reações narrativas não recebem valor econômico estimado.
+A Oficina de Carpintaria recebe um cenário favorável plausível: concluída antes das outras quatro builds.
+
+DIFICULDADE: Acolhedora
+- nível 3 genérico antigo: utilidade 2251.5; entrada acumulada 7686.5
+- combinação de menor utilidade: 2015.6 (-2.84% de entrada) — community_kitchen, carpentry_workshop, deep_reservoir, public_garden, vigilant_gates
+- combinação de maior utilidade: 2568.7 (+3.68% de entrada) — silo_reserve, intensive_sawmill, community_fountain, community_market, stone_bastion
+  • silo_reserve x community_kitchen: utilidade 2568.7 x 2282.0; diferença 11.82%
+  • intensive_sawmill x carpentry_workshop: utilidade 2568.7 x 2490.6; diferença 3.09%
+  • deep_reservoir x community_fountain: utilidade 2568.7 x 2568.7; diferença 0.00%
+  • community_market x public_garden: utilidade 2568.7 x 2435.8; diferença 5.31%
+  • stone_bastion x vigilant_gates: utilidade 2568.7 x 2513.2; diferença 2.19%
+
+DIFICULDADE: Moderada
+- nível 3 genérico antigo: utilidade 727.4; entrada acumulada 6683.9
+- combinação de menor utilidade: 582.0 (+2.67% de entrada) — silo_reserve, carpentry_workshop, community_fountain, community_market, vigilant_gates
+- combinação de maior utilidade: 826.6 (-1.24% de entrada) — community_kitchen, intensive_sawmill, community_fountain, public_garden, stone_bastion
+  • silo_reserve x community_kitchen: utilidade 728.6 x 758.6; diferença 4.03%
+  • intensive_sawmill x carpentry_workshop: utilidade 728.6 x 660.7; diferença 9.78%
+  • deep_reservoir x community_fountain: utilidade 728.6 x 715.3; diferença 1.85%
+  • community_market x public_garden: utilidade 728.6 x 826.6; diferença 12.60%
+  • stone_bastion x vigilant_gates: utilidade 728.6 x 663.3; diferença 9.39%
+
+DIFICULDADE: Difícil
+- nível 3 genérico antigo: utilidade 794.7; entrada acumulada 7018.1
+- combinação de menor utilidade: 645.2 (+2.67% de entrada) — silo_reserve, carpentry_workshop, community_fountain, community_market, vigilant_gates
+- combinação de maior utilidade: 857.9 (-1.24% de entrada) — community_kitchen, intensive_sawmill, community_fountain, public_garden, stone_bastion
+  • silo_reserve x community_kitchen: utilidade 794.5 x 826.0; diferença 3.89%
+  • intensive_sawmill x carpentry_workshop: utilidade 794.5 x 723.2; diferença 9.40%
+  • deep_reservoir x community_fountain: utilidade 794.5 x 785.1; diferença 1.20%
+  • community_market x public_garden: utilidade 794.5 x 857.9; diferença 7.67%
+  • stone_bastion x vigilant_gates: utilidade 794.5 x 726.0; diferença 9.02%
+
+Variação média de entrada vs. nível 3 genérico: +0.42%
+Maior aumento de entrada: +3.68%
+Maior redução de entrada: -2.84%
+Maior diferença de utilidade dentro de um par: 12.60%
+Resultado: APROVADO

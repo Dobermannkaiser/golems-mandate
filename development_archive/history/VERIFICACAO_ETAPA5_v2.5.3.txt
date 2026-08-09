@@ -1,0 +1,246 @@
+[OK] Scripts GDScript encontrados — 31 arquivo(s)
+[OK] Delimitadores: scripts/GameManager.gd — ok
+[OK] Funções únicas: scripts/GameManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/GameManager.gd — ok
+[OK] Callbacks conectados existem: scripts/GameManager.gd — ok
+[OK] Preload existe: scripts/GameManager.gd -> scripts/events/EventManager.gd — scripts/events/EventManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/campaign/CampaignManager.gd — scripts/campaign/CampaignManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/buildings/BuildingManager.gd — scripts/buildings/BuildingManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/save/SaveManager.gd — scripts/save/SaveManager.gd
+[OK] Preload existe: scripts/GameManager.gd -> scripts/foundation/Part2FoundationManager.gd — scripts/foundation/Part2FoundationManager.gd
+[OK] Recurso literal existe: scripts/GameManager.gd -> scripts/events/EventManager.gd — scripts/events/EventManager.gd
+[OK] Recurso literal existe: scripts/GameManager.gd -> scripts/campaign/CampaignManager.gd — scripts/campaign/CampaignManager.gd
+[OK] Recurso literal existe: scripts/GameManager.gd -> scripts/buildings/BuildingManager.gd — scripts/buildings/BuildingManager.gd
+[OK] Recurso literal existe: scripts/GameManager.gd -> scripts/save/SaveManager.gd — scripts/save/SaveManager.gd
+[OK] Recurso literal existe: scripts/GameManager.gd -> scripts/foundation/Part2FoundationManager.gd — scripts/foundation/Part2FoundationManager.gd
+[OK] Delimitadores: scripts/MedievalTheme.gd — ok
+[OK] Funções únicas: scripts/MedievalTheme.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/MedievalTheme.gd — ok
+[OK] Callbacks conectados existem: scripts/MedievalTheme.gd — ok
+[OK] Delimitadores: scripts/UIManager.gd — ok
+[OK] Funções únicas: scripts/UIManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/UIManager.gd — ok
+[OK] Callbacks conectados existem: scripts/UIManager.gd — ok
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/EventWindow.gd — scripts/ui/EventWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/CampaignWindow.gd — scripts/ui/CampaignWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/SeasonHintWindow.gd — scripts/ui/SeasonHintWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/BuildingWindow.gd — scripts/ui/BuildingWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/VillageWindow.gd — scripts/ui/VillageWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/SaveWindow.gd — scripts/ui/SaveWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/MainMenu.gd — scripts/ui/MainMenu.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/TutorialWindow.gd — scripts/ui/TutorialWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/tutorial/TutorialManager.gd — scripts/tutorial/TutorialManager.gd
+[OK] Preload existe: scripts/UIManager.gd -> scripts/ui/CouncilWindow.gd — scripts/ui/CouncilWindow.gd
+[OK] Preload existe: scripts/UIManager.gd -> scenes/ui/villager_card.tscn — scenes/ui/villager_card.tscn
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/EventWindow.gd — scripts/ui/EventWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/CampaignWindow.gd — scripts/ui/CampaignWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/SeasonHintWindow.gd — scripts/ui/SeasonHintWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/BuildingWindow.gd — scripts/ui/BuildingWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/VillageWindow.gd — scripts/ui/VillageWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/SaveWindow.gd — scripts/ui/SaveWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/MainMenu.gd — scripts/ui/MainMenu.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/TutorialWindow.gd — scripts/ui/TutorialWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/tutorial/TutorialManager.gd — scripts/tutorial/TutorialManager.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scripts/ui/CouncilWindow.gd — scripts/ui/CouncilWindow.gd
+[OK] Recurso literal existe: scripts/UIManager.gd -> scenes/ui/villager_card.tscn — scenes/ui/villager_card.tscn
+[OK] Delimitadores: scripts/Villager.gd — ok
+[OK] Funções únicas: scripts/Villager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/Villager.gd — ok
+[OK] Callbacks conectados existem: scripts/Villager.gd — ok
+[OK] Delimitadores: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Funções únicas: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Callbacks conectados existem: scripts/buildings/BuildingCatalog.gd — ok
+[OK] Delimitadores: scripts/buildings/BuildingManager.gd — ok
+[OK] Funções únicas: scripts/buildings/BuildingManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/buildings/BuildingManager.gd — ok
+[OK] Callbacks conectados existem: scripts/buildings/BuildingManager.gd — ok
+[OK] Preload existe: scripts/buildings/BuildingManager.gd -> scripts/buildings/BuildingCatalog.gd — scripts/buildings/BuildingCatalog.gd
+[OK] Recurso literal existe: scripts/buildings/BuildingManager.gd -> scripts/buildings/BuildingCatalog.gd — scripts/buildings/BuildingCatalog.gd
+[OK] Delimitadores: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Funções únicas: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Callbacks conectados existem: scripts/campaign/CampaignCatalog.gd — ok
+[OK] Delimitadores: scripts/campaign/CampaignManager.gd — ok
+[OK] Funções únicas: scripts/campaign/CampaignManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/campaign/CampaignManager.gd — ok
+[OK] Callbacks conectados existem: scripts/campaign/CampaignManager.gd — ok
+[OK] Delimitadores: scripts/events/EventCatalog.gd — ok
+[OK] Funções únicas: scripts/events/EventCatalog.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/events/EventCatalog.gd — ok
+[OK] Callbacks conectados existem: scripts/events/EventCatalog.gd — ok
+[OK] Delimitadores: scripts/events/EventManager.gd — ok
+[OK] Funções únicas: scripts/events/EventManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/events/EventManager.gd — ok
+[OK] Callbacks conectados existem: scripts/events/EventManager.gd — ok
+[OK] Preload existe: scripts/events/EventManager.gd -> scripts/events/EventCatalog.gd — scripts/events/EventCatalog.gd
+[OK] Recurso literal existe: scripts/events/EventManager.gd -> scripts/events/EventCatalog.gd — scripts/events/EventCatalog.gd
+[OK] Delimitadores: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Funções únicas: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Callbacks conectados existem: scripts/foundation/Part2FoundationManager.gd — ok
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PlayerProfile.gd — scripts/models/PlayerProfile.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PopulationState.gd — scripts/models/PopulationState.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/CalendarState.gd — scripts/models/CalendarState.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/NpcModel.gd — scripts/models/NpcModel.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/RelationshipState.gd — scripts/models/RelationshipState.gd
+[OK] Preload existe: scripts/foundation/Part2FoundationManager.gd -> scripts/specialists/SpecialistCatalog.gd — scripts/specialists/SpecialistCatalog.gd
+[OK] Recurso literal existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PlayerProfile.gd — scripts/models/PlayerProfile.gd
+[OK] Recurso literal existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/PopulationState.gd — scripts/models/PopulationState.gd
+[OK] Recurso literal existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/CalendarState.gd — scripts/models/CalendarState.gd
+[OK] Recurso literal existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/NpcModel.gd — scripts/models/NpcModel.gd
+[OK] Recurso literal existe: scripts/foundation/Part2FoundationManager.gd -> scripts/models/RelationshipState.gd — scripts/models/RelationshipState.gd
+[OK] Recurso literal existe: scripts/foundation/Part2FoundationManager.gd -> scripts/specialists/SpecialistCatalog.gd — scripts/specialists/SpecialistCatalog.gd
+[OK] Delimitadores: scripts/models/CalendarState.gd — ok
+[OK] Funções únicas: scripts/models/CalendarState.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/models/CalendarState.gd — ok
+[OK] Callbacks conectados existem: scripts/models/CalendarState.gd — ok
+[OK] Delimitadores: scripts/models/NpcModel.gd — ok
+[OK] Funções únicas: scripts/models/NpcModel.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/models/NpcModel.gd — ok
+[OK] Callbacks conectados existem: scripts/models/NpcModel.gd — ok
+[OK] Delimitadores: scripts/models/PlayerProfile.gd — ok
+[OK] Funções únicas: scripts/models/PlayerProfile.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/models/PlayerProfile.gd — ok
+[OK] Callbacks conectados existem: scripts/models/PlayerProfile.gd — ok
+[OK] Delimitadores: scripts/models/PopulationState.gd — ok
+[OK] Funções únicas: scripts/models/PopulationState.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/models/PopulationState.gd — ok
+[OK] Callbacks conectados existem: scripts/models/PopulationState.gd — ok
+[OK] Delimitadores: scripts/models/RelationshipState.gd — ok
+[OK] Funções únicas: scripts/models/RelationshipState.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/models/RelationshipState.gd — ok
+[OK] Callbacks conectados existem: scripts/models/RelationshipState.gd — ok
+[OK] Delimitadores: scripts/save/SaveManager.gd — ok
+[OK] Funções únicas: scripts/save/SaveManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/save/SaveManager.gd — ok
+[OK] Callbacks conectados existem: scripts/save/SaveManager.gd — ok
+[OK] Delimitadores: scripts/settings/GameSettings.gd — ok
+[OK] Funções únicas: scripts/settings/GameSettings.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/settings/GameSettings.gd — ok
+[OK] Callbacks conectados existem: scripts/settings/GameSettings.gd — ok
+[OK] Delimitadores: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Funções únicas: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Callbacks conectados existem: scripts/specialists/SpecialistCatalog.gd — ok
+[OK] Delimitadores: scripts/tutorial/TutorialManager.gd — ok
+[OK] Funções únicas: scripts/tutorial/TutorialManager.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/tutorial/TutorialManager.gd — ok
+[OK] Callbacks conectados existem: scripts/tutorial/TutorialManager.gd — ok
+[OK] Delimitadores: scripts/ui/BuildingVisuals.gd — ok
+[OK] Funções únicas: scripts/ui/BuildingVisuals.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/BuildingVisuals.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/BuildingVisuals.gd — ok
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_01.png — assets/etapa5/cat_01.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_02.png — assets/etapa5/cat_02.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_03.png — assets/etapa5/cat_03.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/cat_04.png — assets/etapa5/cat_04.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_spring.png — assets/etapa5/ground_spring.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_summer.png — assets/etapa5/ground_summer.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_autumn.png — assets/etapa5/ground_autumn.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/ground_winter.png — assets/etapa5/ground_winter.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/empty_lot.png — assets/etapa5/empty_lot.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/house_level1.png — assets/etapa5/house_level1.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/house_level2.png — assets/etapa5/house_level2.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/house_level3.png — assets/etapa5/house_level3.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/barn_level1.png — assets/etapa5/barn_level1.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/barn_level2.png — assets/etapa5/barn_level2.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/barn_level3.png — assets/etapa5/barn_level3.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/sawmill_level1.png — assets/etapa5/sawmill_level1.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/sawmill_level2.png — assets/etapa5/sawmill_level2.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/sawmill_level3.png — assets/etapa5/sawmill_level3.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/well_level1.png — assets/etapa5/well_level1.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/well_level2.png — assets/etapa5/well_level2.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/well_level3.png — assets/etapa5/well_level3.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/square_level1.png — assets/etapa5/square_level1.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/square_level2.png — assets/etapa5/square_level2.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/square_level3.png — assets/etapa5/square_level3.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/wall_line.png — assets/etapa5/wall_line.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/wall_corner.png — assets/etapa5/wall_corner.png
+[OK] Recurso literal existe: scripts/ui/BuildingVisuals.gd -> assets/etapa5/wall_gate.png — assets/etapa5/wall_gate.png
+[OK] Delimitadores: scripts/ui/BuildingWindow.gd — ok
+[OK] Funções únicas: scripts/ui/BuildingWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/BuildingWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/BuildingWindow.gd — ok
+[OK] Delimitadores: scripts/ui/CampaignWindow.gd — ok
+[OK] Funções únicas: scripts/ui/CampaignWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/CampaignWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/CampaignWindow.gd — ok
+[OK] Delimitadores: scripts/ui/CouncilWindow.gd — ok
+[OK] Funções únicas: scripts/ui/CouncilWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/CouncilWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/CouncilWindow.gd — ok
+[OK] Delimitadores: scripts/ui/EventWindow.gd — ok
+[OK] Funções únicas: scripts/ui/EventWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/EventWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/EventWindow.gd — ok
+[OK] Delimitadores: scripts/ui/MainMenu.gd — ok
+[OK] Funções únicas: scripts/ui/MainMenu.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/MainMenu.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/MainMenu.gd — ok
+[OK] Delimitadores: scripts/ui/SaveWindow.gd — ok
+[OK] Funções únicas: scripts/ui/SaveWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/SaveWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/SaveWindow.gd — ok
+[OK] Delimitadores: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Funções únicas: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/SeasonHintWindow.gd — ok
+[OK] Delimitadores: scripts/ui/TutorialWindow.gd — ok
+[OK] Funções únicas: scripts/ui/TutorialWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/TutorialWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/TutorialWindow.gd — ok
+[OK] Delimitadores: scripts/ui/VillageWindow.gd — ok
+[OK] Funções únicas: scripts/ui/VillageWindow.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/VillageWindow.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/VillageWindow.gd — ok
+[OK] Preload existe: scripts/ui/VillageWindow.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Recurso literal existe: scripts/ui/VillageWindow.gd -> scripts/ui/BuildingVisuals.gd — scripts/ui/BuildingVisuals.gd
+[OK] Delimitadores: scripts/ui/VillagerCard.gd — ok
+[OK] Funções únicas: scripts/ui/VillagerCard.gd — ok
+[OK] Sem conflito com métodos nativos draw_*: scripts/ui/VillagerCard.gd — ok
+[OK] Callbacks conectados existem: scripts/ui/VillagerCard.gd — ok
+[OK] Membros de classes do projeto são válidos — ok
+[OK] Instâncias tipadas usam membros válidos — ok
+[OK] Cena íntegra: scenes/main.tscn — ok
+[OK] Recurso da cena existe: scenes/main.tscn -> scenes/villager.tscn — scenes/villager.tscn
+[OK] Recurso da cena existe: scenes/main.tscn -> scripts/UIManager.gd — scripts/UIManager.gd
+[OK] Cena íntegra: scenes/ui/villager_card.tscn — ok
+[OK] Recurso da cena existe: scenes/ui/villager_card.tscn -> scripts/ui/VillagerCard.gd — scripts/ui/VillagerCard.gd
+[OK] Cena íntegra: scenes/villager.tscn — ok
+[OK] Recurso da cena existe: scenes/villager.tscn -> scripts/Villager.gd — scripts/Villager.gd
+[OK] Versão do projeto é 2.5.4
+[OK] Base de save continua na versão 4
+[OK] Save anterior continua compatível
+[OK] Função inexistente create_button foi removida
+[OK] UI carrega VillageWindow
+[OK] UI carrega BuildingVisuals
+[OK] Botão AMPLIAR existe
+[OK] Janela ampliada pode abrir
+[OK] Janela ampliada pode fechar
+[OK] Mini-vila e janela usam a mesma sincronização
+[OK] Visual da vila implementa apply_season
+[OK] Visual da vila implementa update_buildings
+[OK] Visual da vila implementa update_population_overview
+[OK] Visual da vila implementa update_council
+[OK] Visual da vila implementa set_large_view_enabled
+[OK] Casas possuem limite visual
+[OK] Moradores comuns possuem movimento
+[OK] Conselheiros possuem sprites próprios
+[OK] Construções são clicáveis
+[OK] Variações sazonais existem
+[OK] Quadrados antigos ficam ocultos
+[OK] Pack visual essencial está completo — ok
+[OK] Terreno não usa repetição visível
+[OK] Caminhos ficam acima do terreno
+[OK] Sombras escuras sobre prédios foram removidas
+[OK] Atualizações visuais usam assinaturas de estado
+[OK] Visão ampliada pausa animações ao fechar
+[OK] Mini-vila possui escala própria
+[OK] Vila ampliada possui escala própria
+[OK] Sprites dos moradores possuem transparência real — ok
+[OK] Terrenos sazonais têm resolução ampla — ok
+
+Resumo: 244 verificações, 0 falha(s).

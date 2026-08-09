@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "passos_leves_bolseiro"
+display_name = "Aparência: Bolseiro das Trilhas"
+species_name = "Passos-Leves"
+pronouns = "variáveis"
+role_name = "Explorador e coletor"
+personality = "Atento, leve e sempre pronto para improvisar."
+biography = "Visual adicional de Passos-Leves para ampliar a variedade dos fundadores."
+portrait_path = "res://assets/council/portraits/passos_leves/passos_leves_05.png"
+fallback_color = Color(0.654902, 0.560784, 0.352941, 1)
+is_founder_appearance = true

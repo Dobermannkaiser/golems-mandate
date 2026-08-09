@@ -1,0 +1,29 @@
+Golem's Mandate — arquivos alterados na v3.5.3
+
+CÓDIGO DE RUNTIME
+- project.godot
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/ui/MainMenu.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+
+VERIFICADORES
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- tools/verify_part3_stage5.py
+- tools/verify_part3_stage6.py
+- tools/verify_project_optimization_v351.py
+- tools/verify_sprite_integration_v352.py
+- tools/verify_lazy_windows_v353.py [novo]
+
+DOCUMENTAÇÃO
+- LEIA-ME_CORRECAO_CARREGAMENTO_JANELAS_v3.5.3.md [novo]
+- ROTEIRO_DE_TESTE_CORRECAO_JANELAS_v3.5.3.txt [novo]
+- AUDITORIA_JANELAS_SOB_DEMANDA_v3.5.3.txt [novo]
+- ARQUIVOS_ALTERADOS_v3.5.3.txt [novo]
+- VERIFICACAO_CORRECAO_JANELAS_v3.5.3.txt [novo]
+
+RECURSOS PRESERVADOS
+- Dez sprites finais das builds de construção.
+- Save versão 15.
+- Catálogos, economia, diálogos e acontecimentos da v3.5.2.

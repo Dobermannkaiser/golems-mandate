@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c2kj8fuwchdbx"]
+
+[ext_resource type="Script" uid="uid://d2bve6xmsv046" path="res://scripts/Villager.gd" id="1_kufqh"]
+
+[node name="Villager" type="Node2D" unique_id=500916518]
+script = ExtResource("1_kufqh")
+
+[node name="Body" type="ColorRect" parent="." unique_id=1184568413]
+offset_left = -24.0
+offset_top = -24.0
+offset_right = 24.0
+offset_bottom = 24.0
+mouse_filter = 2
+color = Color(0.3137255, 1, 1, 1)
+
+[node name="NameLabel" type="Label" parent="." unique_id=1382468513]
+offset_left = -70.0
+offset_top = 32.0
+offset_right = 70.0
+offset_bottom = 64.0
+text = "Habitante"
+horizontal_alignment = 1

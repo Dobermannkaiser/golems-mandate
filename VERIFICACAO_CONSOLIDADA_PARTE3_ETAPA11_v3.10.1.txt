@@ -1,0 +1,30 @@
+GOLEM'S MANDATE — VERIFICAÇÃO CONSOLIDADA — PARTE 3 / ETAPA 11 / v3.10.1
+
+BASE
+- Origem: árvore-fonte preservada da base estável v3.9.0, validada anteriormente pelo usuário no Godot.
+- Hash combinado dos scripts da base antes da Etapa 11: fc31915b5dfe33a974a284a72c12c95c5209104160b0be08636fad2f56478a9e.
+- Candidata montada em cópia separada; a base estável não foi sobrescrita.
+- ZIP de imagens recebido: SHA-256 da95147121b6507c13f4931c9c65941ee6815583a164c66a7da5489d4448017b.
+
+RESULTADOS
+- Contratos específicos da Etapa 11 e correções: 64 aprovados, 0 falhas.
+- Cenas pessoais: 8 vínculos, 4 marcos exatos e 32 cenas preservadas.
+- Imagens finais: 8 JPEGs válidos, catalogados e associados às cenas de 800 pontos.
+- Decisão final: amizade profunda e adiamento sempre disponíveis; romance condicionado a 2 marcas e parceiro exclusivo.
+- Escopo GDScript: 74 scripts, 1.376 funções, 0 possíveis vazamentos locais.
+- Estrutura: delimitadores, funções duplicadas, preloads e indentação verificados em 74 scripts, 0 falhas.
+- Teste Interno v3.8.2 preservado: 9 verificações, 0 falhas.
+- Transparência dos retratos anteriores: 30 imagens, 0 falhas.
+- Save: versão 18 mantida; nenhuma migração adicional necessária sobre a v3.9.0.
+- Regressões: formatação composta, diagnóstico de cartas, salvamento estrutural e retomada do avanço diário cobertos estaticamente.
+- Canteiro: um único desenho procedural genérico; nenhuma variante criada.
+- Decoração: nenhum pacote ou diretório novo criado.
+
+VALIDADORES HISTÓRICOS
+- Verificadores antigos mantêm expectativas congeladas de versões e quantidades de etapas anteriores.
+- A verificação usada para esta candidata é tools/verify_part3_stage11.py, complementada pelos verificadores independentes de escopo, Teste Interno e retratos.
+
+LIMITAÇÃO
+- O Godot não foi executado por regra do projeto.
+- Não houve parse/import pelo motor, execução de cena ou teste visual interativo.
+- A promoção para base estável depende do roteiro manual do usuário no Godot.

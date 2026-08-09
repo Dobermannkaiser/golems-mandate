@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "bruxinha_ruiva"
+display_name = "Dália Folhaverde"
+species_name = "Bruxa"
+pronouns = "ela/dela"
+role_name = "Herborista, cultivadora e bruxa comunitária"
+personality = "Sociável, curiosa e confiante. Enxerga significado nas coisas comuns sem perder o senso prático."
+biography = "Uma jovem bruxa de 21 anos que viaja trocando sementes, remédios e histórias. Trata o cultivo como trabalho coletivo e transforma curiosidade em cuidado prático com a comunidade."
+portrait_path = "res://assets/dialogue/portraits/bruxinha_ruiva.png"
+fallback_color = Color(0.607843, 0.470588, 0.321569, 1)
+is_special_npc = true
+romance_available = true
+hidden_until_story = true

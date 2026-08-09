@@ -1,0 +1,35 @@
+ROTEIRO DE TESTE — LAYOUT EXPERIMENTAL v2.5.4.d
+
+1. ABERTURA
+- Abra o projeto no Godot 4.7.1.
+- Confirme que o menu principal mostra v2.5.4.d.
+- Inicie uma campanha nova e carregue uma campanha existente.
+
+2. BARRA LATERAL
+- Confirme a ordem: Vila, Conselho, Registro, Avaliação e Obras.
+- Confirme que Configurações e Ajuda continuam na parte inferior.
+- Clique em Avaliação e verifique se a janela de objetivos abre normalmente.
+- Clique em Obras e verifique se a janela de construções abre normalmente.
+- Feche as duas janelas e confirme que nenhum sprite da vila aparece acima delas.
+
+3. BARRA SUPERIOR
+- Confirme que o bloco Avaliação & Obras não existe mais na barra superior.
+- Confirme que a barra mostra apenas calendário/alertas e os quatro recursos.
+- Verifique se População, Alimentação, Material e Felicidade aparecem sem corte.
+- Encerre um dia e confira se valores e previsões atualizam corretamente.
+
+4. NAVEGAÇÃO
+- Abra Vila, Conselho e Registro pela lateral.
+- Abra Configurações e Ajuda.
+- Confirme que a vila pausa quando a aba Registro está aberta.
+- Confirme que o botão Ampliar continua funcionando.
+
+5. CAMPANHA E SAVE
+- Construa uma casa ou melhoria.
+- Troque um conselheiro.
+- Salve, volte ao menu e carregue.
+- Confirme que todos os dados foram preservados.
+
+6. RESOLUÇÃO
+- Teste em 1152x648.
+- Redimensione a janela e confira se os recursos continuam legíveis.

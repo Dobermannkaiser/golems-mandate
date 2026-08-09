@@ -1,0 +1,47 @@
+Golem's Mandate — verificação consolidada
+Parte 3 — Etapa 7 — v3.6.0 candidata
+
+AUDITORIA ESPECÍFICA DA ETAPA 7
+- 494 verificações
+- 0 falhas
+
+REGRESSÕES ESTRUTURAIS
+- Etapa 3: 656 verificações, 0 falhas
+- Etapa 4: 183 verificações, 0 falhas
+- Etapa 5: 64 verificações, 0 falhas
+- Etapa 6: 184 verificações, 0 falhas
+- Janelas sob demanda: 96 verificações, 0 falhas
+- Otimização da v3.5.1 preservada: 50 verificações, 0 falhas
+- Integração dos sprites da Etapa 6: 106 verificações, 0 falhas
+- Imersão dos diálogos: 24 verificações, 0 falhas
+
+ESCOPO GDSCRIPT
+- scripts analisados: 67
+- funções analisadas: 1.236
+- possíveis vazamentos de escopo: 0
+
+SIMULAÇÃO ESPECÍFICA
+- campanhas aleatórias: 5.000
+- ofertas concluídas: 30.000
+- verificações adiadas: 9.032
+- empates de espécie: 1.023
+- ofertas antigas concluídas após o Dia 120: 5.662
+- maior reserva observada: 7
+- erros: 0
+
+OUTRAS SIMULAÇÕES DE REGRESSÃO
+- recrutamento antigo: 10.000 campanhas e 60.000 ofertas, 0 falhas
+- progressão de cartas: 25.000 carreiras, 0 falhas de invariantes
+- passivas e sinergias: limite econômico aprovado
+- builds das construções: equilíbrio econômico aprovado
+
+REFERÊNCIAS E RECURSOS
+- preloads existentes;
+- caminhos res:// existentes;
+- oito espécies com ao menos dois retratos recrutáveis;
+- arquivos de retrato encontrados;
+- save global preservado na versão 15;
+- migração de recrutamento v1 para v2 implementada.
+
+IMPORTANTE
+O Godot não foi baixado, instalado ou executado. Este relatório não substitui o teste de runtime feito pelo usuário.

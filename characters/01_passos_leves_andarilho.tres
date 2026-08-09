@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogue/CharacterDefinition.gd" id="1_character"]
+
+[resource]
+script = ExtResource("1_character")
+character_id = "passos_leves_andarilho"
+display_name = "Aparência: Andarilho Rúnico"
+species_name = "Passos-Leves"
+pronouns = "variáveis"
+role_name = "Andarilho e herbalista"
+personality = "Calmo, supersticioso e sempre atento aos presságios da estrada."
+biography = "Um visual genérico para fundadores Passos-Leves ligados a trilhas, ervas, amuletos e histórias antigas."
+portrait_path = "res://assets/dialogue/portraits/passos_leves_andarilho.png"
+fallback_color = Color(0.435294, 0.501961, 0.376471, 1)
+is_founder_appearance = true

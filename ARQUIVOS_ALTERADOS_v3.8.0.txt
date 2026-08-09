@@ -1,0 +1,47 @@
+GOLEM'S MANDATE — PARTE 3 / ETAPA 9 — ARQUIVOS DA v3.8.0
+
+NOVOS
+- LEIA-ME_PARTE3_ETAPA9_v3.8.0.md
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA9_v3.8.0.txt
+- VERIFICACAO_CONSOLIDADA_PARTE3_ETAPA9_v3.8.0.txt
+- scripts/relationships/RelationshipExpansionCatalog.gd
+- tools/verify_part3_stage9.py
+
+ALTERADOS — CONTEÚDO E JOGO
+- characters/24_bruxinha_ruiva.tres
+- characters/25_meio_vampiro_emo_gotico.tres
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/dialogue/CharacterDefinition.gd
+- scripts/dialogue/DialogueCatalog.gd
+- scripts/events/EventManager.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/models/RelationshipState.gd
+- scripts/relationships/RelationshipCatalog.gd
+- scripts/relationships/RelationshipDialogueCatalog.gd
+- scripts/save/SaveManager.gd
+- scripts/specialists/SpecialistCatalog.gd
+- scripts/story/StoryChapterCatalog.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/ui/MainMenu.gd
+- scripts/ui/RelationshipsWindow.gd
+
+ALTERADOS — VERIFICADORES ACUMULADOS
+- tools/verify_lazy_windows_v353.py
+- tools/verify_part3_stage3.py
+- tools/verify_part3_stage4.py
+- tools/verify_part3_stage5.py
+- tools/verify_part3_stage6.py
+- tools/verify_part3_stage7.py
+- tools/verify_part3_stage8.py
+- tools/verify_project_optimization_v351.py
+- tools/verify_sprite_integration_v352.py
+
+OBSERVAÇÕES
+- A fonte v3.7.0 recebida permaneceu intacta; a v3.8.0 foi construída em cópia separada.
+- Os documentos e relatórios anteriores foram preservados sem edição.
+- Nenhuma imagem foi gerada ou substituída.
+- Os retratos existentes de Bruxinha e Meio-vampiro são temporários; expressões usam variações visuais no código e aceitam arte separada no futuro.

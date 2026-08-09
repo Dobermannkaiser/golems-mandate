@@ -1,0 +1,44 @@
+Golem’s Mandate — Roteiro de teste da correção v3.1.2
+
+IMPORTANTE
+1. Remova do Gerenciador de Projetos a entrada quebrada da v3.1.1.
+2. Não reutilize a pasta extraída da v3.1.1.
+3. Importe o ZIP v3.1.2 como um projeto novo ou extraia-o em uma pasta vazia.
+4. O arquivo project.godot deve estar na raiz da pasta escolhida.
+
+TESTE 1 — ABERTURA
+- Abrir o projeto no Godot 4.7.1.
+- Confirmar que não aparecem erros de UID desconhecido.
+- Confirmar que GameSettings, AudioManager e GameManager são carregados como autoloads.
+- Executar o jogo.
+
+TESTE 2 — RELACIONAMENTOS
+- Abrir Relações.
+- Conversar com personagens e fechar diálogos.
+- Confirmar ausência do erro `unsupported format character` em RelationshipCatalog.gd.
+- Verificar descrições de bônus com porcentagens.
+
+TESTE 3 — MURALHA
+- Abrir a área da vila na visão normal.
+- Confirmar que muralha e torres não invadem o cabeçalho da interface.
+- Abrir a visão ampliada.
+- Confirmar o mesmo comportamento.
+
+TESTE 4 — CASAS EXTRAS
+- Carregar ou alcançar uma vila com mais casas do que o limite visual.
+- Confirmar que aparece `MORADIAS: +N casas` no canto inferior direito.
+- Confirmar legibilidade e ausência de sobreposição importante.
+
+TESTE 5 — FILA
+- Enfileirar uma casa e uma melhoria.
+- Avançar dias.
+- Confirmar que a fila continua funcionando como na v3.1.0.
+- Testar reordenação e cancelamento.
+
+RESULTADO ESPERADO
+- projeto abre normalmente;
+- zero erros de UID/autoload;
+- zero erros de formatação de relacionamento;
+- muralhas reposicionadas;
+- indicador de moradias legível;
+- fila de obras preservada.

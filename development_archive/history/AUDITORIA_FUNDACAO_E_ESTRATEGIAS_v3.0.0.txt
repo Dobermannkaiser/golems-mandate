@@ -1,0 +1,63 @@
+GOLEM'S MANDATE — AUDITORIA DE FUNDAÇÃO E ESTRATÉGIAS — v3.0.0
+
+BASE ANALISADA
+- Base estável: v2.10.1.
+- Campanha: 120 dias, avaliações nos dias 20/40/60/80/100/120.
+- Conselho ativo: quatro representantes.
+- Construções fixas: Celeiro, Serraria, Poço, Praça e Muralha, mais casas.
+- A simulação anterior cobriu 1.800 campanhas e foi preservada sem mudança de fórmulas.
+
+FÓRMULAS CENTRAIS PRESERVADAS
+- Alimentação diária: população × 2,10.
+- Manutenção diária: população × 0,27.
+- Decaimento de felicidade: representantes × 0,53 + habitantes comuns × 0,13.
+- Agricultor: 1,0 + (Agilidade × 0,60 + Inteligência × 0,40) × 0,90.
+- Ferreiro: 0,5 + (Força × 0,70 + Inteligência × 0,30) × 0,60.
+- Servidor Público: (Carisma × 0,70 + Inteligência × 0,30) × 0,35 de felicidade.
+- Guarda: (Força × 0,50 + Agilidade × 0,50) × 0,20 de felicidade.
+- Coletor: alimentação 0,4 + eficiência × 0,35; material 0,2 + eficiência × 0,25.
+- Produção comum: 1,55 de alimentação e 0,19 de material por habitante comum.
+- Dificuldade, estação, construções e relações aplicam multiplicadores posteriores.
+
+MAPA DE ESTRATÉGIAS DOMINANTES OU DE ALTO RISCO
+
+1. Troca diária de profissões
+A versão atual não cobra custo, tempo ou fadiga ao trocar profissões. A política automatizada da simulação pode escolher a melhor composição todos os dias. Isso favorece microgerenciamento perfeito e reduz identidade profissional. A Parte 3 não corrige isso nesta etapa; o histórico agora mede as trocas e a concentração para orientar passivas e retornos decrescentes.
+
+2. Alimentação e preparação do inverno
+Celeiro e agricultores dominam o planejamento de longo prazo porque o inverno reduz produção e aumenta consumo. A simulação mostra que gestão planejada acumula grande reserva no outono, enquanto gestão casual chega a 0% de vitória na Moderada e Difícil. Esta é uma estratégia forte, mas coerente com a identidade sazonal; o risco está na diferença abrupta entre planejamento ótimo e casual.
+
+3. Construção instantânea antes de avaliações
+Na v2.10.1 uma melhoria produz benefício imediatamente. Isso permite converter material em produção ou felicidade no último momento, reduzindo o valor do planejamento temporal. A fila da Etapa 2 atacará diretamente essa estratégia. Nesta etapa, cada melhoria passa a ser registrada para permitir comparação antes e depois da mudança.
+
+4. Crescimento populacional controlado por capacidade
+A política planejada constrói casas somente quando a próxima meta populacional exige, evitando manutenção e consumo precoces. Isso é uma decisão legítima e deve continuar relevante. A fila criará risco de começar tarde demais, tornando a decisão menos automática sem invalidá-la.
+
+5. Ordem de prioridade dos edifícios
+O simulador prioriza Celeiro e Poço, alternando Serraria, Praça e Muralha conforme a fase. As variantes irreversíveis podem diversificar essa ordem, mas precisam evitar uma opção universalmente superior. A nova fundação já salva escolhas irreversíveis por construção.
+
+6. Variância dos fundadores
+A geração atual permite atributos amplos e passivas pré-definidas. Isso pode gerar Conselhos com poder desigual. A etapa das cartas deverá substituir essa geração por quatro atributos somando 10, especializações variadas e passivas sem repetição. A semente persistente criada agora permitirá reproduzir e diagnosticar qualquer geração.
+
+7. Dificuldade e margem de erro
+Resultados preservados da simulação:
+- Acolhedora planejada/casual: 100% de vitórias.
+- Moderada planejada: 60,5%; casual: 0%.
+- Difícil planejada: 45%; casual: 0%.
+A Parte 3 adicionará decisões e atrasos. Sem novo balanceamento ao final, a Moderada pode ficar excessivamente punitiva. Nenhum ajuste foi feito agora para evitar balancear sistemas ainda inexistentes.
+
+INSTRUMENTAÇÃO ADICIONADA
+- histórico de produção por dia;
+- produção individual antes dos multiplicadores globais;
+- composição profissional diária;
+- dias com falta de alimento ou material;
+- decisões por categoria;
+- escolhas e resultados de acontecimentos;
+- trocas de Conselho;
+- melhorias de construções;
+- escolhas de relacionamento;
+- flags persistentes para eventos encadeados;
+- semente da campanha.
+
+CONCLUSÃO
+A economia atual possui decisões reais, mas permite respostas instantâneas e otimização diária perfeita. As próximas etapas devem adicionar tempo, identidade e permanência sem alterar secretamente as regras. A instrumentação da v3.0.0 permite medir o impacto dessas mudanças em campanhas futuras.

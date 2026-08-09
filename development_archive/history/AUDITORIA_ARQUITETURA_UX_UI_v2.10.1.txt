@@ -1,0 +1,49 @@
+SQUARE VILLAGE — AUDITORIA DE ARQUITETURA, UX E UI — v2.10.1
+
+BASE
+- Base estável preservada: v2.10.0.
+- Nova manutenção separada: v2.10.1.
+- Save de campanha preservado: schema v7.
+- Economia, 24 metas, três dificuldades e simulação permaneceram inalteradas.
+
+CRITÉRIOS DA SKILL “GODOT — PROGRAMAÇÃO PARA JOGOS”
+[OK] Trabalho sobre cópia da última base validada.
+[OK] Alterações incrementais e concentradas na camada de interface.
+[OK] Helper reutilizável em vez de duplicar regras de foco em cada tela.
+[OK] Conteúdo e balanceamento aprovados preservados.
+[OK] Configurações globais separadas do save da campanha.
+[OK] Contratos entre UIManager e Conselho padronizados.
+[OK] Oráculo expandido sem alterar a campanha.
+[OK] Verificação estrutural e empacotamento versionado.
+[OK] Ausência de execução do Godot declarada explicitamente.
+
+CRITÉRIOS DA SKILL “GODOT — UX E UI PARA JOGOS”
+[OK] Foco inicial previsível em páginas e modais.
+[OK] Foco anterior restaurado ao fechar janelas.
+[OK] Cancelamento consistente por ui_cancel/Esc.
+[OK] Confirmação destrutiva começa na alternativa segura.
+[OK] Navegação por teclado e controle apoiada pelos controles principais.
+[OK] Foco visual reforçado no Theme.
+[OK] Alvos principais com altura mínima entre 38 e 50 px.
+[OK] Tooltips adicionados a ações ambíguas ou indisponíveis.
+[OK] Feedback usa texto/símbolos além de cor.
+[OK] Modo de contraste reforçado por estação.
+[OK] Alternativas a movimento e escrita gradual.
+[OK] Guia do Jogo documenta navegação e acessibilidade.
+[OK] Oráculo verifica preferências e recursos de UX/UI.
+
+CONTRASTE VERIFICADO
+- Texto claro / botão padrão: 5,12:1.
+- Texto claro / botão reforçado: 8,29:1.
+- Tinta / pergaminho: 10,44:1.
+- Texto claro / painel reforçado: 10,91:1.
+- Acento de inverno / fundo: 14,09:1.
+
+PONTOS MANTIDOS PARA EVITAR REGRESSÕES
+- Não foi introduzida escala global de UI, pois o layout aprovado ainda usa uma resolução-base compacta e precisaria de uma etapa própria de matriz responsiva.
+- Não foi criado remapeamento completo de controles, pois isso exige uma tela e um sistema de conflitos dedicados.
+- Não foi iniciada internacionalização, pois o conteúdo atual ainda não foi migrado para chaves traduzíveis.
+- Não houve redesenho visual amplo; a identidade medieval aprovada foi preservada.
+
+RESULTADO
+A v2.10.1 melhora robustez, previsibilidade, acessibilidade e manutenção sem alterar o ciclo de jogo concluído na v2.10.0.

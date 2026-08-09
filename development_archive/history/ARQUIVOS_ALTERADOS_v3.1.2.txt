@@ -1,0 +1,24 @@
+Golem’s Mandate — Parte 3, Etapa 2 — v3.1.2
+
+Correção refeita sobre a v3.1.0.
+
+Arquivos funcionais alterados:
+- project.godot
+- scripts/relationships/RelationshipCatalog.gd
+- scripts/ui/BuildingVisuals.gd
+- scripts/UIManagerVariantB.gd
+- scripts/ui/MainMenu.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+
+Ferramentas atualizadas para a versão candidata:
+- tools/verify_part3_stage2.py
+- tools/verify_part3_skill_review.py
+- tools/verify_skill_review.py
+
+Documentação adicionada/atualizada:
+- LEIA-ME_CORRECAO_v3.1.2.md
+- ROTEIRO_DE_TESTE_CORRECAO_v3.1.2.txt
+- ARQUIVOS_ALTERADOS_v3.1.2.txt
+- LEIA-ME_PARTE3_ETAPA2_v3.1.2.md
+- AUDITORIA_FILA_DE_OBRAS_v3.1.2.txt
+- ROTEIRO_DE_TESTE_PARTE3_ETAPA2_v3.1.2.txt

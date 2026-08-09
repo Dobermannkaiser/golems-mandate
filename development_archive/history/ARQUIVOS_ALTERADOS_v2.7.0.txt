@@ -1,0 +1,29 @@
+SQUARE VILLAGE — ARQUIVOS PRINCIPAIS DA ETAPA 7
+
+NOVOS
+- scripts/story/StoryChapterCatalog.gd
+- scripts/story/StoryManager.gd
+- characters/18_deusa_auditoria.tres
+- characters/19_aelric_ferreiro.tres
+- assets/dialogue/portraits/sanctuary_void.png
+- assets/dialogue/portraits/aelric_ferreiro.png
+- tools/verify_stage7.py
+- LEIA-ME_PARTE2_ETAPA7.md
+- ROTEIRO_DE_TESTE_ETAPA7_v2.7.0.txt
+
+ALTERADOS
+- project.godot
+- scripts/GameManager.gd
+- scripts/UIManager.gd
+- scripts/UIManagerVariantB.gd
+- scripts/save/SaveManager.gd
+- scripts/events/EventManager.gd
+- scripts/dialogue/DialogueCatalog.gd
+- scripts/ui/DialogueWindow.gd
+- scripts/ui/DiagnosticsWindow.gd
+- scripts/diagnostics/InternalDiagnostics.gd
+- scripts/foundation/Part2FoundationManager.gd
+- scripts/models/PopulationState.gd
+- scripts/specialists/SpecialistCatalog.gd
+
+A base visual, o layout oficial, os 40 eventos comuns, o Conselho, as construções e o sistema de diálogo da v2.6.1 foram preservados.

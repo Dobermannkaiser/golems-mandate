@@ -1,0 +1,32 @@
+Golem's Mandate — Correção de diálogos e imersão — v3.4.1
+
+AUDITORIA DE IMERSÃO
+Golem's Mandate — auditoria de imersão dos diálogos — v3.4.1
+Verificações: 24
+Falhas: 0
+Resultado: APROVADO
+
+REGRESSÃO — ETAPA 3
+Golem's Mandate — verificação da Parte 3 / Etapa 3
+Verificações: 637
+Falhas: 0
+Resultado estrutural: APROVADO
+
+REGRESSÃO — ETAPA 4
+Golem's Mandate — verificação da Parte 3 / Etapa 4
+Verificações: 183
+Falhas: 0
+Resultado estrutural: APROVADO
+
+REGRESSÃO — ETAPA 5
+Golem's Mandate — verificação da Parte 3 / Etapa 5
+Verificações: 64
+Falhas: 0
+Resultado estrutural: APROVADO
+
+ESCOPO LOCAL GDSCRIPT
+Golem's Mandate — verificação heurística de escopo local GDScript
+Scripts analisados: 64
+Funções analisadas: 1176
+Possíveis vazamentos de escopo: 0
+Resultado: APROVADO

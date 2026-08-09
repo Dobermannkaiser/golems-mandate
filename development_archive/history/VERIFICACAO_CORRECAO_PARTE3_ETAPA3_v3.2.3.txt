@@ -1,0 +1,59 @@
+Golem's Mandate — Parte 3 / Etapa 3 — v3.2.3
+
+=== Verificação estrutural ===
+Comando: python3 tools/verify_part3_stage3.py --strict-art
+Código de saída: 0
+Golem's Mandate — verificação da Parte 3 / Etapa 3
+Verificações: 571
+Falhas: 0
+Resultado estrutural: APROVADO
+
+=== Simulação das cartas iniciais ===
+Comando: python3 tools/simulate_council_cards_stage3.py
+Código de saída: 0
+SIMULAÇÃO — CARTAS DO CONSELHO — ETAPA 3
+Campanhas simuladas: 10000
+Cartas geradas: 40000
+Falhas de invariantes: 0
+Conselhos distintos: 10000
+Distribuição de valores de atributo: {1: 28119, 2: 56864, 3: 47873, 4: 21186, 5: 5958}
+Uso de nomes: {'Luma Pata-Leve': 6732, 'Nilo Brisa-Mansa': 6664, 'Pico Trilha-Fina': 6635, 'Rino Salta-Orvalho': 6691, 'Tiri Musgo-Claro': 6643, 'Vela Dedo-Ágil': 6635}
+Uso de retratos: {'felix_pescador': 5598, 'lumi_cozinheira': 5709, 'passos_leves_andarilho': 5660, 'passos_leves_artifice': 5803, 'passos_leves_batedor': 5797, 'passos_leves_bolseiro': 5663, 'passos_leves_cronista': 5770}
+Uso de passivas: {'adaptavel': 10000, 'cooperativo': 10000, 'economico': 10000, 'motivador': 10000}
+Uso de personalidades: {'ambitious': 4957, 'cautious': 5004, 'kind': 4916, 'optimistic': 5060, 'pessimistic': 4976, 'playful': 5001, 'practical': 5017, 'stubborn': 5069}
+Resultado: APROVADO
+
+=== Simulação de XP ===
+Comando: python3 tools/simulate_xp_stage3.py
+Código de saída: 0
+SIMULAÇÃO — XP DAS CARTAS — v3.2.3
+Fontes modeladas: +2 por dia ativo; +20 por acontecimento resolvido.
+Casos verificados: 6
+Falhas: 0
+Resultado: APROVADO
+
+=== Simulação de recrutamento ===
+Comando: python3 tools/simulate_recruitment_stage3.py
+Código de saída: 0
+SIMULAÇÃO — RECRUTAMENTO DE CARTAS — v3.2.3
+Campanhas simuladas: 10000
+Ofertas simuladas: 60000
+Falhas: 0
+Casos em que a segunda maior amizade foi usada: 46535
+Uso de espécies: {'Anã': 10000, 'Draconato': 10000, 'Elfo': 10000, 'Kobold': 10000, 'Meio-demônia': 10000, 'Passos-Leves': 10000}
+Resultado: APROVADO
+
+=== Verificação de transparência ===
+Comando: python3 tools/verify_transparent_portraits_stage3.py
+Código de saída: 0
+VERIFICAÇÃO — TRANSPARÊNCIA DOS RETRATOS — v3.2.3
+Imagens verificadas: 30
+Falhas: 0
+Resultado: APROVADO
+
+Avisos/erros de stderr:
+/mnt/data/gm_v323_work/tools/verify_transparent_portraits_stage3.py:46: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(alpha.getdata())
+
+=== Limite da validação ===
+O Godot não foi executado neste ambiente. A validação acima é estrutural, algorítmica e de integridade de recursos; o runtime e o layout visual dependem do teste real no Godot 4.7.1 do usuário.

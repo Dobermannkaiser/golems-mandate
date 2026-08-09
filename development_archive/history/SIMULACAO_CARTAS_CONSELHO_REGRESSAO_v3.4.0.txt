@@ -1,0 +1,11 @@
+SIMULAÇÃO — CARTAS DO CONSELHO — REGRESSÃO DA ETAPA 5
+Campanhas simuladas: 10000
+Cartas geradas: 40000
+Falhas de invariantes: 0
+Conselhos distintos: 10000
+Distribuição de valores de atributo: {1: 27879, 2: 57251, 3: 47917, 4: 20897, 5: 6056}
+Uso de nomes: {'Luma Pata-Leve': 6732, 'Nilo Brisa-Mansa': 6664, 'Pico Trilha-Fina': 6635, 'Rino Salta-Orvalho': 6691, 'Tiri Musgo-Claro': 6643, 'Vela Dedo-Ágil': 6635}
+Uso de retratos: {'felix_pescador': 5598, 'lumi_cozinheira': 5709, 'passos_leves_andarilho': 5660, 'passos_leves_artifice': 5803, 'passos_leves_batedor': 5797, 'passos_leves_bolseiro': 5663, 'passos_leves_cronista': 5770}
+Uso de passivas: {'adaptavel': 2683, 'autossuficiente': 2702, 'dedicado': 2685, 'economico': 2671, 'improvisador': 2684, 'incansavel': 2725, 'inquieto': 2647, 'mediador': 2690, 'motivador': 2647, 'organizador': 2625, 'otimista': 2678, 'protetor': 2642, 'rival_produtivo': 2588, 'versatil': 2623, 'veterano': 2710}
+Uso de personalidades: {'ambitious': 5035, 'cautious': 5000, 'kind': 5008, 'optimistic': 5012, 'pessimistic': 4987, 'playful': 4962, 'practical': 5011, 'stubborn': 4985}
+Resultado: APROVADO

@@ -1,0 +1,40 @@
+Golem's Mandate — roteiro de teste da correção de janelas — v3.5.3
+
+PREPARAÇÃO
+[ ] Abrir a v3.5.3 em uma pasta nova.
+[ ] Confirmar que o menu mostra 3.5.3.
+[ ] Carregar um save versão 15 ou iniciar uma campanha de teste.
+
+ERRO PRINCIPAL
+[ ] Clicar em GERENCIAR antes de abrir AJUDA.
+[ ] Confirmar que a janela de construções abre normalmente.
+[ ] Confirmar que a dica contextual aparece quando ainda não foi vista.
+[ ] Confirmar que não aparece erro relacionado a show_tutorial ou base Nil.
+[ ] Fechar a dica e continuar usando a janela de construções.
+
+TUTORIAL
+[ ] Abrir AJUDA pelo botão principal.
+[ ] Abrir o Guia do Jogo pelo menu inicial.
+[ ] Fechar o tutorial com botão e com Esc.
+[ ] Confirmar que uma dica contextual já vista não reaparece indevidamente.
+
+JANELAS SOB DEMANDA
+[ ] Abrir CAMPANHA.
+[ ] Abrir CONSELHO.
+[ ] Abrir DETALHAR MODIFICADORES.
+[ ] Abrir VILA AMPLIADA.
+[ ] Abrir RELACIONAMENTOS.
+[ ] Abrir SAVE e executar salvar/carregar em slot de teste.
+[ ] Abrir o histórico de uma carta.
+[ ] Disparar um diálogo ou acontecimento disponível.
+[ ] Confirmar que nenhuma janela produz erro de referência nula.
+
+REGRESSÃO DA ETAPA 6
+[ ] Confirmar que as dez artes novas continuam aparecendo.
+[ ] Confirmar que a escolha de build final continua irreversível após a conclusão.
+[ ] Salvar e carregar uma vila com build escolhida.
+
+RESULTADO
+[ ] Jogo permanece aberto após clicar em GERENCIAR.
+[ ] Nenhum Parser Error ou Invalid call aparece no depurador.
+[ ] Nenhum comportamento aprovado da v3.5.2 foi perdido.

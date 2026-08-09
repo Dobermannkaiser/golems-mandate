@@ -1,0 +1,39 @@
+GOLEM'S MANDATE — PARTE 3 / ETAPA 8 — VERIFICAÇÃO CONSOLIDADA v3.7.0
+
+RESULTADO
+- Auditorias estáticas: APROVADAS.
+- Teste no Godot: NÃO EXECUTADO; o motor não está instalado neste ambiente.
+- Status da entrega: CANDIDATA PARA TESTE MANUAL.
+
+VERIFICADORES EXECUTADOS
+- Etapa 3: 672 verificações, 0 falhas.
+- Etapa 4: 183 verificações, 0 falhas.
+- Etapa 5: 64 verificações, 0 falhas.
+- Etapa 6: 184 verificações, 0 falhas.
+- Etapa 7: 506 verificações, 0 falhas.
+- Etapa 8: 77 verificações, 0 falhas.
+- Janelas sob demanda: 96 verificações, 0 falhas.
+- Integração de sprites: 106 verificações, 0 falhas.
+- Limpeza e otimização: 50 verificações, 0 falhas.
+- Escopo local GDScript: 69 scripts e 1.292 funções; 0 possíveis vazamentos.
+
+CONTRATOS ESPECÍFICOS CONFIRMADOS POR INSPEÇÃO
+- Quatro cadeias pessoais e oito IDs de acontecimento.
+- Atribuição única por atributos, personalidade e passiva.
+- Janela de 10 dias e expiração sem efeito ou entrada artificial.
+- Condições por Conselho, recursos/felicidade e construções.
+- Contexto de estação, obras e composição do Conselho.
+- Histórico e XP creditados ao fundador protagonista.
+- Persistência do estado, escolha, acontecimento dinâmico e vestígio visual.
+- Filtro dos cinco acontecimentos recentes.
+- Migração do save 15 para 16.
+- Escrita temporária verificada e backup do save anterior.
+- Autosave após escolha de espécie e reconciliação de oferta antiga.
+- Janela de recrutamento rolável, responsiva e com ciclo de foco.
+- Validação cruzada de avaliações, vagas, oferta e sequência de recrutas.
+
+LIMITES
+- As verificações estáticas não executam o parser, o runtime ou o renderizador do Godot.
+- Não comprovam foco real por dispositivo, rolagem, escala, recorte, áudio ou aparência final.
+- Nenhuma simulação extensa foi executada nesta entrega.
+- A aprovação final exige o roteiro ROTEIRO_DE_TESTE_PARTE3_ETAPA8_v3.7.0.txt.

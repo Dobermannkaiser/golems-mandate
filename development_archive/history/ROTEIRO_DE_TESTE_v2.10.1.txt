@@ -1,0 +1,70 @@
+SQUARE VILLAGE — ROTEIRO DE TESTE DA REVISÃO — v2.10.1
+
+1. ABERTURA E COMPATIBILIDADE
+- Abra o projeto e confirme a versão 2.10.1.
+- Carregue um save criado na v2.10.0.
+- Confirme dia, dificuldade, recursos, população, história e relações.
+
+2. NAVEGAÇÃO SEM MOUSE
+- No menu, use Tab, Shift+Tab, setas e Enter.
+- Abra Configurações, Guia, Recordes e Carregar.
+- Confirme que o foco é visível e segue uma ordem compreensível.
+- Abra uma confirmação destrutiva e verifique que CANCELAR recebe foco primeiro.
+
+3. MODAIS E RETORNO DE FOCO
+Para cada tela abaixo, observe qual botão a abriu, feche com Esc/ui_cancel e confirme que o foco retorna ao controle anterior:
+- Obras;
+- Avaliação;
+- Conselho;
+- Relações;
+- Salvar/Carregar;
+- Vila ampliada;
+- Oráculo de Diagnóstico;
+- criação de nova vila;
+- aviso sazonal.
+
+4. CONFIGURAÇÕES DE ACESSIBILIDADE
+- Ative e desative REDUZIR ANIMAÇÕES.
+- Ative TEXTO INSTANTÂNEO e abra um diálogo.
+- Ative CONTRASTE REFORÇADO em cada estação.
+- Use RESTAURAR ACESSIBILIDADE e confirme os padrões.
+- Reinicie o jogo e confirme que as escolhas persistiram.
+
+5. DIÁLOGOS
+- Abra uma conversa com escolhas.
+- Confirme que a primeira resposta disponível recebe foco.
+- Abra HISTÓRICO e feche com Esc ou VOLTAR.
+- Confirme que o foco retorna às escolhas ou ao botão de continuar.
+- Feche um diálogo permitido e verifique o retorno de foco.
+
+6. SAVE E AÇÕES DE RISCO
+- Abra Salvar/Carregar.
+- Inicie uma confirmação de carregar ou excluir.
+- Pressione Esc: a confirmação deve ser cancelada sem fechar a janela.
+- Pressione Esc novamente: a janela deve fechar.
+- Confirme que nenhuma ação ocorreu no primeiro cancelamento.
+
+7. CONSELHO
+- Abra Conselho, navegue pelos dois seletores e pelo botão de troca.
+- Feche por FECHAR e por Esc.
+- Reabra e realize uma troca válida.
+- Confirme que o restante da interface continua responsivo.
+
+8. FEEDBACK NÃO DEPENDENTE DE COR
+- Salve, carregue, construa e tente uma ação bloqueada.
+- Mensagens positivas devem começar com [OK].
+- Avisos devem começar com [ATENÇÃO] quando aplicável.
+
+9. ORÁCULO
+- Abra TESTE INTERNO e execute novamente.
+- Deve aparecer a seção “UX, UI e acessibilidade”.
+- Confirme que não há erros de recursos ou preferências.
+
+10. REGRESSÃO DE CAMPANHA
+- Avance pelo menos até a primeira auditoria.
+- Confirme produção, consumo, evento, capítulo, avaliação e derrota imediata.
+- Confirme que as metas e a dificuldade são iguais à v2.10.0.
+
+11. DEPURADOR
+- Durante todos os testes, mantenha o painel Depurador aberto.
+- Não devem surgir erros vermelhos, callbacks ausentes ou referências inválidas.

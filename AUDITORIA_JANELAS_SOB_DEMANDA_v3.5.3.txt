@@ -1,0 +1,39 @@
+Golem's Mandate — auditoria das janelas sob demanda — v3.5.3
+
+ORIGEM DO ERRO
+- A v3.5.1 retirou da função _ready() a criação antecipada de quinze janelas.
+- _show_campaign_tutorial() foi adaptada para criar tutorial_window antes do uso.
+- _show_contextual_tutorial() manteve apenas a verificação de visibilidade e não criava a janela.
+- Ao clicar em GERENCIAR, a dica contextual era solicitada por call_deferred.
+- Como tutorial_window ainda era Nil, show_tutorial() falhava.
+
+CORREÇÃO
+- _create_tutorial_window() agora valida a instância criada.
+- _ensure_tutorial_window() centraliza a garantia de disponibilidade.
+- _show_campaign_tutorial() usa o helper.
+- _show_contextual_tutorial() usa o helper antes de show_tutorial().
+- O alvo Control é validado antes da criação e exibição.
+
+JANELAS AUDITADAS
+1. event_window — criação antes de show_event; usos posteriores protegidos.
+2. campaign_window — criação nos fluxos de abertura e resultado; fechamentos protegidos.
+3. recruitment_window — criação antes da oferta; callback protegido.
+4. season_hint_window — criação antes de show_hint; fechamento protegido.
+5. building_window — criação antes de show_buildings; callbacks protegidos.
+6. save_window — criação antes de show_window; callbacks retornam quando inválida.
+7. tutorial_window — falha encontrada e corrigida.
+8. council_window — criação antes de open_window; fechamentos protegidos.
+9. councillor_history_window — criação antes de open_window.
+10. forecast_details_window — criação antes de open_window.
+11. village_window — criação antes de show_village; refresh protegido.
+12. dialogue_window — criação antes de cada conversa; falha de criação tratada.
+13. diagnostics_window — criação antes de exibir.
+14. relationships_window — criação antes de exibir; refresh protegido.
+15. profile_setup_window — criação antes de show_setup.
+
+RESULTADO DA AUDITORIA
+- Janelas analisadas: 15.
+- Caminho com criação ausente encontrado: 1.
+- Caminhos corrigidos: tutorial completo e tutorial contextual passaram a usar a mesma garantia.
+- Alterações de gameplay: nenhuma.
+- Alteração de save: nenhuma.
