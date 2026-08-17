@@ -177,6 +177,10 @@ var happiness: float = INITIAL_HAPPINESS
 var current_day: int = 1
 
 var villagers: Array[Villager] = []
+## Índice O(1) para lookup por representative_id, mantido em paralelo a
+## `villagers`. Atualizado exclusivamente em `register_villager()` e
+## `unregister_villager()` — únicos dois pontos de mutação do array.
+var _villagers_by_representative_id: Dictionary = {}
 
 var event_manager = EVENT_MANAGER_SCRIPT.new()
 var founder_memory_manager = FOUNDER_MEMORY_MANAGER_SCRIPT.new()
@@ -252,6 +256,9 @@ func register_villager(villager: Villager) -> void:
 			return
 
 	villagers.append(villager)
+	var clean_representative_id: String = villager.representative_id.strip_edges()
+	if not clean_representative_id.is_empty():
+		_villagers_by_representative_id[clean_representative_id] = villager
 
 	if not villager.profession_changed.is_connected(
 		_on_villager_profession_changed
@@ -1229,6 +1236,9 @@ func unregister_villager(villager: Villager) -> void:
 		return
 
 	villagers.erase(villager)
+	var clean_representative_id: String = villager.representative_id.strip_edges()
+	if _villagers_by_representative_id.get(clean_representative_id) == villager:
+		_villagers_by_representative_id.erase(clean_representative_id)
 	if not _has_complete_initial_roster():
 		roster_initialized = false
 	villagers_changed.emit()
@@ -3019,9 +3029,15 @@ func get_councillor_history(representative_id: String) -> Dictionary:
 
 func _find_villager_by_representative_id(representative_id: String) -> Villager:
 	var clean_id: String = representative_id.strip_edges()
-	for villager: Villager in villagers:
-		if is_instance_valid(villager) and villager.representative_id == clean_id:
-			return villager
+	var villager: Villager = _villagers_by_representative_id.get(clean_id) as Villager
+	if is_instance_valid(villager):
+		return villager
+	# Fallback de segurança: se o índice ficar dessincronizado por algum
+	# caminho de mutação não coberto, ainda encontra pela busca linear
+	# em vez de falhar silenciosamente.
+	for candidate: Villager in villagers:
+		if is_instance_valid(candidate) and candidate.representative_id == clean_id:
+			return candidate
 	return null
 
 

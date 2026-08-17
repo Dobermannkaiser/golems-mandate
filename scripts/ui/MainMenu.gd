@@ -21,6 +21,8 @@ var records_page: VBoxContainer
 
 var continue_button: Button
 var load_button: Button
+var new_campaign_button: Button
+var quit_button: Button
 var main_status_label: Label
 var main_feedback_label: Label
 var load_details_label: Label
@@ -42,6 +44,7 @@ var confirmation_cancel_button: Button
 var save_overview: Dictionary = {}
 var opened_from_game: bool = false
 var confirmation_action: String = ""
+var previous_focus: Control
 
 
 func _ready() -> void:
@@ -57,6 +60,8 @@ func show_menu(
 	overview: Dictionary,
 	from_game: bool = false
 ) -> void:
+	if not is_menu_visible():
+		previous_focus = VillageUIAccessibility.remember_focus(self)
 	save_overview = overview.duplicate(true)
 	opened_from_game = from_game
 	confirmation_action = ""
@@ -96,7 +101,36 @@ func show_new_campaign_confirmation(
 
 func hide_menu() -> void:
 	confirmation_action = ""
+
+	# O Godot não limpa foco de teclado automaticamente quando um Control
+	# fica invisível. Sem isto, o botão que estava focado no menu continua
+	# sendo o "dono do foco" da viewport mesmo escondido — e pode voltar a
+	# receber navegação por teclado/gamepad mais tarde, mesmo com outra
+	# janela aberta por cima. Libera o foco só se ele ainda pertence a este
+	# menu, pra não interferir em foco de outras telas por engano.
+	var viewport: Viewport = get_viewport()
+	if is_instance_valid(viewport):
+		var focus_owner: Control = viewport.gui_get_focus_owner()
+		if (
+			is_instance_valid(focus_owner)
+			and is_instance_valid(overlay)
+			and overlay.is_ancestor_of(focus_owner)
+		):
+			viewport.gui_release_focus()
+
 	overlay.visible = false
+	var restore_root: Control
+	var parent_node: Node = get_parent()
+	if (
+		is_instance_valid(parent_node)
+		and parent_node.has_method("get_focus_restore_root")
+	):
+		restore_root = parent_node.call("get_focus_restore_root") as Control
+	VillageUIAccessibility.restore_focus_deferred(
+		previous_focus,
+		restore_root
+	)
+	previous_focus = null
 	if opened_from_game:
 		var season: Dictionary = GameManager.get_current_season()
 		AudioManager.enter_game(String(season.get("id", "spring")))
@@ -107,6 +141,21 @@ func is_menu_visible() -> bool:
 		is_instance_valid(overlay)
 		and overlay.visible
 	)
+
+
+func get_active_focus_root() -> Control:
+	if is_instance_valid(main_page) and main_page.visible:
+		# Na página principal, o atalho de medalhas faz parte do menu.
+		return overlay
+	for page: VBoxContainer in [
+		load_page,
+		settings_page,
+		confirmation_page,
+		records_page
+	]:
+		if is_instance_valid(page) and page.visible:
+			return page
+	return overlay
 
 
 func refresh_save_overview(
@@ -294,7 +343,7 @@ func _create_menu() -> void:
 		"v%s" % str(
 		ProjectSettings.get_setting(
 			"application/config/version",
-				"3.11.5"
+				"3.11.7"
 			)
 		),
 		version_color,
@@ -347,7 +396,7 @@ func _build_main_page() -> void:
 	)
 	page_focus_targets[main_page.name] = continue_button
 
-	var new_campaign_button: Button = (
+	new_campaign_button = (
 		_create_menu_button(
 			"NOVA CAMPANHA",
 			330.0
@@ -405,7 +454,7 @@ func _build_main_page() -> void:
 		settings_button
 	)
 
-	var quit_button: Button = _create_menu_button(
+	quit_button = _create_menu_button(
 		"SAIR DO JOGO",
 		330.0
 	)
@@ -418,6 +467,29 @@ func _build_main_page() -> void:
 		main_page,
 		quit_button
 	)
+	_apply_quiet_emphasis(quit_button)
+
+	# Navegação explícita por teclado/gamepad entre os botões do menu
+	# principal. O Godot calcula vizinho de foco por posição espacial
+	# quando não é definido, mas isso é frágil em qualquer reflow futuro do
+	# layout — fixar explicitamente garante ordem previsível de cima pra
+	# baixo, com wrap do último pro primeiro e vice-versa.
+	var main_menu_order: Array[Button] = [
+		continue_button,
+		new_campaign_button,
+		load_button,
+		tutorial_button,
+		settings_button,
+		quit_button
+	]
+	for i in main_menu_order.size():
+		var current: Button = main_menu_order[i]
+		var next: Button = main_menu_order[(i + 1) % main_menu_order.size()]
+		var previous: Button = main_menu_order[
+			(i - 1 + main_menu_order.size()) % main_menu_order.size()
+		]
+		current.focus_neighbor_bottom = current.get_path_to(next)
+		current.focus_neighbor_top = current.get_path_to(previous)
 
 	main_feedback_label = MedievalTheme.create_label(
 		"",
@@ -883,6 +955,8 @@ func _refresh_main_page() -> void:
 	if opened_from_game:
 		continue_button.text = "VOLTAR À VILA"
 		continue_button.disabled = false
+		_apply_primary_emphasis(continue_button)
+		_clear_emphasis(new_campaign_button)
 
 		main_status_label.text = (
 			"%s — DIA %d — SEMENTE %d\n"
@@ -939,6 +1013,8 @@ func _refresh_main_page() -> void:
 	elif is_valid:
 		continue_button.text = "CONTINUAR"
 		continue_button.disabled = false
+		_apply_primary_emphasis(continue_button)
+		_clear_emphasis(new_campaign_button)
 
 		main_status_label.text = (
 			"%s — %s — DIA %d — SEMENTE %d\n"
@@ -996,6 +1072,8 @@ func _refresh_main_page() -> void:
 	else:
 		continue_button.text = "CONTINUAR"
 		continue_button.disabled = true
+		_clear_emphasis(continue_button)
+		_apply_primary_emphasis(new_campaign_button)
 
 		if bool(
 			save_overview.get(
@@ -1589,6 +1667,80 @@ func _create_menu_button(
 	VillageUIAccessibility.configure_button(button)
 
 	return button
+
+
+## Realça um botão como a ação primária da tela (fundo dourado, texto
+## escuro, levemente maior). Usa overrides só nesta instância — não mexe no
+## tema global, então não afeta nenhum outro botão do jogo.
+func _apply_primary_emphasis(button: Button) -> void:
+	if not is_instance_valid(button):
+		return
+
+	button.add_theme_font_size_override("font_size", 18)
+
+	var normal_style: StyleBoxFlat = StyleBoxFlat.new()
+	normal_style.bg_color = MedievalTheme.GOLD
+	normal_style.border_color = MedievalTheme.GOLD_DARK
+	normal_style.set_border_width_all(2)
+	normal_style.set_corner_radius_all(8)
+
+	var hover_style: StyleBoxFlat = StyleBoxFlat.new()
+	hover_style.bg_color = MedievalTheme.GOLD.lightened(0.12)
+	hover_style.border_color = MedievalTheme.GOLD_DARK
+	hover_style.set_border_width_all(2)
+	hover_style.set_corner_radius_all(8)
+
+	var pressed_style: StyleBoxFlat = StyleBoxFlat.new()
+	pressed_style.bg_color = MedievalTheme.GOLD_DARK
+	pressed_style.border_color = MedievalTheme.GOLD_DARK
+	pressed_style.set_border_width_all(2)
+	pressed_style.set_corner_radius_all(8)
+
+	button.add_theme_stylebox_override("normal", normal_style)
+	button.add_theme_stylebox_override("hover", hover_style)
+	button.add_theme_stylebox_override("pressed", pressed_style)
+	button.add_theme_color_override("font_color", MedievalTheme.INK)
+	button.add_theme_color_override("font_hover_color", MedievalTheme.INK)
+	button.add_theme_color_override("font_pressed_color", MedievalTheme.INK)
+
+
+## Reduz o peso visual de um botão secundário/pouco frequente (ex: Sair do
+## Jogo), sem desabilitá-lo. Overrides só nesta instância.
+func _apply_quiet_emphasis(button: Button) -> void:
+	if not is_instance_valid(button):
+		return
+
+	var normal_style: StyleBoxFlat = StyleBoxFlat.new()
+	normal_style.bg_color = Color(0.0, 0.0, 0.0, 0.0)
+	normal_style.border_color = MedievalTheme.WOOD_LIGHT
+	normal_style.set_border_width_all(1)
+	normal_style.set_corner_radius_all(8)
+
+	var hover_style: StyleBoxFlat = StyleBoxFlat.new()
+	hover_style.bg_color = MedievalTheme.WOOD_DARK
+	hover_style.border_color = MedievalTheme.WOOD_LIGHT
+	hover_style.set_border_width_all(1)
+	hover_style.set_corner_radius_all(8)
+
+	button.add_theme_stylebox_override("normal", normal_style)
+	button.add_theme_stylebox_override("hover", hover_style)
+	button.add_theme_color_override("font_color", MedievalTheme.TEXT_MUTED)
+
+
+## Remove os overrides de ênfase (primário ou discreto), voltando o botão ao
+## estilo padrão do tema. Necessário porque qual botão é "primário" muda
+## dinamicamente conforme existe ou não uma campanha salva.
+func _clear_emphasis(button: Button) -> void:
+	if not is_instance_valid(button):
+		return
+	button.remove_theme_font_size_override("font_size")
+	button.add_theme_font_size_override("font_size", 16)
+	button.remove_theme_stylebox_override("normal")
+	button.remove_theme_stylebox_override("hover")
+	button.remove_theme_stylebox_override("pressed")
+	button.remove_theme_color_override("font_color")
+	button.remove_theme_color_override("font_hover_color")
+	button.remove_theme_color_override("font_pressed_color")
 
 
 func _make_panel_style(

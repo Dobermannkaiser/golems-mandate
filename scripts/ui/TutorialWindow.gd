@@ -103,6 +103,10 @@ func is_window_visible() -> bool:
 	)
 
 
+func uses_custom_focus_direction(action_name: StringName) -> bool:
+	return action_name == &"ui_left" or action_name == &"ui_right"
+
+
 func _create_window() -> void:
 	overlay = Control.new()
 	overlay.name = "TutorialOverlay"

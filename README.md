@@ -19,7 +19,7 @@ O projeto inclui sistemas de:
 
 ## Versão disponível
 
-A versão estável final da Parte 3 é a `v3.11.5`.
+A versão estável final da Parte 3 é a `v3.11.7`.
 
 Os arquivos disponibilizados neste repositório correspondem ao projeto-fonte para Godot 4. O pacote original da versão pode ser encontrado na seção **Releases**.
 

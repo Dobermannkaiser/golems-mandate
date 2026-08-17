@@ -115,7 +115,10 @@ func hide_window() -> void:
 	_hide_variant_choice(false)
 	_hide_cancel_confirmation(false)
 	overlay.visible = false
-	VillageUIAccessibility.restore_focus_deferred(previous_focus)
+	VillageUIAccessibility.restore_focus_deferred(
+		previous_focus,
+		_get_parent_focus_restore_root()
+	)
 	previous_focus = null
 
 
@@ -124,6 +127,20 @@ func is_window_visible() -> bool:
 		is_instance_valid(overlay)
 		and overlay.visible
 	)
+
+
+func get_active_focus_root() -> Control:
+	if (
+		is_instance_valid(variant_choice_overlay)
+		and variant_choice_overlay.visible
+	):
+		return variant_choice_overlay
+	if (
+		is_instance_valid(cancel_confirmation_overlay)
+		and cancel_confirmation_overlay.visible
+	):
+		return cancel_confirmation_overlay
+	return overlay
 
 
 func _refresh_content() -> void:
@@ -375,7 +392,9 @@ func _on_cancel_order_pressed(
 	)
 	cancel_confirmation_overlay.visible = true
 	# O foco inicial fica na ação segura, nunca no cancelamento destrutivo.
-	cancel_confirmation_cancel_button.grab_focus.call_deferred()
+	VillageUIAccessibility.focus_deferred(
+		cancel_confirmation_cancel_button
+	)
 
 
 func _confirm_cancel_order() -> void:
@@ -392,7 +411,8 @@ func _hide_cancel_confirmation(restore_focus: bool = true) -> void:
 	pending_cancel_order_id = ""
 	if restore_focus:
 		VillageUIAccessibility.restore_focus_deferred(
-			cancel_confirmation_previous_focus
+			cancel_confirmation_previous_focus,
+			get_active_focus_root()
 		)
 	cancel_confirmation_previous_focus = null
 
@@ -405,7 +425,9 @@ func _on_move_order_pressed(order_id: String, direction: int) -> void:
 
 func _restore_interaction_focus() -> void:
 	if is_window_visible():
-		VillageUIAccessibility.focus_first_enabled(overlay)
+		VillageUIAccessibility.focus_first_enabled(
+			get_active_focus_root()
+		)
 
 
 func _create_housing_card(
@@ -1380,7 +1402,9 @@ func _select_variant(
 		variant_name,
 		effect_text
 	]
-	variant_choice_confirm_button.grab_focus.call_deferred()
+	VillageUIAccessibility.focus_deferred(
+		variant_choice_confirm_button
+	)
 
 
 func _confirm_variant_choice() -> void:
@@ -1401,9 +1425,20 @@ func _hide_variant_choice(restore_focus: bool = true) -> void:
 	pending_variant_id = ""
 	if restore_focus:
 		VillageUIAccessibility.restore_focus_deferred(
-			variant_choice_previous_focus
+			variant_choice_previous_focus,
+			get_active_focus_root()
 		)
 	variant_choice_previous_focus = null
+
+
+func _get_parent_focus_restore_root() -> Control:
+	var parent_node: Node = get_parent()
+	if (
+		is_instance_valid(parent_node)
+		and parent_node.has_method("get_focus_restore_root")
+	):
+		return parent_node.call("get_focus_restore_root") as Control
+	return null
 
 
 func _create_cancel_confirmation() -> void:

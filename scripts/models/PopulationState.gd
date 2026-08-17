@@ -238,6 +238,7 @@ func set_housing_capacity(new_capacity: int) -> bool:
 	if (
 		new_capacity < INITIAL_HOUSING_CAPACITY
 		or new_capacity > MAX_SAFE_POPULATION
+		or new_capacity % 5 != 0
 	):
 		return false
 

@@ -214,6 +214,7 @@ var _feedback_tween: Tween
 var _feedback_kind: String = ""
 var _feedback_target: Vector2 = Vector2(0.53, 0.45)
 var _feedback_alpha: float = 0.0
+var _reduced_motion_active: bool = false
 
 
 func _ready() -> void:
@@ -223,6 +224,7 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	clip_contents = true
 	_rng.seed = 251052
+	_reduced_motion_active = GameSettings.reduced_motion
 	# A vila sempre fica abaixo das janelas modais. Os filhos
 	# usam apenas pequenas faixas locais de profundidade.
 	z_index = 0
@@ -260,6 +262,12 @@ func set_simulation_active(value: bool) -> void:
 		_restart_common_villager_routes()
 	else:
 		_stop_common_villager_routes()
+
+
+func refresh_motion_setting() -> void:
+	if _reduced_motion_active == GameSettings.reduced_motion:
+		return
+	_restart_common_villager_routes()
 
 
 func apply_season(season_id: String) -> void:
@@ -603,7 +611,7 @@ func _ensure_building_buttons() -> void:
 		button.mouse_default_cursor_shape = (
 			Control.CURSOR_POINTING_HAND
 		)
-		button.focus_mode = Control.FOCUS_NONE
+		button.focus_mode = Control.FOCUS_ALL
 		button.pressed.connect(
 			_on_building_button_pressed.bind(
 				building_id
@@ -1063,6 +1071,13 @@ func _layout_common_villagers() -> void:
 
 
 func _restart_common_villager_routes() -> void:
+	_stop_common_villager_routes()
+	_reduced_motion_active = GameSettings.reduced_motion
+
+	if GameSettings.reduced_motion:
+		_position_common_villagers_for_reduced_motion()
+		return
+
 	if not simulation_active:
 		return
 
@@ -1070,8 +1085,24 @@ func _restart_common_villager_routes() -> void:
 		if not is_instance_valid(villager_node):
 			continue
 
-		_stop_villager_tween(villager_node)
 		_start_common_villager_tween(villager_node)
+
+
+func _position_common_villagers_for_reduced_motion() -> void:
+	for index: int in range(common_villager_nodes.size()):
+		var villager_node: Control = common_villager_nodes[index]
+		if not is_instance_valid(villager_node):
+			continue
+
+		var route_index: int = index % COMMON_ROUTE_POINTS.size()
+		villager_node.set_meta("route_index", route_index)
+		villager_node.set_meta("position_initialized", true)
+		villager_node.position = (
+			_normalized_to_map_position(
+				COMMON_ROUTE_POINTS[route_index]
+			)
+			- villager_node.size * 0.5
+		)
 
 
 func _stop_common_villager_routes() -> void:
@@ -1103,6 +1134,7 @@ func _start_common_villager_tween(
 ) -> void:
 	if (
 		not simulation_active
+		or GameSettings.reduced_motion
 		or not is_instance_valid(villager_node)
 	):
 		return
@@ -1139,9 +1171,6 @@ func _start_common_villager_tween(
 		1.4,
 		4.5
 	)
-
-	if GameSettings.reduced_motion:
-		duration = 0.01
 
 	var tween: Tween = create_tween()
 	villager_tweens[villager_node.get_instance_id()] = tween
@@ -1259,6 +1288,8 @@ func _on_resized() -> void:
 	_layout_houses()
 	_layout_council_nodes()
 	_layout_common_villagers()
+	if GameSettings.reduced_motion:
+		_position_common_villagers_for_reduced_motion()
 	_layout_extra_house_label()
 	queue_redraw()
 

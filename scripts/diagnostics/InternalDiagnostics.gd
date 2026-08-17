@@ -469,8 +469,8 @@ static func _validate_part3_foundation() -> Dictionary:
 		ProjectSettings.get_setting("application/config/version", "")
 	)
 
-	if project_version != "3.11.5":
-		errors.append("A Etapa 12 da Parte 3 deve usar a versão 3.11.5.")
+	if project_version != "3.11.7":
+		errors.append("A Etapa 12 da Parte 3 deve usar a versão 3.11.7.")
 	if SAVE_MANAGER_SCRIPT.SAVE_VERSION != 18:
 		errors.append("A Etapa 12 deve manter o envelope global de save versão 18.")
 	if SAVE_MANAGER_SCRIPT.SAVE_SCHEMA_ID != "golems_mandate_part3":

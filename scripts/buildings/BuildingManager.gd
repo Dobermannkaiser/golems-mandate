@@ -1193,7 +1193,11 @@ func _sanitize_loaded_order(order: Dictionary) -> Dictionary:
 	order["paid_cost"] = _round_material_cost(float(order.get("paid_cost", 0.0)))
 	order["effect_text"] = String(order.get("effect_text", ""))
 	var variant_id: String = String(order.get("variant_id", "")).strip_edges()
-	if int(order.get("target_level", 1)) == BUILDING_VARIANT_CATALOG_SCRIPT.FINAL_LEVEL:
+	if (
+		not is_housing
+		and int(order.get("target_level", 1))
+		== BUILDING_VARIANT_CATALOG_SCRIPT.FINAL_LEVEL
+	):
 		if not BUILDING_VARIANT_CATALOG_SCRIPT.is_valid_for_building(
 			variant_id,
 			building_id

@@ -102,13 +102,29 @@ func hide_dialogue() -> void:
 	overlay.visible = false
 	_reset_scene_image()
 	dialogue_manager.reset()
-	VillageUIAccessibility.restore_focus_deferred(previous_focus)
+	var restore_root: Control
+	var parent_node: Node = get_parent()
+	if (
+		is_instance_valid(parent_node)
+		and parent_node.has_method("get_focus_restore_root")
+	):
+		restore_root = parent_node.call("get_focus_restore_root") as Control
+	VillageUIAccessibility.restore_focus_deferred(
+		previous_focus,
+		restore_root
+	)
 	previous_focus = null
 	dialogue_closed.emit(closed_conversation_id)
 
 
 func is_dialogue_visible() -> bool:
 	return is_instance_valid(overlay) and overlay.visible
+
+
+func get_active_focus_root() -> Control:
+	if is_instance_valid(history_panel) and history_panel.visible:
+		return history_panel
+	return overlay
 
 
 func _process(delta: float) -> void:

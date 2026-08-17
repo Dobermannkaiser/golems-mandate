@@ -398,10 +398,12 @@ func import_save_data(save_data: Dictionary) -> bool:
 	pending_custom_metadata = (
 		custom_metadata_value as Dictionary
 	).duplicate(true)
-	pending_dialogue_id = String(save_data.get("pending_dialogue_id", ""))
+	pending_dialogue_id = String(
+		save_data.get("pending_dialogue_id", "")
+	).strip_edges()
 	pending_dialogue_context = String(
 		save_data.get("pending_dialogue_context", "")
-	)
+	).strip_edges()
 	pending_chapter_id = String(save_data.get("pending_chapter_id", ""))
 	pending_event_id = String(save_data.get("pending_event_id", ""))
 	pending_outro_variant = String(
@@ -411,14 +413,6 @@ func import_save_data(save_data: Dictionary) -> bool:
 		save_data.get("awaiting_story_event", false)
 	)
 
-	if pending_dialogue_context not in [
-		"",
-		"prologue",
-		"chapter_intro",
-		"chapter_outro",
-		"building_variant_reaction"
-	]:
-		return false
 	if pending_dialogue_id.is_empty() != pending_dialogue_context.is_empty():
 		return false
 	return true

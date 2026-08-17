@@ -342,10 +342,18 @@ static func _configure_buttons(
 		2
 	)
 
+	# Estilo "desabilitado": precisa se distinguir claramente do "normal" a
+	# olho, não só por alpha (que fica sutil demais na paleta escura do
+	# jogo). Usa o tom mais escuro/dessaturado da paleta (panel_dark) em vez
+	# de uma variação do próprio botão, para o elemento "recuar" visualmente
+	# em vez de parecer só uma versão opaca do botão ativo.
+	var disabled_bg: Color = palette["panel_dark"]
+	disabled_bg.a = 0.55 if not enhanced_contrast else 0.72
+
 	var disabled_style: StyleBoxFlat = _make_box(
-		Color(0.24, 0.28, 0.20, 0.70),
-		Color(0.45, 0.40, 0.28, 0.70),
-		2,
+		disabled_bg,
+		Color(0.10, 0.09, 0.08, 0.60),
+		1,
 		8,
 		0
 	)
@@ -412,10 +420,14 @@ static func _configure_buttons(
 		Color.WHITE
 	)
 
+	# TEXT_MUTED ficava perto demais de TEXT_LIGHT em luminosidade — o botão
+	# desabilitado quase não se distinguia do ativo. Um cinza dessaturado
+	# (sem o tom quente da paleta) lê como "indisponível" de forma mais
+	# clara, mantendo contraste mínimo legível mesmo no modo alto contraste.
 	medieval_theme.set_color(
 		"font_disabled_color",
 		"Button",
-		TEXT_MUTED
+		Color(0.62, 0.60, 0.56, 0.85 if enhanced_contrast else 0.65)
 	)
 
 	medieval_theme.set_font_size(

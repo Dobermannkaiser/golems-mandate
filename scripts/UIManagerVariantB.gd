@@ -11,6 +11,7 @@ var workspace_stack: Control
 var village_workspace: HBoxContainer
 var register_workspace: PanelContainer
 var register_text: RichTextLabel
+var register_back_button: Button
 var sidebar_panel: PanelContainer
 var sidebar_buttons: Dictionary = {}
 var settings_sidebar_button: Button
@@ -180,7 +181,7 @@ func _create_sidebar() -> PanelContainer:
 	layout.add_child(diagnostics_sidebar_button)
 
 	var variant_label: Label = MedievalTheme.create_label(
-		"LAYOUT OFICIAL\nv3.11.5",
+		"LAYOUT OFICIAL\nv3.11.7",
 		MedievalTheme.TEXT_MUTED,
 		10
 	)
@@ -586,11 +587,11 @@ func _create_register_workspace() -> PanelContainer:
 	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	header.add_child(title)
 
-	var back_button: Button = Button.new()
-	back_button.text = "VOLTAR À VILA"
-	back_button.custom_minimum_size = Vector2(160.0, 38.0)
-	back_button.pressed.connect(_on_sidebar_village_pressed)
-	header.add_child(back_button)
+	register_back_button = Button.new()
+	register_back_button.text = "VOLTAR À VILA"
+	register_back_button.custom_minimum_size = Vector2(160.0, 38.0)
+	register_back_button.pressed.connect(_on_sidebar_village_pressed)
+	header.add_child(register_back_button)
 
 	var explanation: Label = MedievalTheme.create_label(
 		"Os registros mais recentes aparecem primeiro. O resumo atual também permanece no rodapé.",
@@ -612,9 +613,36 @@ func _create_register_workspace() -> PanelContainer:
 	register_text.add_theme_color_override("default_color", MedievalTheme.PARCHMENT_LIGHT)
 	register_text.add_theme_constant_override("line_separation", 5)
 	layout.add_child(register_text)
+	call_deferred("_configure_register_focus_neighbors")
 
 	_refresh_register_text()
 	return panel
+
+
+func _configure_register_focus_neighbors() -> void:
+	var register_button: Button = sidebar_buttons.get("register") as Button
+	if (
+		not is_instance_valid(register_button)
+		or not is_instance_valid(register_back_button)
+		or not is_instance_valid(register_text)
+		or not register_text.is_inside_tree()
+	):
+		return
+	register_button.focus_neighbor_right = (
+		register_button.get_path_to(register_text)
+	)
+	register_text.focus_neighbor_left = (
+		register_text.get_path_to(register_button)
+	)
+	register_back_button.focus_neighbor_left = (
+		register_back_button.get_path_to(register_button)
+	)
+	register_back_button.focus_neighbor_bottom = (
+		register_back_button.get_path_to(register_text)
+	)
+	register_text.focus_neighbor_top = (
+		register_text.get_path_to(register_back_button)
+	)
 
 
 func _create_bottom_bar() -> PanelContainer:
@@ -784,6 +812,8 @@ func _refresh_register_text() -> void:
 
 
 func _set_workspace(workspace_id: String) -> void:
+	if not get_active_interface_id().is_empty():
+		return
 	if is_instance_valid(village_workspace):
 		village_workspace.visible = workspace_id == "village"
 
@@ -826,6 +856,8 @@ func _on_sidebar_register_pressed() -> void:
 
 
 func _on_sidebar_settings_pressed() -> void:
+	if not is_interface_open_allowed(&"main_menu"):
+		return
 	AudioManager.play_ui("window_open", false)
 	AudioManager.enter_menu(true)
 	if not is_instance_valid(main_menu):

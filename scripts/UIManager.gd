@@ -177,6 +177,7 @@ var active_story_dialogue_id: String = ""
 var active_level_dialogue_id: String = ""
 var tutorial_after_story: bool = false
 var profile_setup_return_to_game: bool = false
+var tutorial_previous_focus: Control
 
 var previous_food: float = 0.0
 var previous_material: float = 0.0
@@ -248,6 +249,218 @@ func _ready() -> void:
 	_queue_world_layout()
 	call_deferred("_animate_interface_entrance")
 	call_deferred("_show_startup_menu")
+
+
+func get_active_interface_id() -> StringName:
+	var active_interface: Dictionary = _get_active_interface_state()
+	return StringName(active_interface.get("id", &""))
+
+
+func get_active_focus_root() -> Control:
+	var active_interface: Dictionary = _get_active_interface_state()
+	if active_interface.is_empty():
+		return _get_default_focus_root()
+	var interface_root_value: Control = (
+		active_interface.get("root") as Control
+	)
+	if not is_instance_valid(interface_root_value):
+		return _get_default_focus_root()
+	if interface_root_value.has_method("get_active_focus_root"):
+		var scoped_value: Variant = interface_root_value.call(
+			"get_active_focus_root"
+		)
+		var scoped_root: Control = (
+			scoped_value as Control
+			if scoped_value is Control
+			else null
+		)
+		if (
+			is_instance_valid(scoped_root)
+			and scoped_root.is_visible_in_tree()
+			and VillageUIAccessibility.is_focus_within(
+				interface_root_value,
+				scoped_root
+			)
+		):
+			return scoped_root
+	return interface_root_value
+
+
+func get_focus_restore_root() -> Control:
+	return get_active_focus_root()
+
+
+func _get_default_focus_root() -> Control:
+	if is_instance_valid(interface_root) and interface_root.is_visible_in_tree():
+		return interface_root
+	return self
+
+
+func is_interface_open_allowed(
+	interface_id: StringName,
+	allow_tutorial_overlay: bool = false
+) -> bool:
+	var active_interface: Dictionary = _get_active_interface_state()
+	if active_interface.is_empty():
+		return true
+	var active_id: StringName = StringName(active_interface.get("id", &""))
+	if active_id == interface_id:
+		return true
+	return allow_tutorial_overlay and interface_id == &"tutorial"
+
+
+func _get_active_interface_state() -> Dictionary:
+	if is_instance_valid(tutorial_window) and tutorial_window.is_window_visible():
+		return {"id": &"tutorial", "root": tutorial_window as Control}
+	if is_instance_valid(profile_setup_window) and profile_setup_window.is_window_visible():
+		return {"id": &"profile_setup", "root": profile_setup_window as Control}
+	if is_instance_valid(diagnostics_window) and diagnostics_window.is_window_visible():
+		return {"id": &"diagnostics", "root": diagnostics_window as Control}
+	if is_instance_valid(dialogue_window) and dialogue_window.is_dialogue_visible():
+		return {"id": &"dialogue", "root": dialogue_window as Control}
+	if is_instance_valid(relationships_window) and relationships_window.is_window_visible():
+		return {"id": &"relationships", "root": relationships_window as Control}
+	if is_instance_valid(main_menu) and main_menu.is_menu_visible():
+		return {"id": &"main_menu", "root": main_menu as Control}
+	if is_instance_valid(recruitment_window) and recruitment_window.is_window_visible():
+		return {"id": &"recruitment", "root": recruitment_window as Control}
+	if is_instance_valid(councillor_history_window) and councillor_history_window.is_window_visible():
+		return {"id": &"councillor_history", "root": councillor_history_window as Control}
+	if is_instance_valid(forecast_details_window) and forecast_details_window.is_window_visible():
+		return {"id": &"forecast_details", "root": forecast_details_window as Control}
+	if is_instance_valid(village_window) and village_window.is_window_visible():
+		return {"id": &"village", "root": village_window as Control}
+	if is_instance_valid(season_hint_window) and season_hint_window.is_window_visible():
+		return {"id": &"season_hint", "root": season_hint_window as Control}
+	if is_instance_valid(save_window) and save_window.is_window_visible():
+		return {"id": &"save", "root": save_window as Control}
+	if is_instance_valid(council_window) and council_window.is_window_visible():
+		return {"id": &"council", "root": council_window as Control}
+	if is_instance_valid(campaign_window) and campaign_window.is_window_visible():
+		return {"id": &"campaign", "root": campaign_window as Control}
+	if is_instance_valid(building_window) and building_window.is_window_visible():
+		return {"id": &"building", "root": building_window as Control}
+	if is_instance_valid(event_window) and event_window.is_event_visible():
+		return {"id": &"event", "root": event_window as Control}
+	return {}
+
+
+func _input(event: InputEvent) -> void:
+	var active_interface: Dictionary = _get_active_interface_state()
+	var interface_root_value: Control = (
+		active_interface.get("root") as Control
+		if not active_interface.is_empty()
+		else null
+	)
+	var active_root: Control = get_active_focus_root()
+	if not is_instance_valid(active_root):
+		return
+
+	var move_previous: bool = event.is_action_pressed("ui_focus_prev")
+	var move_next: bool = event.is_action_pressed("ui_focus_next")
+	var focus_up: bool = event.is_action_pressed("ui_up")
+	var focus_down: bool = event.is_action_pressed("ui_down")
+	var focus_left: bool = event.is_action_pressed("ui_left")
+	var focus_right: bool = event.is_action_pressed("ui_right")
+	var accept_pressed: bool = event.is_action_pressed("ui_accept")
+	if not (
+		move_previous
+		or move_next
+		or focus_up
+		or focus_down
+		or focus_left
+		or focus_right
+		or accept_pressed
+	):
+		return
+
+	var viewport: Viewport = get_viewport()
+	var focus_owner: Control = viewport.gui_get_focus_owner()
+	if not VillageUIAccessibility.is_focus_within(active_root, focus_owner):
+		VillageUIAccessibility.focus_edge(active_root, move_previous)
+		viewport.set_input_as_handled()
+		return
+	if accept_pressed:
+		return
+
+	if move_previous or move_next:
+		VillageUIAccessibility.focus_relative(
+			active_root,
+			focus_owner,
+			move_previous
+		)
+		viewport.set_input_as_handled()
+		return
+
+	var direction_side: int = -1
+	var direction_action: StringName = &""
+	if focus_up:
+		direction_side = SIDE_TOP
+		direction_action = &"ui_up"
+	elif focus_down:
+		direction_side = SIDE_BOTTOM
+		direction_action = &"ui_down"
+	elif focus_left:
+		direction_side = SIDE_LEFT
+		direction_action = &"ui_left"
+	elif focus_right:
+		direction_side = SIDE_RIGHT
+		direction_action = &"ui_right"
+
+	if direction_side < 0:
+		return
+	if (
+		is_instance_valid(interface_root_value)
+		and interface_root_value.has_method("uses_custom_focus_direction")
+		and bool(
+			interface_root_value.call(
+				"uses_custom_focus_direction",
+				direction_action
+			)
+		)
+	):
+		return
+	if VillageUIAccessibility.should_control_handle_direction(
+		focus_owner,
+		direction_side
+	):
+		return
+	VillageUIAccessibility.focus_directional(
+		active_root,
+		focus_owner,
+		direction_side
+	)
+	viewport.set_input_as_handled()
+
+
+func _is_contextual_tutorial_target_active(target: Control) -> bool:
+	if not is_instance_valid(target):
+		return false
+	var active_interface: Dictionary = _get_active_interface_state()
+	if active_interface.is_empty():
+		return true
+	var active_root: Control = active_interface.get("root") as Control
+	return (
+		active_root == target
+		or VillageUIAccessibility.is_focus_within(active_root, target)
+	)
+
+
+func _capture_tutorial_focus() -> void:
+	tutorial_previous_focus = VillageUIAccessibility.remember_focus(self)
+
+
+func _queue_tutorial_focus_restore() -> void:
+	var previous_focus: Control = tutorial_previous_focus
+	tutorial_previous_focus = null
+	call_deferred("_restore_focus_after_interface_close", previous_focus)
+
+
+func _restore_focus_after_interface_close(previous_focus: Control) -> void:
+	VillageUIAccessibility.restore_focus_deferred(
+		previous_focus,
+		get_focus_restore_root()
+	)
 
 
 func _hide_old_interface() -> void:
@@ -1131,6 +1344,8 @@ func _open_pending_recruitment_if_available() -> void:
 		and campaign_window.is_window_visible()
 	):
 		return
+	if not is_interface_open_allowed(&"recruitment"):
+		return
 	if not GameManager.has_pending_recruitment_offer():
 		return
 	if not is_instance_valid(recruitment_window):
@@ -1314,6 +1529,8 @@ func _create_forecast_details_window() -> void:
 
 
 func _on_forecast_details_pressed() -> void:
+	if not is_interface_open_allowed(&"forecast_details"):
+		return
 	if not is_instance_valid(forecast_details_window):
 		_create_forecast_details_window()
 	forecast_details_window.open_window(
@@ -1427,6 +1644,8 @@ func _create_profile_setup_window() -> void:
 
 
 func _open_relationships_window() -> void:
+	if not is_interface_open_allowed(&"relationships"):
+		return
 	AudioManager.play_ui("window_open", false)
 	if not is_instance_valid(relationships_window):
 		_create_relationships_window()
@@ -1446,6 +1665,8 @@ func _open_relationships_window() -> void:
 
 
 func _open_relationships_test_window() -> void:
+	if not is_interface_open_allowed(&"relationships"):
+		return
 	if not is_instance_valid(relationships_window):
 		_create_relationships_window()
 	if is_instance_valid(relationships_window):
@@ -1470,6 +1691,8 @@ func _on_relationships_window_closed() -> void:
 
 
 func _on_council_button_pressed() -> void:
+	if not is_interface_open_allowed(&"council"):
+		return
 	AudioManager.play_ui("window_open", false)
 	if not is_instance_valid(council_window):
 		_create_council_window()
@@ -1688,6 +1911,8 @@ func _on_village_event_resolved(
 
 
 func _on_campaign_button_pressed() -> void:
+	if not is_interface_open_allowed(&"campaign"):
+		return
 	AudioManager.play_ui("window_open", false)
 	if not is_instance_valid(campaign_window):
 		_create_campaign_window()
@@ -1714,6 +1939,8 @@ func _on_campaign_button_pressed() -> void:
 
 
 func _on_building_button_pressed() -> void:
+	if not is_interface_open_allowed(&"building"):
+		return
 	AudioManager.play_ui("window_open", false)
 	if not is_instance_valid(building_window):
 		_create_building_window()
@@ -1746,6 +1973,8 @@ func _on_building_button_pressed() -> void:
 
 
 func _on_expand_village_button_pressed() -> void:
+	if not is_interface_open_allowed(&"village"):
+		return
 	AudioManager.play_ui("window_open", false)
 	if not is_instance_valid(village_window):
 		_create_village_window()
@@ -1961,6 +2190,8 @@ func _show_startup_menu() -> void:
 
 
 func _on_menu_button_pressed() -> void:
+	if not is_interface_open_allowed(&"main_menu"):
+		return
 	AudioManager.play_ui("window_open", false)
 	if not is_instance_valid(main_menu):
 		_create_main_menu()
@@ -2084,6 +2315,8 @@ func _on_main_menu_quit_requested() -> void:
 
 
 func _on_help_button_pressed() -> void:
+	if not is_interface_open_allowed(&"tutorial"):
+		return
 	AudioManager.play_ui("window_open", false)
 	_show_campaign_tutorial(
 		false,
@@ -2101,6 +2334,7 @@ func _show_campaign_tutorial(
 ) -> void:
 	if not _ensure_tutorial_window():
 		return
+	_capture_tutorial_focus()
 
 	if is_instance_valid(main_menu):
 		main_menu.hide_menu()
@@ -2162,6 +2396,8 @@ func _show_contextual_tutorial(
 		return
 	if not is_instance_valid(target):
 		return
+	if not _is_contextual_tutorial_target_active(target):
+		return
 	if not _ensure_tutorial_window():
 		return
 	if (
@@ -2179,6 +2415,7 @@ func _show_contextual_tutorial(
 	if steps.is_empty():
 		return
 
+	_capture_tutorial_focus()
 	tutorial_context_hint_id = hint_id
 	tutorial_return_to_menu = false
 	tutorial_menu_opened_from_game = false
@@ -2215,6 +2452,7 @@ func _on_tutorial_closed(
 			"Dica contextual registrada. O Guia do Jogo permanece disponível em AJUDA.",
 			false
 		)
+		_queue_tutorial_focus_restore()
 		call_deferred("_resume_pending_mandatory_content")
 		return
 
@@ -2261,6 +2499,7 @@ func _on_tutorial_closed(
 	tutorial_menu_opened_from_game = false
 	tutorial_started_automatically = false
 	tutorial_is_full_guide = false
+	_queue_tutorial_focus_restore()
 	if should_resume_game:
 		call_deferred("_resume_pending_mandatory_content")
 
@@ -2756,6 +2995,8 @@ func _make_context_step(
 
 
 func _on_save_button_pressed() -> void:
+	if not is_interface_open_allowed(&"save"):
+		return
 	AudioManager.play_ui("window_open", false)
 	if not is_instance_valid(save_window):
 		_create_save_window()
@@ -4462,6 +4703,8 @@ func _on_card_attribute_point_requested(
 func _on_card_history_requested(villager: Villager) -> void:
 	if not is_instance_valid(villager):
 		return
+	if not is_interface_open_allowed(&"councillor_history"):
+		return
 	if not is_instance_valid(councillor_history_window):
 		_create_councillor_history_window()
 	var history: Dictionary = GameManager.get_councillor_history(
@@ -5025,6 +5268,8 @@ func _open_diagnostic_dialogue() -> void:
 
 
 func show_internal_diagnostics() -> void:
+	if not is_interface_open_allowed(&"diagnostics"):
+		return
 	if not is_instance_valid(diagnostics_window):
 		_create_diagnostics_window()
 
@@ -5491,6 +5736,8 @@ func _on_day_advanced(summary: String) -> void:
 
 func _on_game_settings_changed(_settings_data: Dictionary) -> void:
 	_apply_season_appearance(GameManager.current_day, true)
+	if is_instance_valid(building_visuals):
+		building_visuals.refresh_motion_setting()
 
 
 
