@@ -1,7 +1,53 @@
-# Godot 4+
+# ============================================================
+# Golem's Mandate
+# Arquivos locais, gerados e temporários que não devem entrar
+# no controle de versão.
+# ============================================================
+
+# Godot 4 — cache e dados gerados pelo editor
 .godot/
+
+# Exportação Android gerada pelo Godot
 /android/
 
-# Ferramentas de auditoria em Python
+# Builds e exportações locais
+build/
+dist/
+exports/
+
+# Python — ferramentas auxiliares e auditorias
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains / IntelliJ / Rider
+.idea/
+
+# Arquivos temporários e de backup
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*~
+
+# Logs locais
+*.log
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux / gerenciadores de arquivos
+.directory
+.Trash-*
