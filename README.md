@@ -1,6 +1,7 @@
 # Golem's Mandate
 
 **A narrative village-management game built with Godot 4.**
+<img width="1139" height="641" alt="Golem's Mandate gameplay" src="https://github.com/user-attachments/assets/e1c68a76-6228-4dbd-a31f-1244a43a6ae7" />
 
 Golem's Mandate is a narrative management game about building a village, organizing a council and dealing with the long-term consequences of your decisions.
 
