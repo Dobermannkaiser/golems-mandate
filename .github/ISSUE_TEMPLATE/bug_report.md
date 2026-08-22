@@ -149,3 +149,88 @@ If an error appeared, paste the relevant portion here.
 
 ```text
 Paste relevant output here
+```
+
+Remove passwords, tokens, personal information and unrelated private data before posting logs.
+
+
+## Regression information
+
+Did this behavior work correctly in an earlier version?
+
+- [ ] Yes
+- [ ] No
+- [ ] Unsure
+- [ ] Not applicable
+
+If yes, identify the last known version where it worked:
+
+<!-- Example: v3.11.6 -->
+
+
+## New campaign comparison
+
+If the problem involves progression or saves, did you test whether it also occurs in a new campaign?
+
+- [ ] Yes, it also occurs in a new campaign
+- [ ] No, it only appears in an existing campaign
+- [ ] Tested, but the result was inconclusive
+- [ ] Not tested
+- [ ] Not applicable
+
+
+## Workarounds
+
+Have you found a temporary workaround?
+
+- [ ] No
+- [ ] Yes
+
+If yes, describe it:
+
+<!-- Describe any temporary action that avoids or reduces the problem. -->
+
+
+## Additional context
+
+Add anything else that may help investigate the issue.
+
+<!--
+Examples:
+- difficulty mode;
+- campaign day;
+- relevant councillors or characters;
+- building state;
+- recent settings changes;
+- unusual reproduction conditions.
+-->
+
+
+## AI assistance
+
+Was artificial intelligence used to investigate or describe this bug?
+
+- [ ] Yes
+- [ ] No
+
+If yes, distinguish clearly between:
+
+- behavior actually observed;
+- suggestions made by AI;
+- tests that were really performed;
+- conclusions that remain unverified.
+
+
+## Checklist
+
+Before submitting this report:
+
+- [ ] I checked that this issue relates to Golem's Mandate.
+- [ ] I included the affected game version when known.
+- [ ] I described the actual behavior separately from the expected behavior.
+- [ ] I provided reproduction steps when possible.
+- [ ] I did not claim tests that were not performed.
+- [ ] I removed passwords, tokens and private information.
+- [ ] I checked existing issues for an obviously identical report.
+
+Thank you for helping improve Golem's Mandate.
